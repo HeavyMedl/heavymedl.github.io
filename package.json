@@ -1,6 +1,6 @@
 {
-  "name": "heavymedl",
-  "version": "4.2.0",
+  "name": "heavymedl.dev",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

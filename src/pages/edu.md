@@ -5,9 +5,7 @@ title: "Education"
 
 This page describes my path to earning a **B.Sc in Computer Science** from [the Evergreen State College](https://www.evergreen.edu/).
 
-Here you'll find a [Summary](#summary) section that captures all the courses nested under their respective programs. It contains metadata like credits earned, dates, and credentials conferred.
-
-Below this is a corresponding course catalog whose descriptions were written by the faculty members who curated each program.
+Here you'll find a [summary](#summary) section which is a list of courses I completed. It contains metadata like credits earned, dates, and credentials conferred. Below this is a corresponding course catalog whose descriptions were written by the faculty members who curated each program.
 
 ## Table of contents
 

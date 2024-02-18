@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "heavymedl.dev",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 5,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
@@ -28,6 +28,12 @@ export const SOCIALS: SocialObjects = [
     name: "Github",
     href: "https://github.com/heavymedl",
     linkTitle: ` ${SITE.title} on Github`,
+    active: true,
+  },
+  {
+    name: "GitLab",
+    href: "https://gitlab.com/kmedley",
+    linkTitle: `${SITE.title} on GitLab`,
     active: true,
   },
   {
@@ -106,12 +112,6 @@ export const SOCIALS: SocialObjects = [
     name: "Discord",
     href: "https://github.com/heavymedl",
     linkTitle: `${SITE.title} on Discord`,
-    active: false,
-  },
-  {
-    name: "GitLab",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on GitLab`,
     active: false,
   },
   {

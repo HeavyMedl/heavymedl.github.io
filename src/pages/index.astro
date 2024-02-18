@@ -50,21 +50,42 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <span class="sr-only">RSS Feed</span>
       </a>
       <p>
-        Hi, there. I'm Kurt. I'm a professional full-stack engineer based in the
-        Seattle area. While my specialization is in front-end technologies, my
+        Hi, there. I'm Kurt. I'm a full-stack software engineer based in the
+        Seattle area. I have a
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="/edu/"
+        >
+          B.Sc in Computer Science
+        </LinkButton>
+      </p>
+      <p>
+        Professionally, my specialization is in front-end technologies, but my
         expertise extends fluidly across the entire stack, encompassing
-        databases, servers, UI components, and everything in between.
+        databases, servers, UI components, and everything in between. I'm
+        quality-obsessed, with a record for delivering performant solutions that
+        stand the test of time.
       </p>
       <p>
-        I'm quality-obsessed, with a record for delivering performant solutions
-        that stand the test of time.
-      </p>
-      <p>
-        Here I write on various topics. From front-end patterns to algorithms
-        and mathematics, this site serves as my blog, portfolio, and personal
-        brain dump.
+        In this space I write on various topics including DSA, mathematics,
+        design patterns, machine learning, data science, and more.
       </p>
       <p>Thanks for stopping by and I hope you enjoy my musings.</p>
+      <div>
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="/cv/"
+        >
+          Curriculum vitae
+        </LinkButton>
+        |
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="mailto:renovamenzxh@gmail.com"
+        >
+          kurtdmedley@gmail.com
+        </LinkButton>
+      </div>
       <!-- <p>
         Read the blog posts or check
         <LinkButton
@@ -78,7 +99,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
             <Socials />
           </div>
         )

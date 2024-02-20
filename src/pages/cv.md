@@ -35,9 +35,11 @@ Awarded: 2009
 
 Here are some industry achievements that I am proud of.
 
-### Facilitated REI's migration to Vite, Vitest, and Vue 3 at REI
+### Brought Vite, Vitest, and Vue 3 to REI
 
 TODO
+
+- Mention work to SSR middleware
 
 ### Introduced TypeScript to the FED community at REI
 
@@ -61,7 +63,7 @@ TODO
 
 ---
 
-## Experience
+## Industry experience
 
 ### Senior Software Engineer | Front-end Platform @ REI
 

@@ -53,11 +53,11 @@ TODO
 
 TODO
 
-### Introduced modern build tools at Costco
+### Wrote the middleware to server-render Vue applications at REI
 
 TODO
 
-### SSR?
+### Introduced modern build tools at Costco
 
 TODO
 
@@ -75,7 +75,9 @@ Additionally, we:
 
 - provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
 - mitigate security vulnerabilities in our front-end ecosystem.
-- track emerging technologies and trends in the industry. We also provide E2E technology direction and guidance.
+- scrutinize our properties for optimal performance.
+- track emerging technologies and trends in the industry.
+- provide E2E technology direction and guidance.
 - work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
 - contribute to [Cedar](https://cedar.rei.com), REI's design system written in **Vue**.
 
@@ -83,13 +85,7 @@ Additionally, we:
 
 Bellevue, WA | July 2019 - April 2020
 
-TODO - WIP
-
-On the REI Adventures product engineering team for REI. Followed a standard SDLC using agile methodologies and ceremonies to
-
-- Rewrote the [REI adventures](https://www.rei.com/adventures) property with **Vue.js**.
-- Decommissioned overlapping frameworks
-- on-call responsibilities
+On a product engineering team that delivered Vue-based pages and UI components for REI's Adventures property. My team and I rewrote the REI Adventures property with Vue and decommissioned overlapping frameworks. We followed a standard SDLC using agile methodologies and ceremonies. I interfaced with UX designers, product and program managers, business analysts, and business stakeholders. I had rotating on-call responsibilities.
 
 ### Software Engineer III | Full-stack @ Costco eCommerce
 
@@ -157,6 +153,14 @@ The following is a subset of notable projects from my industry experience divide
 - Packwood is an NPM package discovery tool used for reporting. It began as a hackathon project but became a fixture in the developer platform ecosystem. It's written with Vue, Vite, Vitest, and Spring Boot.
 
 #### [REI Adventures](https://www.rei.com/adventures)
+
+**Web applications**
+
+- [Adventures home page](https://www.rei.com/adventures)
+- [Search page](https://www.rei.com/adventures/search/keyword?q=canada)
+- [Trip details page](https://www.rei.com/adventures/trips/weekend/canadian-rockies-hiking-camping.html)
+- [Resource page](https://www.rei.com/adventures/resources/faqs)
+- ...more on request
 
 ### [Costco eCommerce](https://www.costco.com)
 

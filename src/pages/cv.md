@@ -95,14 +95,14 @@ On a product engineering team that delivered Vue-based pages and UI components f
 
 Issaquah, WA | July 2016 - July 2019
 
-I led several more complex projects including
+During my concluding position as a senior software engineer at Costco, I took charge of several intricate projects, which included:
 
-- bringing SMS notifications to our LTL (less-than-truckload) carriers
-- another site redesign effort that brought React to Costco
-- bringing gas prices to the Costco warehouse locator
-- bringing a member validation service to customer profiles.
+- implementing SMS notifications for our LTL (less-than-truckload) carriers.
+- spearheading another site redesign, introducing React to Costco's technology stack.
+- integrating gas prices into the Costco warehouse locator.
+- implementing a member validation service for customer profiles.
 
-In addition to writing code, these projects required me to create timelines that balanced project requirements with stakeholder deadlines, lead teams of off-shore contractors, and mentor junior developers.
+Beyond coding, these endeavors demanded my skills in crafting timelines that harmonized project requirements with stakeholder deadlines. I also led teams of off-shore contractors and provided mentorship to junior developers as part of these comprehensive responsibilities.
 
 ### Software Engineer II | Full-stack @ Costco eCommerce
 

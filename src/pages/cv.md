@@ -53,7 +53,7 @@ TODO
 
 TODO
 
-### Canonicalizing how NPM packages are scaffolded at REI
+### Canonicalized how NPM packages are scaffolded at REI
 
 TODO
 

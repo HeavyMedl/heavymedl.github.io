@@ -116,9 +116,9 @@ Issaquah, WA | July 2013 - July 2014
 
 After my internship, I was hired as a full-stack software engineer working for Costco eCommerce. I worked with fellow engineers on many projects spanning the entire stack. I was given a bi-weekly on-call responsibility to triage production issues which had me collaborating with our Dev Ops, Sterling OMS, and Networking teams. During this time I:
 
-- integrated internal and external web services
-- performed general maintenance of applications
 - built a manual authentication service that allowed customers to manage their membership details
+- integrated internal and external web services
+- performed general maintenance on applications
 
 ### Software Engineer Intern | Full-stack @ Costco eCommerce
 

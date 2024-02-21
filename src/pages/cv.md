@@ -95,7 +95,7 @@ On a product team that delivered Vue applications and UI components for REI's Ad
 
 Issaquah, WA | July 2016 - July 2019
 
-During my concluding position as a senior software engineer at Costco, I took charge of several intricate projects, which included:
+During my concluding position as a senior software engineer at Costco, I led several intricate projects including:
 
 - implementing SMS notifications for our LTL (less-than-truckload) carriers.
 - spearheading another site redesign, introducing React to Costco's technology stack.

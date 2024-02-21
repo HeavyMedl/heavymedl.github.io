@@ -108,7 +108,7 @@ Beyond coding, I developed timelines that harmonized project requirements with s
 
 Issaquah, WA | July 2014 - July 2016
 
-As my time at Costco progressed, I took on more substantial leadership roles, with a notable project being our responsive design initiative. Collaborating with business analysts, UX designers, stakeholders, QA, and both on-site and off-site consultants, my team and I successfully delivered a contemporary, responsive website. We employed then-state-of-the-art build tools such as Webpack, utilized SCSS for styling, and implemented Mocha for testing. Through the application of industry-standard tools and patterns, we transformed the chaotic landscape of spaghetti/cowboy code into a well-ordered and efficient system.
+As my time at Costco progressed, I took on more substantial leadership roles, with a notable project being our responsive design initiative. Collaborating with business analysts, UX designers, stakeholders, QA, and both on-site and off-site consultants, my team and I successfully delivered a contemporary, responsive website. We employed then-modern build tools such as Webpack, utilized SCSS for styling, and implemented Mocha for testing. Through the application of industry-standard tools and patterns, we transformed the chaotic landscape of spaghetti/cowboy code into a well-ordered and efficient system.
 
 ### Software Engineer I | Full-stack @ Costco eCommerce
 

@@ -41,6 +41,10 @@ TODO
 
 - Mention work to SSR middleware
 
+### Rewrote REI's Adventures property with Vue
+
+TODO
+
 ### Introduced TypeScript to the FED community at REI
 
 TODO
@@ -57,7 +61,7 @@ TODO
 
 TODO
 
-### Introduced modern build tools at Costco
+### Introduced modern front-end build tools at Costco
 
 TODO
 
@@ -69,7 +73,7 @@ TODO
 
 Hybrid | April 2020 - Present
 
-As a front-end platform engineer, I contribute to a suite of applications, build-tool plugins, and configurations used by all product engineering teams at REI. Our team is responsible for the R&D of front-end patterns as well as vetting technologies that are ultimately adopted by all REI product engineering teams. While we're focused on front-end technology, the nature of our work necessitates collaboration with fellow platform engineering teams, development with Java and Node.js, interfacing with vendor instrumentations, and more.
+As a front-end platform engineer, I contribute to a suite of applications, libraries, build-tool plugins, and configurations used by all product engineering teams at REI. Our team is responsible for the R&D of front-end patterns as well as vetting technologies that are ultimately adopted by all REI product engineering teams. While we're focused on front-end technology, the nature of our work necessitates collaboration with fellow platform engineering teams, development with Java and Node.js, interfacing with vendor instrumentations, and more.
 
 Additionally, we:
 
@@ -79,7 +83,7 @@ Additionally, we:
 - track emerging technologies and trends in the industry.
 - provide E2E technology direction and guidance.
 - work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
-- contribute to [Cedar](https://cedar.rei.com), REI's design system written in **Vue**.
+- contribute to [Cedar](https://cedar.rei.com), REI's design system.
 
 ### Senior Software Engineer | Front-end @ REI Adventures
 
@@ -126,57 +130,39 @@ Started my SW career with a software engineering internship at the Costco HQ in 
 
 ## Industry projects
 
-The following is a subset of notable projects from my industry experience divided by company and role.
+The following is a subset of notable projects from my industry experience.
 
-### [REI](https://www.rei.com)
+### Front-end
 
-#### Front-end Platform
+- REI Adventures
+  - [Landing page](https://www.rei.com/adventures)
+  - [Search page](https://www.rei.com/adventures/search/keyword?q=canada)
+  - [Trip details page](https://www.rei.com/adventures/trips/weekend/canadian-rockies-hiking-camping.html)
+  - [Resource page](https://www.rei.com/adventures/resources/faqs)
+  - ...more on request
 
-**Vite plugins, utilities, and configurations**
+### Full-stack, back-end, and middleware
 
-- [`@rei/create-package`](https://github.com/rei/create-package) is an NPM initializer written with Node and TypeScript and is the officially supported way to create NPM packages at REI.
+- `@rei/ssr` is an Express application that runs alongside Spring Boot and facilitates server-rendering Vue applications. This is used by all product engineering teams using Vue as their UI framework.
+- Wrote a Spring Boot interceptor that makes HTTP requests to the `@rei/ssr` Express server.
+- Wrote a custom Thymeleaf dialect within Spring Boot for the back-end integration of Vite-compiled assets.
+- Climber's Site is REI's internal archetypal microsite used as a reference for all product engineering teams. TODO: (View a screen capture.)
+- Packwood is an NPM package discovery tool used for reporting. It began as a hackathon project but became a fixture in the developer platform ecosystem. TODO: (View a screen capture.)
+- [Costco eCommerce](https://www.costco.com)
+  - Checkout flow (Cart, Shipping, Billing, Review order, Order processing)
+  - Warehouse Locator
+  - Product page
+  - Customer account and profile
+
+### Vite plugins, utilities, and configurations
+
+- [`@rei/create-package`](https://github.com/rei/create-package) is an NPM initializer and the officially supported way to create NPM packages at REI.
 - `@rei/vite-base-config` is the primary Vite and Vitest configuration module consumed by all product engineering teams at REI. It offers a baseline set of configuration defaults aligned with business requirements. Supported by unit tests, this configuration guarantees our Vue applications are optimized and contain the polyfills required by our browser-support matrix.
-- `@rei/vite-plugin-alpine-uploader` is a Vite plugin that facilitates uploading assets compiled by **Vite** to Akamai NetStorage, our CDN. This enables teams to source their bundled assets from the CDN, which improves the speed and availability of these assets for customers.
+- `@rei/vite-plugin-alpine-uploader` is a Vite plugin that facilitates uploading assets compiled by Vite to Akamai NetStorage, our CDN. This enables teams to source their bundled assets from the CDN, which improves the speed and availability of these assets for customers.
 - `@rei/vite-plugin-alpine-manifest-css` is a Vite plugin that alters the CSS property of entries defined in the manifest generated by Vite builds. It ensures the correct injection order of CSS chunk assets.
 - `@rei/vite-plugin-alpine-stats` is a Vite plugin that does static analysis of a repository to provide statistics on the code. Once these statistics are compiled, they are sent to Grafana. TODO: (see here)
 
-**Middleware**
-
-- `@rei/ssr` is an Express application that runs alongside Spring Boot and facilitates server-rendering **Vue** applications. This is used by all product engineering teams using Vue as their UI framework.
-
-**Back-end**
-
-- Wrote a Spring Boot interceptor that makes HTTP requests to the `@rei/ssr` Express server.
-- Wrote a custom Thymeleaf dialect within Spring Boot for the back-end integration of **Vite**-compiled assets.
-
-**CI/CD**
+### CI/CD
 
 - Wrote the GitLab CI/CD **bash** scripts for NPM modules used to publish NPM packages to REI's private NPM registry in Sonatype Nexus.
 - `cov-stats` is a Node.js script that automatically sends unit test coverage results to the Grafana Front-End-Unit-Test Coverage board so that we can track project code coverage over time. It is integrated into GitLab CI as a job executed after a successful publish to REI's NPM registry
-
-**Web applications**
-
-- Climber's Site is REI's internal archetypal microsite used as a reference for all product engineering teams. It's written with Vue, Vite, Vitest, and Spring Boot. TODO: (see here)
-- Packwood is an NPM package discovery tool used for reporting. It began as a hackathon project but became a fixture in the developer platform ecosystem. It's written with Vue, Vite, Vitest, and Spring Boot. TODO: (see here)
-
-#### [REI Adventures](https://www.rei.com/adventures)
-
-**Web applications**
-
-- [Adventures home page](https://www.rei.com/adventures)
-- [Search page](https://www.rei.com/adventures/search/keyword?q=canada)
-- [Trip details page](https://www.rei.com/adventures/trips/weekend/canadian-rockies-hiking-camping.html)
-- [Resource page](https://www.rei.com/adventures/resources/faqs)
-- ...more on request
-
-### [Costco eCommerce](https://www.costco.com)
-
-TODO
-
-- **Gas prices online**
-- **Site redesign**
-- **SEO improvements**
-- **Member-only purchase**
-- **SMS notifications**
-- **Responsive redesign**
-- **CRM and manual authentication**

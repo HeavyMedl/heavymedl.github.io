@@ -49,7 +49,7 @@ TODO
 
 TODO
 
-### Rewrote REI's analytics library in TypeScript
+### Rewrote REI's analytics library with TypeScript
 
 TODO
 

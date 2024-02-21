@@ -89,7 +89,7 @@ Additionally, we:
 
 Bellevue, WA | July 2019 - April 2020
 
-On a product engineering team that delivered Vue applications and UI components for REI's Adventures property. My team and I rewrote the REI Adventures property with Vue and decommissioned overlapping frameworks. We followed a standard SDLC using agile methodologies and ceremonies. I interfaced with UX designers, product and program managers, business analysts, and business stakeholders. I had rotating on-call responsibilities.
+On a product team that delivered Vue applications and UI components for REI's Adventures property. My team and I rewrote the REI Adventures property with Vue and decommissioned overlapping frameworks. We followed a standard SDLC using agile methodologies and ceremonies. I interfaced with UX designers, product and program managers, business analysts, and business stakeholders. I had rotating on-call responsibilities.
 
 ### Software Engineer III | Full-stack @ Costco eCommerce
 

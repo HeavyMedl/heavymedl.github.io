@@ -57,7 +57,7 @@ TODO
 
 TODO
 
-### Wrote the middleware to server-render Vue applications at REI
+### Wrote middleware to server-render Vue applications at REI
 
 TODO
 

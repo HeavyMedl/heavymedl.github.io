@@ -17,7 +17,7 @@ description: A story about how replacing our build tools transformed our develop
 
 The Front-end Build System (FEBS) is REI's internally developed set of tools that helps engineers build the assets that are eventually downloaded by customers visiting REI's online properties. FEBS has evolved over the years to support an ever-changing development landscape.
 
-![AstroPaper v4](@assets/images/rei-febs-logo.png)
+![FEBS 2 logo](@assets/images/rei-febs.png)
 
 The first generation of FEBS was built directly in our legacy monolithic code base, a series of scripts that leveraged some programmable APIs from libraries like `gulp` and `browserify`. This code continues to serve any remaining applications living in that monolithic space.
 

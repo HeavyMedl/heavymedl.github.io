@@ -1,7 +1,7 @@
 ---
 author: Kurt Medley
 pubDatetime: 2024-02-20T15:20:35Z
-title: Unleashing the Power of Vue 3, Vite, and Vitest at REI
+title: Unleashing the Power of Vite and Vitest at REI
 featured: true
 draft: false
 tags:

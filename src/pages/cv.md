@@ -37,33 +37,31 @@ Here are some industry achievements that I am proud of.
 
 ### Brought Vite, Vitest, and Vue 3 to REI
 
-TODO
-
-- Mention work to SSR middleware
+When Vue 2 was announced EOL, our development platform was not positioned to upgrade to Vue 3. Initially, we attempted to update the constituent dependencies of our custom tools but encountered many technical impasses. I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
 
 ### Rewrote REI's Adventures property with Vue
 
-TODO
+When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
 
 ### Introduced TypeScript to the FED community at REI
 
-TODO
+After attending VueConf 2023, I was convinced our front-end ecosystem would benefit from a migration to TypeScript. We wanted to bolster application resilience and improve developer productivity with strict typing. After conferring with our larger front-end community, our team went about creating the path to TypeScript. We converted our archetypal microsite and tools to TypeScript. With a sanctioned functional example, we created documentation and shepherded TypeScript at REI.
 
 ### Rewrote REI's analytics library with TypeScript
 
-TODO
+Shortly after adopting TypeScript, I rewrote a legacy implementation of REI's analytics library to TypeScript using Vite and Vitest. This effort involved sifting through a large amount of code I didn't fully understand and making educated decisions about what a coherent type interface would be. The introduction of TypeScript surfaced underlying implementation problems that can now be corrected.
 
 ### Canonicalized how NPM packages are scaffolded at REI
 
-TODO
+I normalized the process for scaffolding new utility libraries, Vue components, and microsites by introducing an [NPM initializer](https://github.com/rei/create-package). This CLI tool offers a series of prompts that ultimately generate a new directory of templated code. The templates alleviate the developer from the tedium of setting up build tools, managing package dependencies, and setting up CI/CD in GitLab. This tool is the official way to create new JS/TS-based code at REI.
 
 ### Wrote middleware to server-render Vue applications at REI
 
-TODO
+I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
 
 ### Introduced modern front-end build tools at Costco
 
-TODO
+As part of a massive overhaul to the entire Costco eCommerce front end, I pitched Webpack and various other technologies to modernize the front-end build toolchain. This effort helped deliver modernized compiled assets to customers and boost developer productivity.
 
 ---
 

@@ -163,7 +163,7 @@ The following is a subset of notable projects from my industry experience.
 
 ### CI/CD
 
-- Wrote the GitLab CI/CD **bash** scripts for NPM modules used to publish NPM packages to REI's private NPM registry in Sonatype Nexus.
+- Wrote the GitLab CI/CD bash scripts for NPM modules used to publish NPM packages to REI's private NPM registry in Sonatype Nexus.
 - `cov-stats` is a Node.js script that automatically sends unit test coverage results to the Grafana Front-End-Unit-Test Coverage board so that we can track project code coverage over time. It is integrated into GitLab CI as a job executed after a successful publish to REI's NPM registry
 
 <!--

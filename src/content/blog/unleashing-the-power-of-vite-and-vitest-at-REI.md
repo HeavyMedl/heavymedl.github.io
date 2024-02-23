@@ -17,6 +17,8 @@ description: A story about how replacing our build tools transformed our develop
 
 ## Table of contents
 
+## FEBS
+
 The Front-end Build System (FEBS) is REI's internally developed set of tools that helps engineers build the assets that are eventually downloaded by customers visiting REI's online properties. FEBS has evolved over the years to support an ever-changing development landscape.
 
 ![FEBS 2 logo](@assets/images/rei-febs.png)

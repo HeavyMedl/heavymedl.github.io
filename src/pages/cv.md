@@ -71,12 +71,13 @@ As part of a massive overhaul to the entire Costco eCommerce front end, I pitche
 
 Hybrid | April 2020 - Present
 
-As a front-end platform engineer, I contribute to a suite of applications, libraries, build-tool plugins, and configurations used by all product engineering teams at REI. Our team is responsible for the R&D of front-end patterns as well as vetting technologies that are ultimately adopted by all REI product engineering teams. While we're focused on front-end technology, the nature of our work necessitates collaboration with fellow platform engineering teams, development with Java and Node.js, interfacing with vendor instrumentations, and more.
+As a front-end platform engineer, I contribute to a suite of applications, libraries, build-tool plugins, and configurations used by all product engineering teams at REI. Our team is responsible for the R&D of front-end patterns as well as vetting technologies that are ultimately adopted by all REI product engineering teams.
 
 Additionally, we:
 
 - provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
 - mitigate security vulnerabilities in our front-end ecosystem.
+- integrate vendor scripts
 - scrutinize our properties for optimal performance.
 - track emerging technologies and trends in the industry.
 - provide E2E technology direction and guidance.

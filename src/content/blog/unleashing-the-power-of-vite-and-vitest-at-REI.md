@@ -67,6 +67,8 @@ This has alleviated us from low-level dependency management, makes future migrat
 
 ## Lessons learned
 
-Reflecting on the evolution of the build toolchain at REI, the intentions were good. Create a tool that would normalize the way our team's built front-end assets and prevent deviation from supported patterns.
+Reflecting on the evolution of the build toolchain at REI, the intentions were good. Create a tool that would normalize the way our teams built front-end assets and prevent deviation from supported patterns.
 
 What we learned was that we didn't need to be restrictive in the form of an explicit tool like `@rei/febs`. It's not like people couldn't get around it anyway. Instead, we simply provide sanctioned patterns and people use them. The benefits of using the raw build tool greatly outweigh customization that extends the tool directly.
+
+![initials logo](/assets/favicon/favicon-96x96.png)

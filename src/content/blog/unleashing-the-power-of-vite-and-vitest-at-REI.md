@@ -43,7 +43,7 @@ Perhaps you spotted the _inherent_ problem with `@rei/febs`? It's an inheritance
 
 ## This is the way
 
-Eventually, we hit a wall when Vue 3 arrived on the scene. We built a POC that brought Vue 3 support to `@rei/febs`. We discovered that the Rollup plugin used to compile Vue 3 SFCs for our public design system, [Cedar](https://rei.github.io/rei-cedar-docs/), made tree-shaking incompatible with `webpack@4`, resulting in bloated application bundles.
+Eventually, we hit a wall when Vue 3 arrived on the scene. We built a POC that brought Vue 3 support to `@rei/febs`. We discovered that the Rollup plugin used to compile Vue 3 SFCs for our public design system, [Cedar](https://cedar.rei.com), made tree-shaking incompatible with `webpack@4`, resulting in bloated application bundles.
 
 Even though we had a functional POC of our reference microsite using Vue 3, we were unsatisfied with the low-level work we had to do to get there. We decided to experiment with a build toolchain overhaul that dispensed with our implementations in favor of using [Vite](https://vitejs.dev/) to bundle our application. We quickly cobbled together a working solution. We liked the approach so much that we decided to move forward with it.
 
@@ -51,7 +51,7 @@ Even though we had a functional POC of our reference microsite using Vue 3, we w
 
 [Vite](https://vitejs.dev/) is a UI-framework agnostic build tool. It supports React, Svelte, Vue, and others. It's a bundler ... of bundlers. Ironically, it's a wrapper that swaps bundlers in and out for different purposes. But the key point here is that it's a wrapper maintained by an open-source community **instead** of us. Under the hood, it uses `rollup` and `esbuild`.
 
-Vite happens to have first-class support for Vue, which makes sense, as it was built by the creator of Vue. REI is a Vue shop. Our design system, [Cedar](https://rei.github.io/rei-cedar-docs/), is a Vue component library. Cedar now uses Vite to bundle its code. We'll use Vite to bundle our customer-facing Vue 3 applications. One tool to rule them all.
+Vite happens to have first-class support for Vue, which makes sense, as it was built by the creator of Vue. REI is a Vue shop. Our design system, [Cedar](https://cedar.rei.com), is a Vue component library. Cedar now uses Vite to bundle its code. We'll use Vite to bundle our customer-facing Vue 3 applications. One tool to rule them all.
 
 Besides all that, Vite is pretty sweet. It has a "no-bundler" approach to running its development server. It doesn't need to build your application before it's served.
 

@@ -107,3 +107,5 @@ B.Sc in Computer Science
 
 A.A. in Music Theory and Composition
 ~ 09/2005 - 06/2009
+
+<!-- written with ohmycv.app -->

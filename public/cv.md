@@ -28,18 +28,6 @@ A few things I'm proud of. See more <a href="https://heavymedl.dev/cv/#industry-
 - **Rewrote REI's Adventures property with Vue**: When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
 - **Wrote middleware to server-render Vue applications at REI**: I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
 
-<!-- [~P1]: **Eating is All You Need**
-
-    <u>Haha Ha</u>, San Zhang
-
-    *Conference on Neural Information Processing Systems (NeurIPS), 2099*
-
-[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
-
-    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
-
-    *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)*** -->
-
 ## Experience
 
 **Senior Software Engineer | FE Platform**
@@ -48,14 +36,14 @@ A few things I'm proud of. See more <a href="https://heavymedl.dev/cv/#industry-
 
 As a front-end platform engineer at REI, I develop applications, libraries, and build-tool plugins for all product engineering teams. My team focuses on researching front-end patterns, evaluating technologies, and ensuring their adoption across REI. Additionally:
 
-- provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
-- mitigate security vulnerabilities in our front-end ecosystem.
-- integrate vendor scripts
-- scrutinize our properties for optimal performance.
-- track emerging technologies and trends in the industry.
-- provide E2E technology direction and guidance.
-- work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
-- contribute to [Cedar](https://cedar.rei.com), REI's design system.
+- Provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
+- Mitigate security vulnerabilities in our front-end ecosystem.
+- Integrate vendor scripts
+- Scrutinize our properties for optimal performance.
+- Track emerging technologies and trends in the industry.
+- Provide E2E technology direction and guidance.
+- Work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
+- Contribute to [Cedar](https://cedar.rei.com), REI's design system.
 
 **Senior Software Engineer | Front-end**
 ~ REI Adventures | Bellevue, WA
@@ -79,7 +67,7 @@ As a front-end platform engineer at REI, I develop applications, libraries, and 
 - Spearheading another site redesign, introducing React to Costco's technology stack.
 - Integrated gas prices into the Costco warehouse locator.
 - Implemented a member validation service for customer profiles.
-- Developed timelines to accomodate deadlines.
+- Developed timelines to accommodate deadlines.
 - Led teams of off-shore contractors.
 
 **Software Engineer II | Full-stack**
@@ -88,7 +76,7 @@ As a front-end platform engineer at REI, I develop applications, libraries, and 
 
 - Assumed leadership role mentoring junior engineers and interns.
 - Collaborated with QA, BAs, UX designers, and business stakeholders to deliver a responsive redesign of Costco's entire property, with notable flows like Checkout, Warehouse Locator, Product Page, etc.
-- Brought then-modern build tools to Costco's eCommerce developmet workflow including, but not limited to, webpack, SASS, and Mocha.
+- Brought then-modern build tools to Costco's eCommerce development workflow including, but not limited to, webpack, SASS, and Mocha.
 
 **Software Engineer I | Full-stack**
 ~ Costco eCommerce | Issaquah, WA

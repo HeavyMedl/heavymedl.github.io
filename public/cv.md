@@ -14,6 +14,98 @@ header:
     newLine: true
 ---
 
+## Skills
+
+**Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
+
+**Tools and Frameworks:** Git, PyTorch, Keras, scikit-learn, Linux, Vue, React, Django, $\LaTeX$
+
+## Industry Achievements
+
+A few things I'm proud of. See more <a href="https://heavymedl.dev/cv/#industry-achievements" target="_blank">here</a>.
+
+- **Brought Vite, Vitest, and Vue 3 to REI**: When Vue 2 was announced EOL, our development platform was not positioned to upgrade to Vue 3. Initially, we attempted to update the constituent dependencies of our custom tools but encountered many technical impasses. I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](https://heavymedl.dev/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
+- **Rewrote REI's Adventures property with Vue**: When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
+- **Wrote middleware to server-render Vue applications at REI**: I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
+
+<!-- [~P1]: **Eating is All You Need**
+
+    <u>Haha Ha</u>, San Zhang
+
+    *Conference on Neural Information Processing Systems (NeurIPS), 2099*
+
+[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
+
+    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
+
+    *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)*** -->
+
+## Experience
+
+**Senior Software Engineer | FE Platform**
+~ REI | Hybrid
+~ April 2020 - Present
+
+As a front-end platform engineer at REI, I develop applications, libraries, and build-tool plugins for all product engineering teams. My team focuses on researching front-end patterns, evaluating technologies, and ensuring their adoption across REI. Additionally:
+
+- provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
+- mitigate security vulnerabilities in our front-end ecosystem.
+- integrate vendor scripts
+- scrutinize our properties for optimal performance.
+- track emerging technologies and trends in the industry.
+- provide E2E technology direction and guidance.
+- work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
+- contribute to [Cedar](https://cedar.rei.com), REI's design system.
+
+**Senior Software Engineer | Front-end**
+~ REI Adventures | Bellevue, WA
+~ July 2019 - April 2020
+
+- Delivered Vue applications and UI components for REI's Adventures property.
+- My team and I rewrote the REI Adventures property with Vue
+- Decommissioned overlapping frameworks
+- Followed a standard SDLC using agile methodologies and ceremonies
+- Interfaced with UX designers, product and program managers, business analysts, and business stakeholders
+- Rotating on-call responsibilities
+
+<!-- Page break for PDF -->
+<div style="margin-bottom: 7em"></div>
+
+**Software Engineer III | Full-stack**
+~ Costco eCommerce | Issaquah, WA
+~ July 2016 - July 2019
+
+- Implemented SMS notifications for our LTL (less-than-truckload) carriers.
+- Spearheading another site redesign, introducing React to Costco's technology stack.
+- Integrated gas prices into the Costco warehouse locator.
+- Implemented a member validation service for customer profiles.
+- Developed timelines to accomodate deadlines.
+- Led teams of off-shore contractors.
+
+**Software Engineer II | Full-stack**
+~ Costco eCommerce | Issaquah, WA
+~ July 2014 - July 2016
+
+- Assumed leadership role mentoring junior engineers and interns.
+- Collaborated with QA, BAs, UX designers, and business stakeholders to deliver a responsive redesign of Costco's entire property, with notable flows like Checkout, Warehouse Locator, Product Page, etc.
+- Brought then-modern build tools to Costco's eCommerce developmet workflow including, but not limited to, webpack, SASS, and Mocha.
+
+**Software Engineer I | Full-stack**
+~ Costco eCommerce | Issaquah, WA
+~ July 2013 - July 2014
+
+- Built a manual authentication service that allowed customers to manage their membership details
+- Integrated internal and external web services
+- Performed general maintenance on applications
+- Bi-weekly on-call responsibilities triaging production issues
+- Collaborated with Dev Ops, Sterling OMS, and Networking teams
+
+**Software Engineer Intern | Full-stack**
+~ Costco eCommerce | Issaquah, WA
+~ April 2013 - July 2013
+
+Started my SW career with a software engineering internship at the Costco HQ in Issaquah, WA. I was embedded within the Costco eCommerce team responsible for delivering costco.com and costco.ca. I was introduced to Costco’s large, distributed architecture and a suite of [un]customized IBM products including WebSphere Commerce, DB2, and MQ.
+
 ## Education
 
 **The Evergreen State College**
@@ -27,73 +119,3 @@ B.Sc in Computer Science
 
 A.A. in Music Theory and Composition
 ~ 09/2005 - 06/2009
-
-## Industry achievements
-
-A few things I'm proud of. See more <a href="https://heavymedl.dev/cv" target="_blank">here</a>.
-
-[~P1]: **Eating is All You Need**
-
-    <u>Haha Ha</u>, San Zhang
-
-    *Conference on Neural Information Processing Systems (NeurIPS), 2099*
-
-[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
-
-    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
-
-    *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)***
-
-## Experience
-
-<!-- **Machine Learning Engineer Intern**
-  ~ Slow Feet Technology
-  ~ 07/2021 - Present
-
-- Devised a new food-agnostic formulation for fine-grained cross-ingredient meal cooking and subsumed the recent popular works into the proposed scheme
-- Proposed a cream of mushroom soup recipe which is competitive when compared with the SOTA recipes with complex steps by only altering the way of cutting mushroom, published in NeurIPS 2099 (see [~P1])
-- Developed a pan for meal cooking which is benefiting the group members' research work
-
-
-**Reseach Intern**
-  ~ Paddling University
-  ~ 08/2020 - Present
-
-- Designed an efficient method for mapo tofu quality estimation via thermometer
-- Proposed a fast stir frying algorithm for tofu cooking problems, which specifies the amount of the hot sauce instead of using terms like "as much as you can", published in CVPR 2077 (see [~P2])
-- Outperformed SOTA methods while cooking much more efficient in experiments on popular tofu
-
-
-**Research Assistant**
-  ~ Huangdu Institute of Technology
-  ~ 03/2020 - 06/2020
-
-- Proposed a novel framework consisting of a spoon and a pair of chopsticks for eating mapo toufu
-- Designed a tofu filtering strategy inspired by beans grinding method for building a dataset for this new task
-- Designed two new evaluation criteria to assess the novelty and diversity of the eating plans
-- Outperformed baselines and existed methods substantially in terms of diversity, novelty and coherence
-
-
-**Reseach Intern**
-  ~ Paddling University
-  ~ 07/2018 - 08/2018
-
-- Designed two sandwiches consisting of breads and meat of two traditional bacon cheese burgers to make use of unused ingredients
-- Utilized the structure duality to boost the cooking speed of two dual tasks based on shared ingredients
-- Outperformed strong baselines on QWE'15 and ASDF'14 dataset -->
-
-## Awards and Honors
-
-**Gold**, International Collegiate Catching Fish Contest (ICCFC)
-~ 2018
-
-**First Prize**, China National Scholarship for Outstanding Dragons
-~ 2017, 2018
-
-## Skills
-
-**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
-
-**Tools and Frameworks:** Git, PyTorch, Keras, scikit-learn, Linux, Vue, React, Django, $\LaTeX$
-
-**Languages:** Chinese (native), English (proficient)

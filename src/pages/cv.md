@@ -3,7 +3,7 @@ layout: ../layouts/CVLayout.astro
 title: "Curriculum vitae"
 ---
 
-> TL;DR You're viewing my expanded curriculum vitae / résumé. If you're looking for a summative CV in PDF form, click here.
+> TL;DR You're viewing my expanded curriculum vitae / résumé. If you're looking for a summative CV in PDF form, click <a href="/cv.pdf" target="_blank">here</a>.
 
 ## Table of contents
 

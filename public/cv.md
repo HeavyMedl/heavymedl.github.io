@@ -16,9 +16,9 @@ header:
 
 ## Skills
 
-**Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
+**Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript, <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java, <span class="iconify" data-icon="vscode-icons:file-type-haskell" data-inline="false"></span> Haskell
 
-**Tools and Frameworks:** Git, PyTorch, Keras, scikit-learn, Linux, Vue, React, Django, $\LaTeX$
+**Tools and Frameworks:** <span class="iconify" data-icon="logos:nodejs" data-inline="false"></span>, <span class="iconify" data-icon="vscode-icons:file-type-git" data-inline="false"></span> Git, <span class="iconify" data-icon="logos:ubuntu" data-inline="false"></span> Ubuntu, <span class="iconify" data-icon="logos:docker-icon" data-inline="false"></span> Docker, <span class="iconify" data-icon="logos:spring" data-inline="false"></span>, <span class="iconify" data-icon="vscode-icons:file-type-vue" data-inline="false"></span> Vue, <span class="iconify" data-icon="vscode-icons:file-type-vite" data-inline="false"></span> Vite, <span class="iconify" data-icon="vscode-icons:file-type-reactjs" data-inline="false"></span> React, <span class="iconify" data-icon="logos:astro" data-inline="false"></span>, $\LaTeX$
 
 ## Industry Achievements
 

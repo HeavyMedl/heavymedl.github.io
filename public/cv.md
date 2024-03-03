@@ -56,8 +56,7 @@ As a front-end platform engineer at REI, I develop applications, libraries, and 
 - Collaborated with UX designers, product and program managers, business analysts, and business stakeholders
 - Rotating on-call responsibilities
 
-<!-- Page break for PDF -->
-<div style="margin-bottom: 7em"></div>
+<br/><br/><br/><br/><br/><br/>
 
 **Software Engineer III | Full-stack**
 ~ Costco eCommerce | Issaquah, WA

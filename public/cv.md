@@ -16,15 +16,15 @@ header:
 
 ## Skills
 
-**Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript, <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java, <span class="iconify" data-icon="vscode-icons:file-type-haskell" data-inline="false"></span> Haskell
+**Languages:** Python, JavaScript, TypeScript, HTML / CSS, Java, Haskell
 
-**Tools and Frameworks:** <span class="iconify" data-icon="logos:nodejs" data-inline="false"></span>, <span class="iconify" data-icon="vscode-icons:file-type-git" data-inline="false"></span> Git, <span class="iconify" data-icon="logos:ubuntu" data-inline="false"></span> Ubuntu, <span class="iconify" data-icon="logos:docker-icon" data-inline="false"></span> Docker, <span class="iconify" data-icon="logos:spring" data-inline="false"></span>, <span class="iconify" data-icon="vscode-icons:file-type-vue" data-inline="false"></span> Vue, <span class="iconify" data-icon="vscode-icons:file-type-vite" data-inline="false"></span> Vite, <span class="iconify" data-icon="vscode-icons:file-type-reactjs" data-inline="false"></span> React, <span class="iconify" data-icon="logos:astro" data-inline="false"></span>, $\LaTeX$
+**Tools and Frameworks:** Node.js, Git, Ubuntu, Docker, Spring, Vue, Vite, Webpack, React, Astro, $\LaTeX$
 
 ## Industry Achievements
 
 A few things I'm proud of. See more <a href="https://heavymedl.dev/cv/#industry-achievements" target="_blank">here</a>.
 
-- **Brought Vite, Vitest, and Vue 3 to REI**: When Vue 2 was announced EOL, our development platform was not positioned to upgrade to Vue 3. Initially, we attempted to update the constituent dependencies of our custom tools but encountered many technical impasses. I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](https://heavymedl.dev/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
+- **Brought Vite, Vitest, and Vue 3 to REI**: I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](https://heavymedl.dev/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
 - **Rewrote REI's Adventures property with Vue**: When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
 - **Wrote middleware to server-render Vue applications at REI**: I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
 
@@ -50,10 +50,10 @@ As a front-end platform engineer at REI, I develop applications, libraries, and 
 ~ July 2019 - April 2020
 
 - Delivered Vue applications and UI components for REI's Adventures property.
-- My team and I rewrote the REI Adventures property with Vue
+- Using UX deliverables from Figma, my team and I redesigned the REI Adventures property with Vue.
 - Decommissioned overlapping frameworks
 - Followed a standard SDLC using agile methodologies and ceremonies
-- Interfaced with UX designers, product and program managers, business analysts, and business stakeholders
+- Collaborated with UX designers, product and program managers, business analysts, and business stakeholders
 - Rotating on-call responsibilities
 
 <!-- Page break for PDF -->

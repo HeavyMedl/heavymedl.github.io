@@ -11,16 +11,16 @@ My responsibility on this small team is to work with solution architects to deli
 ### Finer detail
 
 - Our team builds and maintains several internal Vue applications
-  - One is the archetypal microsite that is used as a reference
-  - Another is a package discovery tool used by engineers to evaluate metadata. It's also used by product managers for reporting.
+  - One is the archetypal microsite that is used as a reference. This is called `climbers-site`.
+  - Another is a package discovery tool used by engineers to evaluate metadata. It's also used by product managers for reporting. This is called `Packwood`
+  - Quickstart microsite is the template used to base every new microsite. It is scaffolded with a CLI tool that I built and maintain.
 - Ensure assets bundled by build tools are consumable by our custom back-end.
   - **Example**: We maintain several Java libraries that facilitate this.
-- We write CLI tools for scaffolding new applications:
-  - **Example**: Our NPM initializer
 - We write GitLab CI scripts for publishing NPM packages to our internal registry.
 - Perform R&D on emerging front-end technologies. We vet them and build proof-of-technologies
   - **Example**: brought Vite and Vitest to REI.
 - Build tools, plugins, and configurations that are used company-wide.
+- We support teams in the adoption of new tools, frameworks, and patterns.
 
 #### Ecosystem
 

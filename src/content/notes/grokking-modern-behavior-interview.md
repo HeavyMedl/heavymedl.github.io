@@ -1,5 +1,73 @@
 # Grokking Modern Behavior Interview
 
+- [Grokking Modern Behavior Interview](#grokking-modern-behavior-interview)
+  - [The STAR method](#the-star-method)
+    - [Situation](#situation)
+    - [Task](#task)
+    - [Action](#action)
+    - [Result](#result)
+    - [Example](#example)
+  - [Opener](#opener)
+    - [History](#history)
+      - [Outline](#outline)
+      - [Full script](#full-script)
+  - [Company and position-specific](#company-and-position-specific)
+    - [Why Walmart / this role / why leave your current role?](#why-walmart--this-role--why-leave-your-current-role)
+    - [Questions for Walmart](#questions-for-walmart)
+  - [Collaboration and teamwork questions](#collaboration-and-teamwork-questions)
+    - [Can you provide an example of when you had to work with a difficult team member? How did you handle that situation?](#can-you-provide-an-example-of-when-you-had-to-work-with-a-difficult-team-member-how-did-you-handle-that-situation)
+      - [Example 1](#example-1)
+      - [Example 2](#example-2)
+    - [Describe a situation where you had to resolve a conflict between team members. How did you handle it, and what was the result?](#describe-a-situation-where-you-had-to-resolve-a-conflict-between-team-members-how-did-you-handle-it-and-what-was-the-result)
+      - [Example 1](#example-1-1)
+    - [Tell me about a time when you had to work with a remote team or under a remote work setup. How did you ensure effective communication and collaboration?](#tell-me-about-a-time-when-you-had-to-work-with-a-remote-team-or-under-a-remote-work-setup-how-did-you-ensure-effective-communication-and-collaboration)
+      - [Example 1](#example-1-2)
+      - [Example 2](#example-2-1)
+    - [Why do you want to quit your current job?](#why-do-you-want-to-quit-your-current-job)
+      - [Example 1](#example-1-3)
+  - [Adaptability questions](#adaptability-questions)
+    - [Can you describe a time when you had to learn a new programming language or technology quickly? How did you go about it?](#can-you-describe-a-time-when-you-had-to-learn-a-new-programming-language-or-technology-quickly-how-did-you-go-about-it)
+      - [Example 1](#example-1-4)
+    - [Tell me about a time when you had to adapt to a significant change in your work environment or project scope. How did you handle it?](#tell-me-about-a-time-when-you-had-to-adapt-to-a-significant-change-in-your-work-environment-or-project-scope-how-did-you-handle-it)
+      - [Example 1](#example-1-5)
+  - [Communication skills questions](#communication-skills-questions)
+    - [How do you handle receiving constructive criticism from your peers or supervisors? Can you provide an example?](#how-do-you-handle-receiving-constructive-criticism-from-your-peers-or-supervisors-can-you-provide-an-example)
+      - [Example 1](#example-1-6)
+    - [Can you share an experience where you had to adapt your communication style when explaining technical concepts to non-technical stakeholders?](#can-you-share-an-experience-where-you-had-to-adapt-your-communication-style-when-explaining-technical-concepts-to-non-technical-stakeholders)
+    - [What is the most critical feedback you've received from your boss in your entire career?](#what-is-the-most-critical-feedback-youve-received-from-your-boss-in-your-entire-career)
+      - [Example 1](#example-1-7)
+  - [Problem-solving and decision-making questions](#problem-solving-and-decision-making-questions)
+    - [How do you approach problem-solving and debugging when faced with a complex issue in your code?](#how-do-you-approach-problem-solving-and-debugging-when-faced-with-a-complex-issue-in-your-code)
+      - [Example 1](#example-1-8)
+    - [How do you handle situations where you are unsure of how to proceed or solve a problem? Can you provide an example?](#how-do-you-handle-situations-where-you-are-unsure-of-how-to-proceed-or-solve-a-problem-can-you-provide-an-example)
+      - [Example 1](#example-1-9)
+  - [Time management and prioritization questions](#time-management-and-prioritization-questions)
+    - [How do you manage your workload and prioritize tasks when working on multiple projects simultaneously?](#how-do-you-manage-your-workload-and-prioritize-tasks-when-working-on-multiple-projects-simultaneously)
+      - [Example 1](#example-1-10)
+    - [Describe a situation where you had to meet a tight deadline on a project. How did you ensure the project was completed on time and met quality standards?](#describe-a-situation-where-you-had-to-meet-a-tight-deadline-on-a-project-how-did-you-ensure-the-project-was-completed-on-time-and-met-quality-standards)
+      - [Example 1](#example-1-11)
+  - [Initiative and leadership questions](#initiative-and-leadership-questions)
+    - [Tell me about a time when you took the initiative to improve a process or implement a new idea within your team.](#tell-me-about-a-time-when-you-took-the-initiative-to-improve-a-process-or-implement-a-new-idea-within-your-team)
+      - [Example 1](#example-1-12)
+      - [Example 2 and 3](#example-2-and-3)
+    - [Tell me about a time when you mentored or helped train a junior team member. What was your approach, and what did you learn from the experience?](#tell-me-about-a-time-when-you-mentored-or-helped-train-a-junior-team-member-what-was-your-approach-and-what-did-you-learn-from-the-experience)
+      - [Example 1](#example-1-13)
+  - [Technical competence and quality questions](#technical-competence-and-quality-questions)
+    - [Can you share an example of a time when you had to deal with a particularly tricky software issue? What steps did you take to resolve it?](#can-you-share-an-example-of-a-time-when-you-had-to-deal-with-a-particularly-tricky-software-issue-what-steps-did-you-take-to-resolve-it)
+    - [What is your approach to balancing the need for high-quality code with the need to deliver features quickly in a fast-paced environment?](#what-is-your-approach-to-balancing-the-need-for-high-quality-code-with-the-need-to-deliver-features-quickly-in-a-fast-paced-environment)
+      - [Example 1](#example-1-14)
+  - [Managing constraints and setbacks questions](#managing-constraints-and-setbacks-questions)
+    - [Tell me about a time when you had to push back on a request or feature due to technical constraints. How did you communicate your concerns, and what was the outcome?](#tell-me-about-a-time-when-you-had-to-push-back-on-a-request-or-feature-due-to-technical-constraints-how-did-you-communicate-your-concerns-and-what-was-the-outcome)
+      - [Example 1](#example-1-15)
+    - [Describe a project where you encountered significant setbacks or obstacles. How did you stay motivated and focused on achieving the project goals?](#describe-a-project-where-you-encountered-significant-setbacks-or-obstacles-how-did-you-stay-motivated-and-focused-on-achieving-the-project-goals)
+      - [Example 1](#example-1-16)
+  - [Work-life balance and personal growth questions](#work-life-balance-and-personal-growth-questions)
+    - [How do you ensure that you maintain a healthy work-life balance while working on demanding projects?](#how-do-you-ensure-that-you-maintain-a-healthy-work-life-balance-while-working-on-demanding-projects)
+    - [How do you stay current with the latest developments and trends in the software engineering field?](#how-do-you-stay-current-with-the-latest-developments-and-trends-in-the-software-engineering-field)
+    - [How have you grown as a software engineer over the years? Can you share an example of how your experience has shaped your approach to development?](#how-have-you-grown-as-a-software-engineer-over-the-years-can-you-share-an-example-of-how-your-experience-has-shaped-your-approach-to-development)
+  - [Any Questions?](#any-questions)
+  - [Key points to remember for your interview](#key-points-to-remember-for-your-interview)
+
 ## The STAR method
 
 STAR stands for Situation, Task, Action, and Result.
@@ -88,6 +156,8 @@ Toward the end of my career with Costco, I introduced React to their front end.
 I began my time with REI on their Adventures property, where I converted it to Vue.js, which was the framework they landed on, which was driven by experimentation with their design system team.
 
 Shortly after the pandemic, Adventures was temporarily displaced. Given my full-stack experience, I was moved to a platform team specialized in front-end engineering. This team collaborates with the broader enablement teams. My responsibility on this team is to work with solution architects to deliver horizontal solutions to our product engineering teams, based on their needs.
+
+## Company and position-specific
 
 ### Why Walmart / this role / why leave your current role?
 

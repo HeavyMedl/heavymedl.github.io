@@ -9,6 +9,7 @@ tags:
   - Data structures and algorithms
   - Big O Notation
   - Logarithms
+  - Log time
 description: 'Hand-written notes from "A Common-Sense Guide to Data Structures and Algorithms, Second Edition". Written by Jay Wengrow. Exported from GoodNotes. Contains large images.'
 ---
 

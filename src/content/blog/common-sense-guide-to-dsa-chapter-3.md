@@ -1,7 +1,7 @@
 ---
 author: Kurt Medley
 pubDatetime: 2024-06-30T15:22:35Z
-title: "Chapter 3: O Yes! Big O Notation"
+title: "Chapter 3: O Yes! Big O notation"
 featured: false
 draft: false
 tags:

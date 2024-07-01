@@ -1,7 +1,7 @@
 ---
 author: Kurt Medley
 pubDatetime: 2024-06-30T15:20:35Z
-title: "Chapter 1: Why DSA matter"
+title: "Chapter 1: Why data structures matter"
 featured: false
 draft: false
 tags:

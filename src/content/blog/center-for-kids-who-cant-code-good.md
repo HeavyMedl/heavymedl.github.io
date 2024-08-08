@@ -18,7 +18,7 @@ In this community, we practice kata in the form of coding problems. We examine a
 
 The community's superpower is its structure and pacing. We're not picking and solving random LeetCode problems; we follow existing curricula from giants in the online learning space. This provides structure and a linear sequence of topics that can be digested slowly.
 
-The goal is deep learning through the slow digestion of complex topics. There is merit in cramming for coding interviews, but ultimately, you get a deeper, more second-nature understanding of a topic through contemplation, the discipline of repeated practice, and positive reinforcement over longer periods.
+The goal is deep learning through the slow digestion of complex topics. While cramming for coding interviews has merit, ultimately, you get a deeper, more second-nature understanding of a topic through contemplation, the discipline of repeated practice, and positive reinforcement over longer periods.
 
 If you're interested, you're invited. All levels of experience and languages are welcome.
 

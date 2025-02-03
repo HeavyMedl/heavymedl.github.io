@@ -22,39 +22,39 @@ header:
 
 ## Industry Achievements
 
-A few things I'm proud of. See more <a href="https://heavymedl.dev/cv/#industry-achievements" target="_blank">here</a>.
+Here are a few accomplishments that I am proud of. See more <a href="https://heavymedl.dev/cv/#industry-achievements" target="_blank">here</a>.
 
-- **Brought Vite, Vitest, and Vue 3 to REI**: I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](https://heavymedl.dev/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
-- **Rewrote REI's Adventures property with Vue**: When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
-- **Wrote middleware to server-render Vue applications at REI**: I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
+- **I introduced Vite, Vitest, and Vue 3 to REI.**: I developed a technology proof that replaced our tools with Vite and Vitest. Additionally, I updated our back-end library to integrate Vite-compiled assets and rewrote our server-rendering solution for Vue to support Vue 3. All product engineering teams at REI adopted this solution. Read the whole story [here](https://heavymedl.dev/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
+- **I rewrote REI's Adventures property using Vue.**: When I joined REI, my team and I rewrote REI's Adventures property using Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
+- **I developed middleware to enable server-side rendering for Vue applications at REI**: I created an Express.js application using TypeScript that handles server-side rendering for Vue applications within REI's technology stack. This Dockerized server operates alongside the central microsite, processing HTTP requests to generate server bundles. It then sends the final HTML back to the central microsite, which integrates into our base templates.
 
 ## Experience
 
-**Senior Software Engineer | FE Platform**
+**Senior Software Engineer | Front-end**
 ~ REI | Hybrid
 ~ April 2020 - Present
 
-As a front-end platform engineer at REI, I develop applications, libraries, and build-tool plugins for all product engineering teams. My team focuses on researching front-end patterns, evaluating technologies, and ensuring their adoption across REI. Additionally:
+As a front-end platform engineer at REI, I develop applications, libraries, and build-tool plugins for all product engineering teams. My team researches front-end patterns, evaluates technologies, and ensures their adoption across the organization. Additionally, we:
 
-- Provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
+- Provide troubleshooting support to teams experiencing runtime or setup issues.
 - Mitigate security vulnerabilities in our front-end ecosystem.
-- Integrate vendor scripts
-- Scrutinize our properties for optimal performance.
+- Integrate vendor solutions.
+- Optimize the performance of our properties.
 - Track emerging technologies and trends in the industry.
-- Provide E2E technology direction and guidance.
-- Work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
+- Provide end-to-end technology direction and guidance.
+- Collaborate closely with other enablement teams, including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
 - Contribute to [Cedar](https://cedar.rei.com), REI's design system.
 
 **Senior Software Engineer | Front-end**
 ~ REI Adventures | Bellevue, WA
 ~ July 2019 - April 2020
 
-- Delivered Vue applications and UI components for REI's Adventures property.
-- Using UX deliverables from Figma, my team and I redesigned the REI Adventures property with Vue.
-- Decommissioned overlapping frameworks
-- Followed a standard SDLC using agile methodologies and ceremonies
-- Collaborated with UX designers, product and program managers, business analysts, and business stakeholders
-- Rotating on-call responsibilities
+- Delivered Vue applications and user interface components for REI's Adventures property.
+- Utilizing UX deliverables from Figma, my team and I redesigned the REI Adventures property using Vue.
+- Decommissioned overlapping frameworks to streamline development.
+- Followed a standard Software Development Life Cycle (SDLC) using agile methodologies and ceremonies.
+- Collaborated with UX designers, product and program managers, business analysts, and stakeholders to ensure successful project outcomes.
+- Managed rotating on-call responsibilities for ongoing support.
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -62,36 +62,36 @@ As a front-end platform engineer at REI, I develop applications, libraries, and 
 ~ Costco eCommerce | Issaquah, WA
 ~ July 2016 - July 2019
 
-- Implemented SMS notifications for our LTL (less-than-truckload) carriers.
-- Spearheading another site redesign, introducing React to Costco's technology stack.
+- Implemented SMS notifications for our less-than-truckload (LTL) carriers.
+- Spearheaded a site redesign to introduce React into Costco's technology stack.
 - Integrated gas prices into the Costco warehouse locator.
-- Implemented a member validation service for customer profiles.
-- Developed timelines to accommodate deadlines.
-- Led teams of off-shore contractors.
+- Developed a member validation service for customer profiles.
+- Created timelines to meet project deadlines.
+- Led teams of offshore contractors.
 
 **Software Engineer II | Full-stack**
 ~ Costco eCommerce | Issaquah, WA
 ~ July 2014 - July 2016
 
-- Assumed leadership role mentoring junior engineers and interns.
-- Collaborated with QA, BAs, UX designers, and business stakeholders to deliver a responsive redesign of Costco's entire property, with notable flows like Checkout, Warehouse Locator, Product Page, etc.
-- Brought then-modern build tools to Costco's eCommerce development workflow including, but not limited to, webpack, SASS, and Mocha.
+- Took on a leadership role by mentoring junior engineers and interns.
+- Worked closely with QA teams, Business Analysts, UX designers, and business stakeholders to successfully redesign Costco's entire website, focusing on key processes such as Checkout, Warehouse Locator, and Product Pages.
+- Introduced modern build tools to enhance Costco's eCommerce development workflow, including Webpack, SASS, and Mocha.
 
 **Software Engineer I | Full-stack**
 ~ Costco eCommerce | Issaquah, WA
 ~ July 2013 - July 2014
 
-- Built a manual authentication service that allowed customers to manage their membership details
-- Integrated internal and external web services
-- Performed general maintenance on applications
-- Bi-weekly on-call responsibilities triaging production issues
-- Collaborated with Dev Ops, Sterling OMS, and Networking teams
+- Developed a manual authentication service that enabled customers to manage their membership details.
+- Integrated both internal and external web services.
+- Conducted general maintenance on applications.
+- Handled bi-weekly on-call responsibilities for triaging production issues.
+- Collaborated with the DevOps, Sterling OMS, and Networking teams.
 
 **Software Engineer Intern | Full-stack**
 ~ Costco eCommerce | Issaquah, WA
 ~ April 2013 - July 2013
 
-Started my SW career with a software engineering internship at the Costco HQ in Issaquah, WA. I was embedded within the Costco eCommerce team responsible for delivering costco.com and costco.ca. I was introduced to Costco’s large, distributed architecture and a suite of [un]customized IBM products including WebSphere Commerce, DB2, and MQ.
+I started my software career with an internship in software engineering at Costco's headquarters in Issaquah, WA. During this internship, I was a member of the eCommerce team responsible for managing Costco's websites, costco.com and costco.ca. I was exposed to Costco's extensive distributed architecture and worked with various IBM products, both customized and non-customized, including WebSphere Commerce, DB2, and MQ.
 
 ## Education
 

@@ -11,7 +11,7 @@ title: "Curriculum vitae"
 
 ## Bio
 
-Kurt Medley is a Computer Science graduate, full-stack engineer, and industry professional with 10+ years of experience. Kurt possesses outstanding analytical abilities and is adept at solving complex problems through a blend of industry-standard and innovative technologies. With lead designation over many high-profile projects for major retail corporations, Kurt ensures the delivery of optimized, resilient, and well-tested software.
+Kurt Medley is a Computer Science graduate and a full-stack engineer with over 10 years of industry experience. He has exceptional analytical skills and excels at solving complex problems using a combination of industry-standard and innovative technologies. As the lead on numerous high-profile projects for major retail corporations, Kurt ensures the delivery of optimized, resilient, and thoroughly tested software.
 
 ---
 
@@ -33,103 +33,103 @@ Awarded: 2009
 
 ## Industry achievements
 
-Here are some industry achievements that I am proud of.
+I would like to share some industry achievements that I am proud of.
 
-### Brought Vite, Vitest, and Vue 3 to REI
+### I introduced Vite, Vitest, and Vue 3 at REI
 
-When Vue 2 was announced EOL, our development platform was not positioned to upgrade to Vue 3. Initially, we attempted to update the constituent dependencies of our custom tools but encountered many technical impasses. I created a proof of technology that replaced our tools with Vite and Vitest, updated our back-end library to integrate Vite-compiled assets, and rewrote our server-rendering solution for Vue to accommodate Vue 3. This was adopted by all product engineering teams at REI. Read the whole story [here](/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
+When Vue 2 was announced as end-of-life (EOL), our development platform was not equipped to upgrade to Vue 3. Initially, we tried to update the individual dependencies of our custom tools, but we faced numerous technical challenges. I created a proof of concept that replaced our existing tools with Vite and Vitest. Additionally, I updated our back-end library to integrate Vite-compiled assets and rewrote our server-rendering solution for Vue to support Vue 3. This new approach was adopted by all product engineering teams at REI. You can read the complete story [here](/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
 
-### Rewrote REI's Adventures property with Vue
+### I revamped the REI Adventures website using Vue
 
-When I joined REI, my team and I rewrote [REI's Adventures](https://www.rei.com/adventures) property with Vue. We decommissioned several overlapping frameworks, ported functional requirements from legacy code, and delivered new user journeys.
+When I joined REI, my team and I rewrote the REI Adventures property using Vue. We eliminated several overlapping frameworks, transferred functional requirements from legacy code, and created new user journeys.
 
-### Introduced TypeScript to the FED community at REI
+### I introduced TypeScript to the Front-End Development community at REI
 
-After attending VueConf 2023, I was convinced our front-end ecosystem would benefit from a migration to TypeScript. We wanted to bolster application resilience and improve developer productivity with strict typing. After conferring with our larger front-end community, our team went about creating the path to TypeScript. We converted our archetypal microsite and tools to TypeScript. With a sanctioned functional example, we created documentation and shepherded TypeScript at REI.
+After attending VueConf 2023, I became convinced that our front-end ecosystem would greatly benefit from migrating to TypeScript. We aimed to enhance application resilience and improve developer productivity through strict typing. After discussing this with our larger front-end community, our team began the transition to TypeScript. We converted our standard microsite and tools to TypeScript. With a validated functional example, we created documentation and guided the adoption of TypeScript at REI.
 
-### Rewrote REI's analytics library with TypeScript
+### I rewrote the analytics library for REI using TypeScript
 
-Shortly after adopting TypeScript, I rewrote a legacy implementation of REI's analytics library to TypeScript using Vite and Vitest. This effort involved sifting through a large amount of code I didn't fully understand and making educated decisions about what a coherent type interface would be. The introduction of TypeScript surfaced underlying implementation problems that can now be corrected.
+After adopting TypeScript, I rewrote a legacy implementation of REI's analytics library using Vite and Vitest. This involved carefully analyzing a substantial amount of code that I didn't fully understand, and making informed decisions about creating a cohesive type interface. The introduction of TypeScript revealed underlying implementation issues that can now be addressed and corrected.
 
-### Canonicalized how NPM packages are scaffolded at REI
+### Standardized the process of scaffolding NPM packages at REI
 
-I normalized the process for scaffolding new utility libraries, Vue components, and microsites by introducing an [NPM initializer](https://github.com/rei/create-package). This CLI tool offers a series of prompts that ultimately generate a new directory of templated code. The templates alleviate the developer from the tedium of setting up build tools, managing package dependencies, and setting up CI/CD in GitLab. This tool is the official way to create new JS/TS-based code at REI.
+I streamlined the process for creating new utility libraries, Vue components, and microsites by introducing an [NPM initializer](http://github.com/rei/create-package). This CLI tool provides a series of prompts that guide users through generating a new directory containing pre-defined code templates. These templates help developers avoid the tedious tasks of setting up build tools, managing package dependencies, and configuring CI/CD in GitLab. This tool is now the official method for creating new JavaScript and TypeScript-based code at REI.
 
-### Wrote middleware to server-render Vue applications at REI
+### I developed middleware to enable server-side rendering of Vue applications at REI
 
-I wrote an Express.js implementation with TypeScript that is responsible for server-rendering Vue applications in REI's stack. This dockerized server runs adjacent to the primary microsite, handling HTTP requests to render server bundles, and finally sending back the resultant HTML to the primary microsite, where it is ultimately injected into our base templates.
+I developed an Express.js implementation using TypeScript that is responsible for server-rendering Vue applications within REI's stack. This dockerized server operates alongside the main microsite, managing HTTP requests to render server bundles. It then sends the resulting HTML back to the primary microsite, where it is injected into our base templates.
 
-### Introduced modern front-end build tools at Costco
+### I implemented modern front-end build tools at Costco
 
-As part of a massive overhaul to the entire Costco eCommerce front end, I pitched Webpack and various other technologies to modernize the front-end build toolchain. This effort helped deliver modernized compiled assets to customers and boost developer productivity.
+To modernize the entire Costco eCommerce front end, I proposed using Webpack and other technologies. This initiative enabled the delivery of modern compiled assets to customers and enhanced developer productivity.
 
 ---
 
 ## Industry experience
 
-### Senior Software Engineer | Front-end Platform @ REI
+### Senior Software Engineer specializing in Front-end Platforms and Integrations at REI
 
 Hybrid | April 2020 - Present
 
-As a front-end platform engineer, I contribute to a suite of applications, libraries, build-tool plugins, and configurations used by all product engineering teams at REI. Our team is responsible for the R&D of front-end patterns as well as vetting technologies that are ultimately adopted by all REI product engineering teams.
+As a front-end platform engineer, I play a key role in developing various applications, libraries, build-tool plugins, and configurations used by all product engineering teams at REI. Our team focuses on researching and developing front-end patterns and evaluating technologies eventually adopted by the entire REI product engineering community.
 
-Additionally, we:
+In addition to this, we:
 
-- provide support in the form of troubleshooting to teams experiencing runtime or setup issues.
-- mitigate security vulnerabilities in our front-end ecosystem.
-- integrate vendor scripts
-- scrutinize our properties for optimal performance.
-- track emerging technologies and trends in the industry.
-- provide E2E technology direction and guidance.
-- work closely with other enablement teams including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
-- contribute to [Cedar](https://cedar.rei.com), REI's design system.
+- Provide troubleshooting support to teams facing runtime or setup issues.
+- Address security vulnerabilities within our front-end ecosystem.
+- Integrate vendor solutions.
+- Analyze our properties for optimal performance.
+- Monitor emerging technologies and industry trends.
+- Offer end-to-end technology direction and guidance.
+- Collaborate closely with other enablement teams, including Design Systems, Platform Engineering, Web Performance, SEO, and Accessibility.
+- Contribute to Cedar, REI's design system.
 
-### Senior Software Engineer | Front-end @ REI Adventures
+### Senior Software Engineer specializing in Front-end Development at REI Adventures
 
 Bellevue, WA | July 2019 - April 2020
 
-Delivered Vue applications and UI components for REI's Adventures property. My team and I rewrote the REI Adventures property with Vue and decommissioned overlapping frameworks. We followed a standard SDLC using agile methodologies and ceremonies. I interfaced with UX designers, product and program managers, business analysts, and business stakeholders. I had rotating on-call responsibilities.
+I developed Vue applications and user interface components for REI's Adventures property. My team and I rewrote the REI Adventures platform using Vue and decommissioned overlapping frameworks. We followed a standard Software Development Life Cycle (SDLC), utilizing agile methodologies and ceremonies. I collaborated closely with UX designers, product and program managers, business analysts, and stakeholders. Additionally, I participated in rotating on-call responsibilities.
 
-### Software Engineer III | Full-stack @ Costco eCommerce
+### Full-Stack Software Engineer III at Costco eCommerce
 
 Issaquah, WA | July 2016 - July 2019
 
-During my concluding position as a senior software engineer at Costco, I led several intricate projects including:
+During my final position as a senior software engineer at Costco, I led several complex projects, including:
 
-- implementing SMS notifications for our LTL (less-than-truckload) carriers.
-- spearheading another site redesign, introducing React to Costco's technology stack.
-- integrating gas prices into the Costco warehouse locator.
-- implementing a member validation service for customer profiles.
+- Implementing SMS notifications for our less-than-truckload (LTL) carriers.
+- Spearheading a site redesign that introduced React to Costco's technology stack.
+- Integrating gas prices into the Costco warehouse locator.
+- Developing a member validation service for customer profiles.
 
-Beyond coding, I developed timelines that harmonized project requirements with stakeholder deadlines. I also led teams of off-shore contractors and provided mentorship to junior developers.
+In addition to coding, I created timelines that aligned project requirements with stakeholder deadlines. I also managed teams of offshore contractors and provided mentorship to junior developers.
 
-### Software Engineer II | Full-stack @ Costco eCommerce
+### Full-Stack Software Engineer II at Costco eCommerce
 
 Issaquah, WA | July 2014 - July 2016
 
-As my time at Costco progressed, I took on more substantial leadership roles, with a notable project being our responsive design initiative. Collaborating with business analysts, UX designers, stakeholders, QA, and both on-site and off-site consultants, my team and I successfully delivered a contemporary, responsive website. We employed then-modern build tools such as Webpack, utilized SCSS for styling, and implemented Mocha for testing. Through the application of industry-standard tools and patterns, we transformed the chaotic landscape of spaghetti/cowboy code into a well-ordered and efficient system.
+As my time at Costco progressed, I took on more significant leadership roles, with a particularly noteworthy project being our responsive design initiative. Collaborating with business analysts, UX designers, stakeholders, quality assurance (QA) experts, and on-site and off-site consultants, my team and I successfully delivered a modern, responsive website. We utilized contemporary build tools like Webpack, employed SCSS for styling, and implemented Mocha for testing. By applying industry-standard tools and best practices, we transformed the previously chaotic environment of disorganized code into a well-structured and efficient system.
 
-### Software Engineer I | Full-stack @ Costco eCommerce
+### Full-Stack Software Engineer I at Costco eCommerce
 
 Issaquah, WA | July 2013 - July 2014
 
-After my internship, I was hired as a full-stack software engineer working for Costco eCommerce. I worked with fellow engineers on many projects spanning the entire stack. I was given a bi-weekly on-call responsibility to triage production issues which had me collaborating with our Dev Ops, Sterling OMS, and Networking teams. During this time I:
+After completing my internship, I was hired as a full-stack software engineer at Costco eCommerce. In this role, I collaborated with fellow engineers on various projects across the entire technology stack. I took on bi-weekly on-call responsibilities to address production issues, which involved working closely with our DevOps, Sterling OMS, and Networking teams. During this time, I:
 
-- built a manual authentication service that allowed customers to manage their membership details
-- integrated internal and external web services
-- performed general maintenance on applications
+- Developed a manual authentication service that allowed customers to manage their membership details.
+- Integrated both internal and external web services.
+- Conducted general maintenance on applications.
 
-### Software Engineer Intern | Full-stack @ Costco eCommerce
+### Full-Stack Software Engineer Intern at Costco eCommerce
 
 Issaquah, WA | April 2013 - July 2013
 
-Started my SW career with a software engineering internship at the Costco HQ in Issaquah, WA. I was embedded within the Costco eCommerce team responsible for delivering [costco.com](https://www.costco.com) and [costco.ca](https://www.costco.ca). I was introduced to Costco's large, distributed architecture and a suite of [un]customized IBM products including WebSphere Commerce, DB2, and MQ.
+I began my software engineering career with an internship at Costco's headquarters in Issaquah, WA. During this internship, I was part of the Costco eCommerce team and managed the websites costco.com and costco.ca. I gained valuable experience working with Costco's extensive distributed architecture and became familiar with various IBM products, including WebSphere Commerce, DB2, and MQ.
 
 ---
 
 ## Industry projects
 
-The following is a subset of notable projects from my industry experience.
+Here is a selection of notable projects drawn from my industry experience.
 
 ### Front-end
 
@@ -141,29 +141,29 @@ The following is a subset of notable projects from my industry experience.
 
 ### Full-stack
 
-- `@rei/ssr` is a dockerized Express application that runs alongside Spring Boot and facilitates server-rendering Vue applications. This is used by all product engineering teams using Vue as their UI framework.
-- Wrote a Spring Boot interceptor that makes HTTP requests to the `@rei/ssr` Express server.
-- Wrote a custom Thymeleaf dialect within Spring Boot for the back-end integration of Vite-compiled assets.
-- Climber's Site is REI's internal archetypal microsite used as a reference for all product engineering teams. [View a screen capture](/assets/img/screen-captures/climbers-site-screencapture.png).
-- Packwood is an NPM package discovery tool used for reporting. It began as a hackathon project but became a fixture in the developer platform ecosystem. [View a screen capture](/assets/img/screen-captures/packwood-screencapture.png).
-- [Costco eCommerce](https://www.costco.com)
-  - Checkout flow (Cart, Shipping, Billing, Review order, Order processing)
+- `@rei/ssr` is a Dockerized Express application that operates alongside Spring Boot to enable server-side rendering of Vue applications. All product engineering teams that utilize Vue as their UI framework use this tool.
+- I developed a Spring Boot interceptor that makes HTTP requests to the `@rei/ssr` Express server.
+- I created a custom Thymeleaf dialect within Spring Boot for the backend integration of Vite-compiled assets.
+- Climber's Site serves as REI's internal archetypal microsite, providing a reference for all product engineering teams. [View a screen capture](/assets/img/screen-captures/climbers-site-screencapture.png).
+- Packwood is an NPM package discovery tool designed for reporting. It originated as a hackathon project and has since become a key component of the developer platform ecosystem. [View a screen capture](/assets/img/screen-captures/packwood-screencapture.png).
+- [Costco eCommerce](https://www.costco.com):
+  - Checkout flow (Cart, Shipping, Billing, Review Order, Order Processing)
   - Warehouse Locator
-  - Product page
-  - Customer account and profile
+  - Product Page
+  - Customer Account and Profile
 
 ### Vite plugins, utilities, and configurations
 
-- [`@rei/create-package`](https://github.com/rei/create-package) is an NPM initializer and the officially supported way to create NPM packages at REI.
-- `@rei/vite-base-config` is the primary Vite and Vitest configuration module consumed by all product engineering teams at REI. It offers a baseline set of configuration defaults aligned with business requirements. Supported by unit tests, this configuration guarantees our Vue applications are optimized and contain the polyfills required by our browser-support matrix.
-- `@rei/vite-plugin-alpine-uploader` is a Vite plugin that facilitates uploading assets compiled by Vite to Akamai NetStorage, our CDN. This enables teams to source their bundled assets from the CDN, which improves the speed and availability of these assets for customers.
-- `@rei/vite-plugin-alpine-manifest-css` is a Vite plugin that alters the CSS property of entries defined in the manifest generated by Vite builds. It ensures the correct injection order of CSS chunk assets.
-- `@rei/vite-plugin-alpine-stats` is a Vite plugin that does static analysis of a repository to provide statistics on the code. Once these statistics are compiled, they are sent to Grafana. [View a screen capture](/assets/img/screen-captures/alpine-stats-screencapture.png).
+- The package [@rei/create-package](http://www.github.com/rei/create-package) is the official NPM initializer for creating packages at REI.
+- `@rei/vite-base-config` is the main configuration module for Vite and Vitest, and all product engineering teams at REI utilize it. It provides a foundational default configuration that meets our business requirements. This configuration is backed by unit tests, which ensure that our Vue applications are optimized and include the necessary polyfills according to our browser support matrix.
+- `@rei/vite-plugin-alpine-uploader` is a Vite plugin that uploads assets compiled by Vite to Akamai NetStorage, our CDN. This enables teams to serve their bundled assets from the CDN, improving the speed and availability of these resources for customers.
+- `@rei/vite-plugin-alpine-manifest-css` is a Vite plugin that adjusts the CSS properties of entries listed in the manifest created during Vite builds. It guarantees that the CSS chunk assets are injected in the proper order.
+- `@rei/vite-plugin-alpine-stats` is a Vite plugin that analyzes a repository statically to generate code statistics. After compiling these statistics, they are sent to Grafana. [View a screen capture](/assets/img/screen-captures/alpine-stats-screencapture.png).
 
 ### CI/CD
 
-- Wrote the GitLab CI/CD bash scripts for NPM modules used to publish NPM packages to REI's private NPM registry in Sonatype Nexus.
-- `cov-stats` is a Node.js script that automatically sends unit test coverage results to the Grafana Front-End-Unit-Test Coverage board so that we can track project code coverage over time. It is integrated into GitLab CI as a job executed after a successful publish to REI's NPM registry
+- Developed GitLab CI/CD bash scripts for NPM modules that facilitate publishing NPM packages to REI's private NPM registry in Sonatype Nexus.
+- Created `cov-stats,` a Node.js script that automatically sends unit test coverage results to the Grafana Front-End Unit Test Coverage board. This allows us to track project code coverage over time. The script is integrated into GitLab CI as a job that runs after a successful publication in REI's NPM registry.
 
 <!--
 Gas Prices Online

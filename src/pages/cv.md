@@ -26,35 +26,35 @@ Kurt Medley is a Computer Science graduate and a full-stack engineer with over 1
 
 Below are selected industry achievements demonstrating technical leadership and platform impact.
 
-### Led the architecture and development of Alpine Composer, a Nuxt-based rendering platform integrated with Uniform to enable business-user-driven page creation via configuration and a Vue 3 component library
+### Led development of Alpine Composer
 
-Alpine Composer provides a powerful, extensible foundation for dynamic page rendering across REI's digital ecosystem.
+Alpine Composer is a Nuxt-based rendering platform integrated with Uniform to enable business-user-driven page creation via configuration and a Vue 3 component library. It provides a powerful, extensible foundation for dynamic page rendering across REI's digital ecosystem.
 
-### I introduced Vite, Vitest, and Vue 3 at REI
+### Introduced Vite, Vitest, and Vue 3 at REI
 
 After initial attempts to incrementally update our custom tools failed, I built a proof of concept replacing existing tools with Vite and Vitest. Additionally, I updated our back-end library to integrate Vite-compiled assets and rewrote our server-rendering solution for Vue to support Vue 3. This platform upgrade is now standard across all product engineering teams at REI. You can read the complete story [here](/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
 
-### I revamped the REI Adventures website using Vue
+### Rebuilt REI Adventures using Vue
 
 When I joined REI, my team and I rewrote the REI Adventures property using Vue. We eliminated several overlapping frameworks, transferred functional requirements from legacy code, and created new user journeys.
 
-### After VueConf 2023, I championed a TypeScript migration across REI's front-end ecosystem, improving developer productivity and application resilience
+### Championed TypeScript adoption at REI
 
-We converted our standard microsite and tools to TypeScript. With a validated functional example, we created documentation and guided the adoption of TypeScript at REI.
+After VueConf 2023, I led a TypeScript migration across REI’s front-end ecosystem to improve developer productivity and application resilience. We converted our standard microsite and tools to TypeScript. With a validated functional example, we created documentation and guided the adoption of TypeScript at REI.
 
-### I rewrote the analytics library for REI using TypeScript
+### Rewrote REI analytics library in TypeScript
 
 After adopting TypeScript, I rewrote a legacy implementation of REI's analytics library using Vite and Vitest. This involved carefully analyzing a substantial amount of code that I didn't fully understand, and making informed decisions about creating a cohesive type interface. The introduction of TypeScript revealed underlying implementation issues that can now be addressed and corrected.
 
-### Standardized the process of scaffolding NPM packages at REI
+### Standardized NPM package scaffolding
 
 Led development of an [NPM initializer](http://github.com/rei/create-package). This CLI tool guides users through generating a new directory with pre-defined code templates, avoiding tedious setup of build tools, dependencies, and CI/CD configuration. It is now the official method for creating JavaScript and TypeScript-based code at REI.
 
-### Architected middleware to enable server-side rendering of Vue applications at REI
+### Built SSR middleware for Vue apps
 
 Built an Express.js implementation using TypeScript that server-renders Vue applications within REI's stack. This dockerized server runs alongside the main microsite, handling HTTP requests to render server bundles and returning the resulting HTML to be injected into base templates.
 
-### I implemented modern front-end build tools at Costco
+### Modernized front-end tooling at Costco
 
 I proposed using Webpack and other technologies to modernize Costco’s entire eCommerce front end. This enabled modern asset delivery and enhanced developer productivity.
 

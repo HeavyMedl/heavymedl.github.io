@@ -26,9 +26,9 @@ I’m a seasoned software engineer with over a decade of experience building rob
 
 Below are selected industry achievements demonstrating technical leadership and platform impact.
 
-### Led development of Alpine Composer
+### Architected a Nuxt-based rendering platform
 
-Alpine Composer is a Nuxt-based rendering platform integrated with Uniform to enable business-user-driven page creation via configuration and a Vue 3 component library. It provides a powerful, extensible foundation for dynamic page rendering across REI's digital ecosystem.
+Alpine Composer is a Nuxt-based rendering platform that integrates with Uniform, enabling business users to create pages through configuration using a Vue 3 component library. It serves as a flexible, extensible foundation for dynamic page rendering across REI's digital ecosystem.
 
 ### Introduced Vite, Vitest, and Vue 3 at REI
 

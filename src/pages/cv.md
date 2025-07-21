@@ -11,7 +11,7 @@ title: "Curriculum vitae"
 
 ## Bio
 
-Kurt Medley is a Computer Science graduate and a full-stack engineer with over 10 years of industry experience. He specializes in solving complex platform problems using modern JavaScript tooling and scalable architecture patterns. As the lead on numerous high-profile projects for major retail corporations, Kurt ensures the delivery of optimized, resilient, and thoroughly tested software.
+I’m a seasoned software engineer with over a decade of experience building robust, scalable systems across retail and commerce platforms. From crafting UI components and CLI tools to designing rendering systems and build pipelines, I bring a hands-on, problem-solving approach to full-stack and platform engineering. My work spans traditional front-end development, back-end services, and developer experience tooling, with a focus on delivering maintainable, high-impact solutions.
 
 ---
 

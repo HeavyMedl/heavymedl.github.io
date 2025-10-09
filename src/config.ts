@@ -1,148 +1,38 @@
-import type { Site, SocialObjects } from "./types";
+import type { ThemeConfig } from './types'
 
-// Test adding a comment here
-export const SITE: Site = {
-  website: "https://heavymedl.dev", // replace this with your deployed domain
-  author: "Kurt Medley",
-  desc: "Kurt Medley is a full-stack software engineer based in Seattle, WA.",
-  title: "heavymedl.dev",
-  ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
-  postPerPage: 10,
-  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-};
+export const themeConfig: ThemeConfig = {
+  // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
+  site: {
+    website: 'https://astro-chiri.netlify.app/', // Site domain
+    title: 'CHIRI', // Site title
+    author: '3ASH', // Author name
+    description: 'Minimal blog built by Astro', // Site description
+    language: 'en-US' // Default language
+  },
 
-export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
-} as const;
+  // GENERAL SETTINGS ////////////////////////////////////////////////////////////////////////////////////
+  general: {
+    contentWidth: '35rem', // Content area width
+    centeredLayout: true, // Use centered layout (false for left-aligned)
+    themeToggle: false, // Show theme toggle button (uses system theme by default)
+    postListDottedDivider: false, // Show dotted divider in post list
+    footer: true, // Show footer
+    fadeAnimation: true // Enable fade animations
+  },
 
-export const LOGO_IMAGE = {
-  enable: true,
-  svg: false,
-  // width: '212', // edit directly in header.astro
-  height: "50",
-};
+  // DATE SETTINGS ///////////////////////////////////////////////////////////////////////////////////////
+  date: {
+    dateFormat: 'YYYY-MM-DD', // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+    dateSeparator: '.', // Date separator: . - / (except for MONTH DAY YYYY and DAY MONTH YYYY)
+    dateOnRight: true // Date position in post list (true for right, false for left)
+  },
 
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/heavymedl",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-  {
-    name: "GitLab",
-    href: "https://gitlab.com/kmedley",
-    linkTitle: `${SITE.title} on GitLab`,
-    active: true,
-  },
-  {
-    name: "Facebook",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Facebook`,
-    active: false,
-  },
-  {
-    name: "Instagram",
-    href: "https://instagram.com/heavy.medl",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/heavymedl",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Mail",
-    href: "mailto:kurtdmedley@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: true,
-  },
-  {
-    name: "Twitter",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Twitter`,
-    active: false,
-  },
-  {
-    name: "Twitch",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Twitch`,
-    active: false,
-  },
-  {
-    name: "YouTube",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on YouTube`,
-    active: false,
-  },
-  {
-    name: "WhatsApp",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on WhatsApp`,
-    active: false,
-  },
-  {
-    name: "Snapchat",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Snapchat`,
-    active: false,
-  },
-  {
-    name: "Pinterest",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Pinterest`,
-    active: false,
-  },
-  {
-    name: "TikTok",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on TikTok`,
-    active: false,
-  },
-  {
-    name: "CodePen",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on CodePen`,
-    active: false,
-  },
-  {
-    name: "Discord",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Discord`,
-    active: false,
-  },
-  {
-    name: "Reddit",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Reddit`,
-    active: false,
-  },
-  {
-    name: "Skype",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Skype`,
-    active: false,
-  },
-  {
-    name: "Steam",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Steam`,
-    active: false,
-  },
-  {
-    name: "Telegram",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Telegram`,
-    active: false,
-  },
-  {
-    name: "Mastodon",
-    href: "https://github.com/heavymedl",
-    linkTitle: `${SITE.title} on Mastodon`,
-    active: false,
-  },
-];
+  // POST SETTINGS ///////////////////////////////////////////////////////////////////////////////////////
+  post: {
+    readingTime: false, // Show reading time in posts
+    toc: true, // Show table of contents (when there is enough page width)
+    imageViewer: true, // Enable image viewer
+    copyCode: true, // Enable copy button in code blocks
+    linkCard: true // Enable link card
+  }
+}

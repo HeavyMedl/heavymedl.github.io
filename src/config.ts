@@ -4,9 +4,9 @@ export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
     website: 'https://astro-chiri.netlify.app/', // Site domain
-    title: 'CHIRI', // Site title
-    author: '3ASH', // Author name
-    description: 'Minimal blog built by Astro', // Site description
+    title: 'heavymedl.dev', // Site title
+    author: 'HeavyMedl', // Author name
+    description: 'Brain dump site of Kurt Medley', // Site description
     language: 'en-US' // Default language
   },
 

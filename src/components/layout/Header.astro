@@ -5,7 +5,15 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
 
 <header>
   <nav>
-    <a href="/">{themeConfig.site.title}</a>
+    <img
+      src="/images/heavymedl.png"
+      alt={themeConfig.site.title}
+      class="logo"
+      width="350"
+      height="350"
+      loading="eager"
+      decoding="async"
+    />
     <ThemeToggle />
   </nav>
 </header>
@@ -18,11 +26,9 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
     justify-content: space-between;
     align-items: center;
   }
-  header a {
-    font-weight: var(--font-weight-bold);
-    color: var(--text-primary);
-    text-decoration: none;
-    min-width: 3rem;
-    display: inline-block;
+  .logo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
   }
 </style>

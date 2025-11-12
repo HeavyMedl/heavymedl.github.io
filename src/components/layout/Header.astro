@@ -6,11 +6,9 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
 <header>
   <nav>
     <img
-      src="/images/heavymedl.png"
+      src="/logo/heavymedl.png"
       alt={themeConfig.site.title}
       class="logo"
-      width="350"
-      height="350"
       loading="eager"
       decoding="async"
     />
@@ -30,5 +28,6 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
     display: block;
     height: auto;
     margin: 0 auto;
+    width: clamp(17rem, 34vw, 30rem);
   }
 </style>

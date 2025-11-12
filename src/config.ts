@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
     website: 'https://astro-chiri.netlify.app/', // Site domain
     title: 'heavymedl.dev', // Site title
     author: 'HeavyMedl', // Author name
-    description: 'Brain dump site of Kurt Medley', // Site description
+    description: "Kurt Medley's brain dump", // Site description
     language: 'en-US' // Default language
   },
 
@@ -15,7 +15,7 @@ export const themeConfig: ThemeConfig = {
     contentWidth: '35rem', // Content area width
     centeredLayout: true, // Use centered layout (false for left-aligned)
     themeToggle: false, // Show theme toggle button (uses system theme by default)
-    postListDottedDivider: false, // Show dotted divider in post list
+    postListDottedDivider: true, // Show dotted divider in post list
     footer: true, // Show footer
     fadeAnimation: true // Enable fade animations
   },

@@ -13,28 +13,47 @@
       }
 
       this.mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-      this.svgUrl = '/favicon.svg'
+      this.svgUrl = '/favicon/favicon.svg'
       this.currentColor = null
       this.svgContent = null
+      this.isStaticIcon = false
 
       this.mediaQuery.addEventListener('change', () => this.updateFavicon())
       this.init()
     }
 
     async init() {
-      if (!this.svgContent) {
+      if (!this.svgContent && !this.isStaticIcon) {
         try {
           const res = await fetch(this.svgUrl)
-          this.svgContent = await res.text()
+          const svgText = await res.text()
+
+          if (svgText.includes('data-theme-lock="true"')) {
+            this.isStaticIcon = true
+            this.faviconLink.href = this.svgUrl
+            return
+          }
+
+          this.svgContent = svgText
         } catch (e) {
-          console.warn('Failed to fetch favicon.svg:', e)
+          console.warn('Failed to fetch /favicon/favicon.svg:', e)
           return
         }
       }
+
+      if (this.isStaticIcon) {
+        this.faviconLink.href = this.svgUrl
+        return
+      }
+
       this.updateFavicon()
     }
 
     updateFavicon() {
+      if (this.isStaticIcon || !this.svgContent) {
+        return
+      }
+
       const color = this.mediaQuery.matches ? '#ccc' : '#111'
       if (this.currentColor === color) return
       this.currentColor = color

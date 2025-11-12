@@ -2,4 +2,4 @@
 title: 'About'
 ---
 
-Yo. This is Kurt. Would you like to know more?
+Would you like to know more?

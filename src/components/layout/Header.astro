@@ -10,13 +10,15 @@ import SocialLinks from '@/components/ui/SocialLinks.astro'
       <ThemeToggle />
     </div>
     <div class="brand">
-      <img
-        src="/logo/heavymedl.png"
-        alt={themeConfig.site.title}
-        class="logo"
-        loading="eager"
-        decoding="async"
-      />
+      <a href="/" aria-label={themeConfig.site.title}>
+        <img
+          src="/logo/heavymedl.png"
+          alt={themeConfig.site.title}
+          class="logo"
+          loading="eager"
+          decoding="async"
+        />
+      </a>
       <SocialLinks variant="vaporwave-solid-end" />
     </div>
   </nav>

@@ -6,8 +6,15 @@ import IndexLayout from '@/layouts/IndexLayout.astro'
 <IndexLayout title={`404 - ${themeConfig.site.title}`} description="Not Found">
   <style>
     .error-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--text-secondary);
+      padding: 2rem;
+      text-align: center;
     }
   </style>
-  <p class="error-container">Page Not Found...</p>
+  <div class="error-container">
+    <p>Page Not Found...</p>
+  </div>
 </IndexLayout>

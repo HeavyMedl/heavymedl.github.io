@@ -37,19 +37,19 @@ A selection of work that demonstrates platform impact, architectural leadership,
 
 ## <span class="text-solid-mid">Roles & Experience</span>
 
-### <span class="text-solid-mid">REI — Senior Software Engineer (Front-end Platforms & Integrations)</span>
+### <span class="text-solid-end">REI — Senior Software Engineer (Front-end Platforms & Integrations)</span>
 
 Hybrid | April 2020 – Present
 
 Lead engineer for Alpine Composer. Build and maintain applications, libraries, tooling, and infrastructure used by all product teams. Work spans platform architecture, performance, security, developer tooling, and collaboration with Design Systems, Platform Engineering, SEO, and Accessibility. Contributing engineer to Cedar.
 
-### <span class="text-solid-mid">REI Adventures — Senior Software Engineer</span>
+### <span class="text-solid-end">REI Adventures — Senior Software Engineer</span>
 
 Bellevue, WA | July 2019 – April 2020
 
 Rebuilt the Adventures platform in Vue. Delivered core customer-facing experiences and partnered with UX, PM, and stakeholders. Participated in on-call rotations.
 
-### <span class="text-solid-mid">Costco eCommerce — Software Engineer III → I</span>
+### <span class="text-solid-end">Costco eCommerce — Software Engineer III → I</span>
 
 Issaquah, WA | July 2013 – July 2019 (III: 2016–2019 • II: 2014–2016 • I: 2013–2014)
 

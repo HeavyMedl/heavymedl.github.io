@@ -17,6 +17,8 @@ permissions:
   contents: write
   pull-requests: write
   checks: read
+  pages: write
+  id-token: write
 
 jobs:
   validate:
@@ -120,3 +122,27 @@ jobs:
               commit_title: pullRequest.title,
               commit_message: pullRequest.body || ''
             });
+
+  pages-build:
+    name: Build & Upload Pages Artifact
+    runs-on: ubuntu-latest
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: Install, build, and upload site
+        uses: withastro/action@v5
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: pages-build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

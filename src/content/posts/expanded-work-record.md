@@ -13,7 +13,7 @@ A selection of work that demonstrates platform impact, architectural leadership,
   Architected Alpine Composer, REI’s Nuxt + Uniform rendering platform for configuration-driven page creation using a Vue 3 component library.
 
 - **Introduced Vite, Vitest & Vue 3 to REI**  
-  Replaced legacy build tools with a modern Vite/Vitest workflow and established Vue 3 SSR patterns now adopted across REI. Full write-up [here](/posts/unleashing-the-power-of-vite-and-vitest-at-rei/).
+  Replaced legacy build tools with a modern Vite/Vitest workflow and established Vue 3 SSR patterns now adopted across REI. Full write-up [here](/modernizing-reis-build-system/).
 
 - **Rewrote REI Adventures in Vue**  
   Led migration from legacy frameworks to Vue, implementing new customer journeys and improving maintainability.

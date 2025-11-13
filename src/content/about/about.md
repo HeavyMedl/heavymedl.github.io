@@ -2,4 +2,4 @@
 title: 'About'
 ---
 
-Would you like to know more?
+<span class='text-solid-end'>Would you like to know more?</span>

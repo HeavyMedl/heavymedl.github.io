@@ -5,7 +5,7 @@ pubDate: '2025-11-13'
 
 This is my own long-form career archive. It’s public, but mostly for me. The short résumé version is <a href="/documents/cv/kurt-medley-cv-2025.pdf" target="_blank">here</a>.
 
-## Career Highlights
+## <span class="text-solid-mid">Career Highlights</span>
 
 A selection of work that demonstrates platform impact, architectural leadership, and long-term contributions to engineering teams and systems.
 
@@ -35,21 +35,21 @@ A selection of work that demonstrates platform impact, architectural leadership,
 
 ---
 
-## Roles & Experience
+## <span class="text-solid-mid">Roles & Experience</span>
 
-### REI — Senior Software Engineer (Front-end Platforms & Integrations)
+### <span class="text-solid-mid">REI — Senior Software Engineer (Front-end Platforms & Integrations)</span>
 
 Hybrid | April 2020 – Present
 
 Lead engineer for Alpine Composer. Build and maintain applications, libraries, tooling, and infrastructure used by all product teams. Work spans platform architecture, performance, security, developer tooling, and collaboration with Design Systems, Platform Engineering, SEO, and Accessibility. Contributing engineer to Cedar.
 
-### REI Adventures — Senior Software Engineer
+### <span class="text-solid-mid">REI Adventures — Senior Software Engineer</span>
 
 Bellevue, WA | July 2019 – April 2020
 
 Rebuilt the Adventures platform in Vue. Delivered core customer-facing experiences and partnered with UX, PM, and stakeholders. Participated in on-call rotations.
 
-### Costco eCommerce — Software Engineer III → I
+### <span class="text-solid-mid">Costco eCommerce — Software Engineer III → I</span>
 
 Issaquah, WA | July 2013 – July 2019 (III: 2016–2019 • II: 2014–2016 • I: 2013–2014)
 
@@ -57,7 +57,7 @@ Delivered front-end and full-stack features across checkout, warehouse locator, 
 
 ---
 
-## Selected Projects & Contributions
+## <span class="text-solid-mid">Selected Projects & Contributions</span>
 
 **Front-end work**
 

@@ -1,5 +1,5 @@
 ---
-title: A brief history of my formal education
+title: A brief history of my education
 pubDate: '2025-11-12'
 ---
 

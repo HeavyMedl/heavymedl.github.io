@@ -3,7 +3,7 @@ title: Modernizing REI’s front-end build system
 pubDate: '2025-11-14'
 ---
 
-> This post is published on REI's engineering blog [here](https://engineering.rei.com/frontend/front-end-build-tool-renaissance.html)
+> Note: This post is published on REI's engineering blog [here](https://engineering.rei.com/frontend/front-end-build-tool-renaissance.html)
 
 ## FEBS
 

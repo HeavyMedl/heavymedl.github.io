@@ -1,18 +1,24 @@
 ---
 import { themeConfig } from '@/config'
 import ThemeToggle from '@/components/ui/ThemeToggle.astro'
+import SocialLinks from '@/components/ui/SocialLinks.astro'
 ---
 
 <header>
   <nav>
-    <img
-      src="/logo/heavymedl.png"
-      alt={themeConfig.site.title}
-      class="logo"
-      loading="eager"
-      decoding="async"
-    />
-    <ThemeToggle />
+    <div class="theme-toggle-wrapper">
+      <ThemeToggle />
+    </div>
+    <div class="brand">
+      <img
+        src="/logo/heavymedl.png"
+        alt={themeConfig.site.title}
+        class="logo"
+        loading="eager"
+        decoding="async"
+      />
+      <SocialLinks variant="vaporwave-solid-end" />
+    </div>
   </nav>
 </header>
 <style>
@@ -21,13 +27,20 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
   }
   nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .theme-toggle-wrapper {
+    align-self: flex-end;
+  }
+  .brand {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .logo {
-    display: block;
-    height: auto;
-    margin: 0 auto;
     width: clamp(17rem, 34vw, 30rem);
+    height: auto;
   }
 </style>

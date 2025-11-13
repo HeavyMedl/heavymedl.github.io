@@ -4,6 +4,21 @@
 :root {
   /* Min Content Width */
   --content-width: 25rem;
+  --vaporwave-start: #52ffe5;
+  --vaporwave-mid: #a06bff;
+  --vaporwave-end: #ff5ec3;
+  --vaporwave-gradient: linear-gradient(
+    to bottom,
+    var(--vaporwave-start) 0%,
+    var(--vaporwave-mid) 50%,
+    var(--vaporwave-end) 100%
+  );
+  --vaporwave-gradient-reverse: linear-gradient(
+    to bottom,
+    var(--vaporwave-end) 0%,
+    var(--vaporwave-mid) 50%,
+    var(--vaporwave-start) 100%
+  );
 
   /* Typography */
   --sans:

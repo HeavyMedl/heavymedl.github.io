@@ -1,0 +1,146 @@
+---
+export interface SocialLinksProps {
+  variant?:
+    | 'default'
+    | 'vaporwave'
+    | 'vaporwave-reverse'
+    | 'vaporwave-solid-start'
+    | 'vaporwave-solid-mid'
+    | 'vaporwave-solid-end'
+}
+
+const { variant = 'default' } = Astro.props as SocialLinksProps
+const gradientVariants = new Set(['vaporwave', 'vaporwave-reverse'])
+const solidVariantMap = {
+  'vaporwave-solid-start': 'var(--vaporwave-start)',
+  'vaporwave-solid-mid': 'var(--vaporwave-mid)',
+  'vaporwave-solid-end': 'var(--vaporwave-end)'
+} as const
+
+const useGradient = gradientVariants.has(variant)
+const solidFill =
+  variant in solidVariantMap ? solidVariantMap[variant as keyof typeof solidVariantMap] : null
+const gradientBaseId = useGradient
+  ? `social-gradient-${Math.random().toString(36).slice(2, 10)}`
+  : ''
+
+const gradientStops = useGradient
+  ? [
+      { offset: '0%', role: 'start' as const },
+      { offset: '50%', role: 'middle' as const },
+      { offset: '100%', role: 'end' as const }
+    ]
+  : []
+
+const icons = [
+  {
+    id: 'github',
+    href: 'https://github.com/heavymedl',
+    label: 'GitHub',
+    path: `M12 .5A11.5 11.5 0 0 0 8.4 22.89c.6.11.82-.26.82-.58v-2.14c-3.34.74-4.05-1.42-4.05-1.42a3.2 3.2 0 0 0-1.34-1.76c-1.1-.76.09-.74.09-.74a2.5 2.5 0 0 1 1.84 1.24 2.55 2.55 0 0 0 3.47 1 2.58 2.58 0 0 1 .76-1.58c-2.66-.3-5.46-1.36-5.46-6.05a4.76 4.76 0 0 1 1.27-3.3A4.41 4.41 0 0 1 4 4.08s1.06-.35 3.47 1.3a11.94 11.94 0 0 1 6.12 0C16 3.73 17.08 4.08 17.08 4.08a4.4 4.4 0 0 1-.12 3.33 4.76 4.76 0 0 1 1.26 3.31c0 4.71-2.81 5.75-5.49 6a2.9 2.9 0 0 1 .81 2.23v3.3c0 .32.22.7.83.58A11.5 11.5 0 0 0 12 .5Z`
+  },
+  {
+    id: 'instagram',
+    href: 'https://www.instagram.com/heavy.medl/',
+    label: 'Instagram',
+    path: `M7 2c-2.76 0-5 2.24-5 5v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm11 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z`
+  },
+  {
+    id: 'linkedin',
+    href: 'https://www.linkedin.com/in/heavymedl/',
+    label: 'LinkedIn',
+    path: `M5.2 9.19H2.18V21h3.02Zm.2-3.81A2 2 0 0 0 3.31 3.3a2 2 0 1 0 2.09 2.08ZM21 21h-3v-6.35c0-1.52-.56-2.55-1.95-2.55-1.06 0-1.69.71-1.97 1.4-.1.24-.13.58-.13.92V21h-3s.04-11.42 0-12.61h3v1.79a2.97 2.97 0 0 1 2.7-1.48c1.98 0 3.45 1.29 3.45 4.05Z`
+  },
+  {
+    id: 'email',
+    href: 'mailto:kurtdmedley@gmail.com',
+    label: 'Email',
+    path: `M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5Zm2.5-.5a.5.5 0 0 0-.5.5v.22l7.5 4.69 7.5-4.69V6.5a.5.5 0 0 0-.5-.5Z`
+  }
+] as const
+
+const getFill = (iconId: string) =>
+  useGradient ? `url(#${gradientBaseId}-${iconId})` : (solidFill ?? 'currentColor')
+---
+
+<div class="social-links" data-variant={variant} aria-label="Social links">
+  {
+    icons.map((icon) => (
+      <a href={icon.href} target="_blank" rel="noopener noreferrer" aria-label={icon.label}>
+        <span class="sr-only">{icon.label}</span>
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          {useGradient && (
+            <defs>
+              <linearGradient
+                id={`${gradientBaseId}-${icon.id}`}
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="24"
+                gradientUnits="userSpaceOnUse"
+              >
+                {gradientStops.map((stop) => (
+                  <stop offset={stop.offset} data-role={stop.role} />
+                ))}
+              </linearGradient>
+            </defs>
+          )}
+          <path d={icon.path} fill={getFill(icon.id)} />
+        </svg>
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: clamp(-1.45rem, calc(-0.35rem - 1.1rem * ((100vw - 768px) / 432px)), -0.75rem);
+  }
+
+  .social-links a {
+    color: var(--text-secondary);
+    display: inline-flex;
+    transition:
+      color 0.2s ease-out,
+      opacity 0.2s ease-out;
+  }
+
+  .social-links svg {
+    width: clamp(1rem, 2.2vw, 1.5rem);
+    height: clamp(1rem, 2.2vw, 1.5rem);
+  }
+
+  .social-links a:hover,
+  .social-links a:focus-visible {
+    color: var(--text-primary);
+    opacity: 0.85;
+  }
+
+  .social-links[data-variant='vaporwave'] svg stop[data-role='start'] {
+    stop-color: var(--vaporwave-start);
+  }
+
+  .social-links[data-variant='vaporwave'] svg stop[data-role='middle'] {
+    stop-color: var(--vaporwave-mid);
+  }
+
+  .social-links[data-variant='vaporwave'] svg stop[data-role='end'] {
+    stop-color: var(--vaporwave-end);
+  }
+
+  .social-links[data-variant='vaporwave-reverse'] svg stop[data-role='start'] {
+    stop-color: var(--vaporwave-end);
+  }
+
+  .social-links[data-variant='vaporwave-reverse'] svg stop[data-role='middle'] {
+    stop-color: var(--vaporwave-mid);
+  }
+
+  .social-links[data-variant='vaporwave-reverse'] svg stop[data-role='end'] {
+    stop-color: var(--vaporwave-start);
+  }
+</style>

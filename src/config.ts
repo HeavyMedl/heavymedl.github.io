@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
     website: 'https://heavymedl.dev', // Site domain
     title: 'heavymedl.dev', // Site title
     author: 'HeavyMedl', // Author name
-    description: "Kurt Medley's brain dump", // Site description
+    description: "Desire to know more intensifies", // Site description
     language: 'en-US' // Default language
   },
 

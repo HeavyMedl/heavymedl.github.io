@@ -1,5 +1,5 @@
 ---
-title: An expanded record of my professional work
+title: An expanded record of my work
 pubDate: '2025-11-13'
 ---
 

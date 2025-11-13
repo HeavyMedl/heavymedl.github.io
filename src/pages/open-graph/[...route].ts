@@ -19,29 +19,19 @@ export const { getStaticPaths, GET } = OGImageRoute({
     description: themeConfig.site.title,
     logo: {
       path: 'public/og/og-logo.png',
-      size: [140, 140]
+      size: [320, 320]
     },
-    bgGradient: [
-      [255, 94, 195],
-      [160, 107, 255],
-      [82, 255, 229]
-    ],
-    bgImage: {
-      path: 'public/og/og-bg.png',
-      fit: 'cover'
-    },
-    padding: 72,
+    bgGradient: [[0, 0, 0]],
+    padding: 120,
     font: {
       title: {
-        color: [245, 245, 245],
-        size: 72,
-        weight: 'Bold',
+        color: [0, 0, 0],
+        size: 1,
         families: ['PingFang SC']
       },
       description: {
-        color: [220, 220, 220],
-        size: 36,
-        weight: 'Medium',
+        color: [0, 0, 0],
+        size: 1,
         families: ['PingFang SC']
       }
     },

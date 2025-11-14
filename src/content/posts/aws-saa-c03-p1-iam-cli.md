@@ -7,8 +7,6 @@ I'm following an online course in preparation for taking the AWS Certified Solut
 
 These posts will help me organize my thoughts, study the course topics, and practice technical writing.
 
-Care for some jams while you read?
-
 ## AWS Cloud Overview
 
 AWS is organized into geographic Regions, and each <span class="text-solid-mid">Region</span> contains multiple <span class="text-solid-end">Availability Zones</span> (AZs). Each AZ consists of one or more distinct data centers with independent power, networking, and cooling.

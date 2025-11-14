@@ -11,7 +11,7 @@ From 2011 to 2012, I completed **48 credits** in _Computer Science Foundations_,
 
 ---
 
-## <span class="text-solid-mid">Computer Science Foundations</span>
+## Computer Science Foundations
 
 **Faculty:**  
 Neal Nelson, Ph.D.; Sherri Shulman, Ph.D.; Richard Weiss, Ph.D.
@@ -42,7 +42,7 @@ Covered logic, proofs, set theory, combinatorics, graph theory, number theory, p
 
 ---
 
-## <span class="text-solid-mid">Computability and Language Theory</span>
+## Computability and Language Theory
 
 **Faculty:**  
 Neal Nelson, Ph.D.; Sheryl Shulman, Ph.D.
@@ -67,7 +67,7 @@ Propositional & predicate logic, tableau proofs, completeness, clausal form, mod
 
 ---
 
-## <span class="text-solid-mid">Computing Practice and Theory</span>
+## Computing Practice and Theory
 
 **Faculty:**  
 Judith Bayard Cushing; Aaron A. Skomra; Richard S. Weiss

@@ -5,7 +5,7 @@ pubDate: '2025-11-14'
 
 > Note: This post is published on REI's engineering blog [here](https://engineering.rei.com/frontend/front-end-build-tool-renaissance.html)
 
-## <span class="text-solid-mid">FEBS</span>
+## FEBS
 
 The Front-end Build System (FEBS) is REI's internally developed set of tools that helps engineers build the assets that are eventually downloaded by customers visiting REI's online properties. FEBS has evolved over the years to support an ever-changing development landscape.
 
@@ -15,7 +15,7 @@ The Co-op moved toward a more decentralized approach by introducing microservice
 
 Under the hood, `@rei/febs` is extending `webpack@4` to bundle web application code and `rollup@2` to bundle Vue 2 components and vanilla JavaScript libraries.
 
-## <span class="text-solid-mid">Unforeseen consequences</span>
+## Unforeseen consequences
 
 Our team maintains a microsite that contains supported patterns, technologies, and most importantly, an end-to-end functional example used as a reference by other product teams. We expected `@rei/febs` to canonicalize the way teams built their front-end assets and thereby reduce any individual deviation from supported patterns, theoretically improving the interoperability ecosystem.
 
@@ -23,17 +23,17 @@ For most cases, `@rei/febs` did its job. However, as time went on, feature reque
 
 The maintenance of iterating on `@rei/febs` and troubleshooting microsite build issues began to consume our daily lives. Worse was that `@rei/febs` was becoming bloated with logic for many unforeseen use cases.
 
-## <span class="text-solid-mid">Inherit apparent</span>
+## Inherit apparent
 
 Perhaps you spotted the _inherent_ problem with `@rei/febs`? It's an inheritance model. `@rei/febs` extends several build tool technologies including `webpack` and `rollup`. This means that `@rei/febs` **is** `webpack`. `@rei/febs` **is** `rollup`. So, what's the issue? Inheritance models are brittle by nature (don't @ me). Any change request can require a massive overhaul of the implementation. And the more you customize, the harder it becomes to maintain until it becomes an unrecognizable, enormous blob like in _Akira_.
 
-## <span class="text-solid-mid">This is the way</span>
+## This is the way
 
 Eventually, we hit a wall when Vue 3 arrived on the scene. We built a POC that brought Vue 3 support to `@rei/febs`. We discovered that the Rollup plugin used to compile Vue 3 SFCs for our public design system, [Cedar](https://cedar.rei.com), made tree-shaking incompatible with `webpack@4`, resulting in bloated application bundles.
 
 Even though we had a functional POC of our reference microsite using Vue 3, we were unsatisfied with the low-level work we had to do to get there. We decided to experiment with a build toolchain overhaul that dispensed with our implementations in favor of using [Vite](https://vitejs.dev/) to bundle our application. We quickly cobbled together a working solution. We liked the approach so much that we decided to move forward with it.
 
-## <span class="text-solid-mid">Enter Vite</span>
+## Enter Vite
 
 [Vite](https://vitejs.dev/) is a UI-framework agnostic build tool. It supports React, Svelte, Vue, and others. It's a bundler ... of bundlers. Ironically, it's a wrapper that swaps bundlers in and out for different purposes. But the key point here is that it's a wrapper maintained by an open-source community **instead** of us. Under the hood, it uses `rollup` and `esbuild`.
 
@@ -43,7 +43,7 @@ Besides all that, Vite is pretty sweet. It has a "no-bundler" approach to runnin
 
 > Vite serves source code over native ESM. This is essentially letting the browser take over part of the job of a bundler: Vite only needs to transform and serve source code on demand, as the browser requests it. Code behind conditional dynamic imports is only processed if actually used on the current screen.
 
-## <span class="text-solid-mid">So, what is FEBS now?</span>
+## So, what is FEBS now?
 
 FEBS 3 is the "Front-end Build System", but that system isn't an explicit dependency.
 
@@ -51,7 +51,7 @@ Rather, it's a curated collection of open-source tools that are declared as depe
 
 This has alleviated us from low-level dependency management, makes future migrations and tool swaps easier, and allows engineers maximum flexibility with their application builds while always having a functional example to reference. Engineers can also lean directly on the open-source community for any issues they may have with a particular build tool.
 
-## <span class="text-solid-mid">Lessons learned</span>
+## Lessons learned
 
 Reflecting on the evolution of the build toolchain at REI, the intentions were good. Create a tool that would normalize the way our teams built front-end assets and prevent deviation from supported patterns.
 

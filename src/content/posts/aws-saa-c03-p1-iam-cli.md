@@ -9,7 +9,7 @@ AWS is organized into geographic Regions, and each **Region** contains multiple 
 
 The AZs within a Region are interconnected with high-bandwidth, low-latency networking, allowing them to function as a highly available cluster while still being isolated for fault tolerance.
 
-![AWS Regions contain multiple interconnected Availability Zones, each made up of one or more data centers.](./_assets/aws-cloud-overview.svg)
+![AWS Regions contain multiple interconnected Availability Zones, each made up of one or more data centers.](./_assets/aws-cloud-overview.png)
 
 ## IAM: Users & Groups
 
@@ -27,7 +27,7 @@ IAM permissions are defined inside policies, and those policies can be attached 
 
 Most access in AWS is granted this way; through group-attached policies. A user’s effective permissions are the total set of permissions from all the policies attached to their groups, plus any policies attached directly to their individual user account.
 
-![Users inherit permissions from group policies and their own inline policies.](./_assets/iam-policy-inheritance.svg)
+![Users inherit permissions from group policies and their own inline policies.](./_assets/iam-policy-inheritance.png)
 
 ## IAM: Policy Structure
 

@@ -38,7 +38,7 @@ function toggleAstroAdapter(comment: boolean) {
   )
 
   if (importIndex === -1 || adapterIndex === -1) {
-    console.error('Could not find netlify adapter import or configuration')
+    console.warn('Netlify adapter not found in astro.config.ts, skipping adapter toggle')
     return
   }
 

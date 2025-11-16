@@ -1,0 +1,40 @@
+---
+title: Quiz Demo
+pubDate: '2025-11-16'
+description: Quick quiz component demo
+---
+
+import Quiz from '@/components/ui/Quiz/Quiz.astro'
+
+export const quizData = {
+  title: 'IAM Quick Check',
+  description: 'Two simple questions about IAM fundamentals.',
+  questions: [
+    {
+      id: 'question-root',
+      type: 'multiple-choice',
+      prompt: 'Which identity should never be used for daily operations?',
+      options: [
+        { id: 'root', label: 'Root user', correct: true },
+        { id: 'group', label: 'IAM group' },
+        { id: 'role', label: 'IAM role' }
+      ],
+      explanation: 'The root user has full power and should only be used for initial setup.'
+    },
+    {
+      id: 'question-mfa',
+      type: 'multiple-choice',
+      prompt: 'What does MFA add to the sign-in process?',
+      options: [
+        { id: 'nothing', label: 'No additional security' },
+        { id: 'extra-factor', label: 'Another verification factor', correct: true },
+        { id: 'passwordless', label: 'Password-less login' }
+      ],
+      explanation: 'MFA adds something you have (token/app) on top of the password.'
+    }
+  ]
+}
+
+This post demonstrates the reusable quiz component.
+
+<Quiz {...quizData} />

@@ -1,0 +1,193 @@
+---
+import type { QuizDefinition } from '@/types'
+import QuizChoice from '@/components/ui/Quiz/QuizChoice.astro'
+
+interface Props extends QuizDefinition {
+  id?: string
+}
+
+const { id, title = 'Test your knowledge', description, questions = [] } = Astro.props as Props
+const totalQuestions = questions.length
+---
+
+<section class="quiz-card" id={id}>
+  <p class="quiz-score" data-quiz-total aria-live="polite" role="status">
+    Score: 0% (0/{totalQuestions})
+  </p>
+  <header class="quiz-header">
+    <p class="quiz-title">{title}</p>
+    {description && <p class="quiz-description">{description}</p>}
+  </header>
+
+  {
+    totalQuestions === 0 ? (
+      <p class="quiz-empty">No questions available.</p>
+    ) : (
+      <form class="quiz-form">
+        {questions.map((question, index) =>
+          question.type === 'multiple-choice' ? (
+            <QuizChoice question={question} index={index} />
+          ) : null
+        )}
+      </form>
+    )
+  }
+</section>
+
+<script is:inline>
+  const boundQuestions = new WeakSet()
+
+  const updateQuizResult = (quizRoot) => {
+    const result = quizRoot.querySelector('[data-quiz-total]')
+    if (!result) return
+    const questions = quizRoot.querySelectorAll('fieldset[data-question-id]')
+    const correctCount = Array.from(questions).filter(
+      (question) => question.dataset.answerState === 'correct'
+    ).length
+    const total = questions.length || 1
+    const percentage = Math.round((correctCount / total) * 100)
+    result.textContent = `Score: ${percentage}% (${correctCount}/${total})`
+  }
+
+  const processQuestion = (question) => {
+    const selected = question.querySelector('input[type="radio"]:checked')
+    const explanation = question.querySelector('[data-question-explanation]')
+    const feedback = question.querySelector('[data-question-feedback]')
+
+    question.querySelectorAll('.quiz-option').forEach((option) => {
+      option.classList.remove('is-correct', 'is-incorrect')
+    })
+
+    if (explanation) {
+      explanation.classList.remove('is-correct')
+      explanation.setAttribute('hidden', 'hidden')
+    }
+
+    if (feedback) {
+      feedback.classList.remove('is-incorrect')
+      feedback.setAttribute('hidden', 'hidden')
+      feedback.textContent = ''
+    }
+
+    if (!selected) {
+      if (feedback) {
+        feedback.textContent = 'Please select an answer.'
+        feedback.classList.add('is-incorrect')
+        feedback.removeAttribute('hidden')
+      }
+      question.dataset.answerState = 'unanswered'
+      return false
+    }
+
+    if (selected.dataset.correct === 'true') {
+      selected.closest('.quiz-option')?.classList.add('is-correct')
+      if (explanation) {
+        explanation.classList.add('is-correct')
+        explanation.removeAttribute('hidden')
+      }
+      question.dataset.answerState = 'correct'
+    } else {
+      selected.closest('.quiz-option')?.classList.add('is-incorrect')
+      if (feedback) {
+        feedback.textContent = 'That is incorrect, please try again.'
+        feedback.classList.add('is-incorrect')
+        feedback.removeAttribute('hidden')
+      }
+      question.dataset.answerState = 'incorrect'
+    }
+
+    return true
+  }
+
+  const bindQuiz = (quizRoot) => {
+    quizRoot.querySelectorAll('fieldset[data-question-id]').forEach((question) => {
+      if (boundQuestions.has(question)) return
+      const submitButton = question.querySelector('[data-question-submit]')
+      if (!submitButton) return
+
+      submitButton.addEventListener('click', () => {
+        const processed = processQuestion(question)
+        if (processed) updateQuizResult(quizRoot)
+      })
+
+      boundQuestions.add(question)
+    })
+  }
+
+  const bindAllQuizzes = () => {
+    document.querySelectorAll('.quiz-card').forEach(bindQuiz)
+  }
+
+  bindAllQuizzes()
+  ;['astro:after-swap', 'astro:page-load'].forEach((eventName) => {
+    document.addEventListener(eventName, bindAllQuizzes)
+  })
+</script>
+
+<style>
+  .quiz-card {
+    position: relative;
+    margin: 2.5rem 0;
+    padding: 2.75rem 2.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(140deg, rgba(7, 2, 18, 0.92), rgba(2, 0, 10, 0.85));
+    color: #f7f3ff;
+    box-shadow: 0 45px 65px rgba(3, 0, 9, 0.5);
+  }
+
+  .quiz-title {
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .quiz-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .quiz-description {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .quiz-empty,
+  .quiz-question-feedback {
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+  }
+
+  .quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .quiz-empty {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .quiz-score {
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0.45rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: #0c001f;
+    background: linear-gradient(120deg, #fff1f5, #9cdfef);
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+  }
+</style>

@@ -1,0 +1,243 @@
+---
+import type { MultipleChoiceQuestion } from '@/types'
+
+interface Props {
+  question: MultipleChoiceQuestion
+  index: number
+}
+
+const { question, index } = Astro.props
+const questionId = question.id || `quiz-question-${index}`
+const headingId = `${questionId}-heading`
+---
+
+<fieldset class="quiz-question" data-question-id={questionId} aria-labelledby={headingId}>
+  <div class="quiz-question-heading" id={headingId}>
+    <span class="quiz-question-number">{index + 1}.</span>
+    <span class="quiz-question-text">{question.prompt}</span>
+  </div>
+
+  {
+    question.options.map((option, optionIndex) => {
+      const optionId = `${questionId}-option-${optionIndex}`
+      return (
+        <label class="quiz-option">
+          <input
+            type="radio"
+            name={questionId}
+            id={optionId}
+            value={option.id}
+            data-correct={option.correct ? 'true' : 'false'}
+          />
+          <span class="quiz-option-text">{option.label}</span>
+          {option.description && <span class="quiz-option-description">{option.description}</span>}
+        </label>
+      )
+    })
+  }
+
+  {
+    question.explanation && (
+      <p class="quiz-question-explanation" data-question-explanation hidden>
+        {question.explanation}
+      </p>
+    )
+  }
+
+  <div class="quiz-question-actions">
+    <button type="button" class="quiz-button quiz-question-submit" data-question-submit>
+      Check answer
+    </button>
+    <p class="quiz-question-feedback" data-question-feedback hidden></p>
+  </div>
+</fieldset>
+
+<style>
+  .quiz-question {
+    padding: 2.5rem 2.2rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background:
+      radial-gradient(circle at top, rgba(93, 53, 179, 0.55), transparent 55%),
+      radial-gradient(circle at bottom, rgba(7, 13, 35, 0.5), transparent 35%), #01000c;
+    box-shadow: 0 65px 85px rgba(0, 0, 0, 0.65);
+  }
+
+  .quiz-question:not(:last-child) {
+    margin-bottom: 2.75rem;
+  }
+
+  .quiz-question-heading {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    font-weight: 700;
+    color: #fdfcff;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+  }
+
+  .quiz-question-number {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.05em;
+  }
+
+  .quiz-question-text {
+    line-height: 1.3;
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 0.75rem;
+    width: 100%;
+  }
+
+  .quiz-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .quiz-option {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.9rem;
+    padding: 0.85rem 0;
+  }
+
+  .quiz-option:hover {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .quiz-option input {
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid rgba(255, 226, 111, 0.85);
+    border-radius: 0.2rem;
+    position: relative;
+    margin-top: 0.35rem;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .quiz-option {
+    cursor: pointer;
+  }
+
+  .quiz-option input:checked::after {
+    content: '';
+    position: absolute;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 0.1rem;
+    background: #ffd86f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .quiz-option-text {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .quiz-option-description {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.62);
+  }
+
+  .quiz-question-explanation {
+    margin-top: 1.25rem;
+    padding: 1rem 1.1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+  }
+
+  .quiz-question-actions {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .quiz-button {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.85rem;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .quiz-button:hover {
+    color: #01000c;
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .quiz-question-feedback {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .quiz-question-feedback.is-incorrect {
+    color: #ff8ba0;
+  }
+
+  .quiz-option.is-correct {
+    animation: option-correct 0.4s ease forwards;
+  }
+
+  .quiz-option.is-incorrect {
+    animation: option-incorrect 0.4s ease;
+  }
+
+  @keyframes option-correct {
+    0% {
+      transform: translateX(0);
+      background: transparent;
+    }
+    60% {
+      transform: translateX(6px);
+      background: rgba(34, 197, 94, 0.18);
+    }
+    100% {
+      transform: translateX(4px);
+      background: rgba(34, 197, 94, 0.12);
+    }
+  }
+
+  @keyframes option-incorrect {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    50% {
+      transform: translateX(4px);
+      background: rgba(239, 68, 68, 0.12);
+    }
+    100% {
+      transform: translateX(0);
+      background: none;
+    }
+  }
+</style>

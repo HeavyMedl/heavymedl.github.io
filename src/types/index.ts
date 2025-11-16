@@ -6,3 +6,6 @@ export * from './content.types'
 
 // Component types
 export * from './component.types'
+
+// Quiz types
+export * from './quiz.types'

@@ -4,9 +4,13 @@ import type { MultipleChoiceQuestion } from '@/types'
 interface Props {
   question: MultipleChoiceQuestion
   index: number
+  randomizeOptions?: boolean
 }
 
-const { question, index } = Astro.props
+const { question, index, randomizeOptions = false } = Astro.props
+const options = randomizeOptions
+  ? [...question.options].sort(() => Math.random() - 0.5)
+  : question.options
 const questionId = question.id || `quiz-question-${index}`
 const headingId = `${questionId}-heading`
 ---
@@ -18,7 +22,7 @@ const headingId = `${questionId}-heading`
   </div>
 
   {
-    question.options.map((option, optionIndex) => {
+    options.map((option, optionIndex) => {
       const optionId = `${questionId}-option-${optionIndex}`
       return (
         <label class="quiz-option">

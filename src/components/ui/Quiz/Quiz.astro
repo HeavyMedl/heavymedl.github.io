@@ -4,9 +4,22 @@ import QuizChoice from '@/components/ui/Quiz/QuizChoice.astro'
 
 interface Props extends QuizDefinition {
   id?: string
+  randomizeQuestions?: boolean
+  randomizeOptions?: boolean
 }
 
-const { id, title = 'Test your knowledge', description, questions = [] } = Astro.props as Props
+const {
+  id,
+  title = 'Test your knowledge',
+  description,
+  questions = [],
+  randomizeQuestions = false,
+  randomizeOptions = false
+} = Astro.props as Props
+
+const orderedQuestions = randomizeQuestions
+  ? [...questions].sort(() => Math.random() - 0.5)
+  : questions
 const totalQuestions = questions.length
 ---
 
@@ -24,9 +37,9 @@ const totalQuestions = questions.length
       <p class="quiz-empty">No questions available.</p>
     ) : (
       <form class="quiz-form">
-        {questions.map((question, index) =>
+        {orderedQuestions.map((question, index) =>
           question.type === 'multiple-choice' ? (
-            <QuizChoice question={question} index={index} />
+            <QuizChoice question={question} index={index} randomizeOptions={randomizeOptions} />
           ) : null
         )}
       </form>

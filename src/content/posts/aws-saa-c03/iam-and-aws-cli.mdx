@@ -3,6 +3,9 @@ title: AWS SAA-C03 · IAM & AWS CLI
 pubDate: '2025-11-15'
 ---
 
+import Quiz from '@/components/ui/Quiz/Quiz.astro'
+import { iamAndAwsCliQuiz } from './quizzes/iam-and-aws-cli'
+
 ## AWS Cloud Overview
 
 AWS is organized into geographic Regions, and each **Region** contains multiple **Availability Zones** (AZs). Each AZ consists of one or more distinct data centers with independent power, networking, and cooling.
@@ -123,3 +126,7 @@ Everything in this module builds toward securing and automating access:
 - Lock down each identity with strong password policies + MFA.
 - Use the AWS CLI or SDKs with access keys for programmatic work.
 - Continually audit with IAM Credential Reports and Access Advisor to trim unused access.
+
+## Test your knowledge
+
+<Quiz {...iamAndAwsCliQuiz} randomizeQuestions randomizeOptions />

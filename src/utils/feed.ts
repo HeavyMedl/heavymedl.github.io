@@ -1,6 +1,7 @@
 import type { APIContext, ImageMetadata } from 'astro'
 import { getImage } from 'astro:assets'
 import { getCollection, type CollectionEntry } from 'astro:content'
+import { hasHiddenSegment } from './draft'
 import { Feed } from 'feed'
 import MarkdownIt from 'markdown-it'
 import { parse as htmlParser } from 'node-html-parser'
@@ -123,7 +124,7 @@ async function generateFeedInstance(context: APIContext) {
 
   const posts = await getCollection(
     'posts',
-    ({ id }: CollectionEntry<'posts'>) => !id.startsWith('_')
+    ({ id }: CollectionEntry<'posts'>) => !hasHiddenSegment(id)
   )
   const sortedPosts = posts.sort(
     (a: CollectionEntry<'posts'>, b: CollectionEntry<'posts'>) =>

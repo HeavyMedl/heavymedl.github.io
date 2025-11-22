@@ -1,12 +1,13 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content'
+import { hasHiddenSegment } from '@/utils/draft'
 import PostLayout from '@/layouts/PostLayout.astro'
 import { render } from 'astro:content'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts')
   return posts
-    .filter((post) => !post.id.startsWith('_'))
+    .filter((post) => !hasHiddenSegment(post.id))
     .map((post) => ({
       params: { slug: post.id },
       props: post

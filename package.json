@@ -18,11 +18,11 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",
-    "@astrojs/netlify": "^6.6.2",
+    "@astrojs/netlify": "^6.6.3",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@playform/inline": "^0.1.2",
-    "astro": "^5.16.0",
+    "astro": "^5.16.1",
     "astro-og-canvas": "^0.7.2",
     "canvaskit-wasm": "^0.40.0",
     "feed": "^5.1.0",

@@ -34,3 +34,7 @@ From Rusticus: to grasp the idea of wanting correction and treatment for my char
 ## 8
 
 From Apollonius: moral freedom, the certainty to ignore the dice of fortune, and have no other perspective, even for a moment, than that of reason alone; to be always the same man, unchanged in sudden pain, in the loss of a child, in lingering sickness; to see clearly in his living example that a man can combine intensity and relaxation; not to be impatient in explanation; the observance of a man who clearly regarded as the least of his gifts his experience and skill in communicating his philosophical insights; the lesson of how to take apparent favours from one's friends, neither compromised by them nor insensitive in their rejection.
+
+## 9
+
+From Sextus: a kindly disposition, and the pattern of a house-hold governed by the paterfamilias; the concept of life lived according to nature; an unaffected dignity; intuitive concern for his friends; tolerance both of ordinary people and of the emptily opinionated; an agreeable manner with all, so that the pleasure of his conversation was greater than any flattery, and his very presence brought him the highest respect from all the company; certainty of grasp and method in the discovery and organization of the essential principles of life; never to give the impression of anger or any other passion, but to combine complete freedom from passion with the greatest human affection; to praise without fanfare, and to wear great learning lightly.

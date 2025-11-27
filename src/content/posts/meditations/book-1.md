@@ -38,3 +38,7 @@ From Apollonius: moral freedom, the certainty to ignore the dice of fortune, and
 ## 9
 
 From Sextus: a kindly disposition, and the pattern of a house-hold governed by the paterfamilias; the concept of life lived according to nature; an unaffected dignity; intuitive concern for his friends; tolerance both of ordinary people and of the emptily opinionated; an agreeable manner with all, so that the pleasure of his conversation was greater than any flattery, and his very presence brought him the highest respect from all the company; certainty of grasp and method in the discovery and organization of the essential principles of life; never to give the impression of anger or any other passion, but to combine complete freedom from passion with the greatest human affection; to praise without fanfare, and to wear great learning lightly.
+
+## 10
+
+From Alexander the grammarian: not to leap on mistakes, or captiously interrupt when anyone makes an error of vocabulary, syntax, or pronunciation, but neatly to introduce the correct form of that particular expression by way of answer, confirmation, or discussion of the matter itself rather than its phrasing—or by some other such felicitous prompting.

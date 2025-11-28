@@ -42,3 +42,7 @@ From Sextus: a kindly disposition, and the pattern of a house-hold governed by t
 ## 10
 
 From Alexander the grammarian: not to leap on mistakes, or captiously interrupt when anyone makes an error of vocabulary, syntax, or pronunciation, but neatly to introduce the correct form of that particular expression by way of answer, confirmation, or discussion of the matter itself rather than its phrasing—or by some other such felicitous prompting.
+
+## 11
+
+From Fronto: to understand the effect of suspicion, caprice, and hypocrisy in the exercise of absolute rule; and that for the most part these people we call 'Patricians' are somewhat short of human affection.

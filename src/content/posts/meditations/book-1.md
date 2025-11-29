@@ -46,3 +46,7 @@ From Alexander the grammarian: not to leap on mistakes, or captiously interrupt 
 ## 11
 
 From Fronto: to understand the effect of suspicion, caprice, and hypocrisy in the exercise of absolute rule; and that for the most part these people we call 'Patricians' are somewhat short of human affection.
+
+## 12
+
+From Alexander the Platonist: rarely, and never without essential cause, to say or write to anyone that 'I am too busy'; not to use a similar excuse, advancing 'pressure of circumstances', in constant avoidance of the properties inherent in our relations to our fellows and contemoraries.

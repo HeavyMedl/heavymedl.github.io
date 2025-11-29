@@ -49,4 +49,4 @@ From Fronto: to understand the effect of suspicion, caprice, and hypocrisy in th
 
 ## 12
 
-From Alexander the Platonist: rarely, and never without essential cause, to say or write to anyone that 'I am too busy'; not to use a similar excuse, advancing 'pressure of circumstances', in constant avoidance of the proprieties inherent in our relations to our fellows and contemoraries.
+From Alexander the Platonist: rarely, and never without essential cause, to say or write to anyone that 'I am too busy'; not to use a similar excuse, advancing 'pressure of circumstances', in constant avoidance of the proprieties inherent in our relations to our fellows and contemporaries.

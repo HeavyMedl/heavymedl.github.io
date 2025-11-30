@@ -50,3 +50,7 @@ From Fronto: to understand the effect of suspicion, caprice, and hypocrisy in th
 ## 12
 
 From Alexander the Platonist: rarely, and never without essential cause, to say or write to anyone that 'I am too busy'; not to use a similar excuse, advancing 'pressure of circumstances', in constant avoidance of the proprieties inherent in our relations to our fellows and contemporaries.
+
+## 13
+
+From Catulus: not to spurn a friend’s criticism, even if it may be an unreasonable complaint, but to try to restore his usual feelings; to speak of one’s teachers with wholehearted gratitude, as is recorded of Domitius and Athenodotus; and a genuine love for children.

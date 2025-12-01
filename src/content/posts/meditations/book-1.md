@@ -54,3 +54,7 @@ From Alexander the Platonist: rarely, and never without essential cause, to say 
 ## 13
 
 From Catulus: not to spurn a friend’s criticism, even if it may be an unreasonable complaint, but to try to restore his usual feelings; to speak of one’s teachers with wholehearted gratitude, as is recorded of Domitius and Athenodotus; and a genuine love for children.
+
+## 14
+
+From Severus: love of family, 14love of truth, love of justice; to have come by his help to understand Thrasea, Helvidius, Cato, Dio, Brutus; to have conceived the idea of a balanced constitution, a commonwealth based on equality and freedom of speech, and of a monarchy which values above all the liberty of the subject; from him, too, a constant and vigorous respect 2 for philosophy; beneficence, unstinting generosity, optimism; his confidence in the affection of his friends, his frankness with those who met with his censure, and open likes and dislikes, so that his friends did not need to guess at his wishes.

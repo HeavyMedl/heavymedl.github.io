@@ -58,3 +58,7 @@ From Catulus: not to spurn a friend’s criticism, even if it may be an unreason
 ## 14
 
 From Severus: love of family, love of truth, love of justice; to have come by his help to understand Thrasea, Helvidius, Cato, Dio, Brutus; to have conceived the idea of a balanced constitution, a commonwealth based on equality and freedom of speech, and of a monarchy which values above all the liberty of the subject; from him, too, a constant and vigorous respect for philosophy; beneficence, unstinting generosity, optimism; his confidence in the affection of his friends, his frankness with those who met with his censure, and open likes and dislikes, so that his friends did not need to guess at his wishes.
+
+## 15
+
+From Maximus: self-mastery, immune to any passing whim; good cheer in all circumstances, including illness; a nice balance of character, both gentle and dignified; an uncomplaining energy for what needs to be done; the trust he inspired in everyone that he meant what he said and was well-intentioned in all that he did; proof against surprise or panic; in nothing either hurried or hesitant, never short of resource, never downcast or cringing, or on the other hand angry or suspicious; generosity in good works, and a forgiving and truthful nature; the impression he gave of undeviating rectitude as a path chosen rather than enforced; the fact that no one would ever have thought himself belittled by him, or presumed to consider himself superior to him; and a pleasant humour.

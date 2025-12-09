@@ -1,0 +1,434 @@
+---
+title: 'Pre-Algebra Workbook: Factors, Multiples, and Divisibility'
+pubDate: '2025-12-08'
+tags: ['math', 'pre-algebra', 'workbook', 'factors-multiples']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+
+<MathProblem
+  number={1}
+  choices={[
+    { label: 'A', text: '121' },
+    { label: 'B', text: '135' },
+    { label: 'C', text: '142' },
+    { label: 'D', text: '208' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Which number is divisible by $3$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Use the divisibility rule for $3$: add the digits of the number.  
+      If the sum of the digits is divisible by $3$, then the whole number is divisible by $3$.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Check each option by summing its digits:</p>
+    <ul>
+      <li>$121: 1 + 2 + 1 = 4$ (not divisible by $3$)</li>
+      <li>$135: 1 + 3 + 5 = 9$ (divisible by $3$)</li>
+      <li>$142: 1 + 4 + 2 = 7$ (not divisible by $3$)</li>
+      <li>$208: 2 + 0 + 8 = 10$ (not divisible by $3$)</li>
+    </ul>
+    <p>
+      Only $135$ has a digit sum divisible by $3$.
+    </p>
+    <p>
+      The correct choice is <strong>B. 135</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={2}
+  choices={[
+    { label: 'A', text: '2' },
+    { label: 'B', text: '4' },
+    { label: 'C', text: '8' },
+    { label: 'D', text: '16' }
+  ]}
+>
+  <div slot="prompt">
+    <p>What is the greatest common factor (GCF) of $16$ and $36$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Either list the factors of each number and find the largest one they share,
+      or use prime factorization and take the common prime factors with the smallest exponents.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Using prime factorization:</p>
+    <p>
+      $16 = 2^4$  
+      $36 = 2^2 \cdot 3^2$
+    </p>
+    <p>
+      The common prime factor is $2$, and the smallest power of $2$ that appears in both
+      is $2^2 = 4$.
+    </p>
+    <p>
+      So the GCF of $16$ and $36$ is $4$.
+    </p>
+    <p>
+      The correct choice is <strong>B. 4</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={3}
+  choices={[
+    { label: 'A', text: '30' },
+    { label: 'B', text: '45' },
+    { label: 'C', text: '60' },
+    { label: 'D', text: '90' }
+  ]}
+>
+  <div slot="prompt">
+    <p>What is the least common multiple (LCM) of $6$ and $15$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      One way is to list multiples of each number until you find the smallest one they share.  
+      Another way is to use prime factorization and take all primes with the largest exponents from either number.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Using prime factorization:</p>
+    <p>
+      $6 = 2 \cdot 3$  
+      $15 = 3 \cdot 5$
+    </p>
+    <p>
+      Include each prime factor with its largest exponent:
+      $2$, $3$, and $5$.
+    </p>
+    <p>
+      So
+      $$
+      \text{LCM} = 2 \cdot 3 \cdot 5 = 30.
+      $$
+    </p>
+    <p>
+      The correct choice is <strong>A. 30</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={4}
+  choices={[
+    { label: 'A', text: 'Prime' },
+    { label: 'B', text: 'Composite' },
+    { label: 'C', text: 'Neither prime nor composite' },
+    { label: 'D', text: 'Irrational' }
+  ]}
+>
+  <div slot="prompt">
+    <p>How is the number $21$ classified?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      A prime number has exactly two positive factors: $1$ and itself.  
+      A composite number has more than two positive factors.  
+      Check whether $21$ has any factors besides $1$ and $21$.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>
+      Check small divisors:
+    </p>
+    <ul>
+      <li>$21 \div 2$ is not an integer.</li>
+      <li>$21 \div 3 = 7$ (an integer), so $3$ is a factor.</li>
+    </ul>
+    <p>
+      Since $21$ has factors $1, 3, 7,$ and $21$, it has more than two positive factors.
+    </p>
+    <p>
+      Therefore, $21$ is <strong>composite</strong>.
+    </p>
+    <p>
+      The correct choice is <strong>B. Composite</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={5}
+  choices={[
+    { label: 'A', text: '2 · 2 · 3 · 7' },
+    { label: 'B', text: '4 · 21' },
+    { label: 'C', text: '2^3 · 21' },
+    { label: 'D', text: '2 · 42' }
+  ]}
+>
+  <div slot="prompt">
+    <p>What is the prime factorization of $84$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Break $84$ down by dividing by small prime numbers ($2, 3, 5, 7,\dots$) until all factors are prime.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Factor step by step:</p>
+    <p>
+      $84 \div 2 = 42$  
+      $42 \div 2 = 21$  
+      $21 \div 3 = 7$  
+      $7$ is prime.
+    </p>
+    <p>
+      So
+      $$
+      84 = 2 \cdot 2 \cdot 3 \cdot 7.
+      $$
+    </p>
+    <p>
+      The correct choice is <strong>A. 2 · 2 · 3 · 7</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={6}
+  choices={[
+    { label: 'A', text: '18' },
+    { label: 'B', text: '25' },
+    { label: 'C', text: '32' },
+    { label: 'D', text: '40' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Which of the following is a multiple of $5$ and also a multiple of $2$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      A number that is a multiple of both $5$ and $2$ must be divisible by $10$.  
+      Look for a number that ends in $0$.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Check the last digit of each number:</p>
+    <ul>
+      <li>$18$ ends in $8$ (not a multiple of $5$).</li>
+      <li>$25$ ends in $5$ (multiple of $5$ but not $2$).</li>
+      <li>$32$ ends in $2$ (multiple of $2$ but not $5$).</li>
+      <li>$40$ ends in $0$ (multiple of both $5$ and $2$).</li>
+    </ul>
+    <p>
+      So $40$ is a multiple of both $5$ and $2$.
+    </p>
+    <p>
+      The correct choice is <strong>D. 40</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={7}
+  choices={[
+    { label: 'A', text: '12' },
+    { label: 'B', text: '16' },
+    { label: 'C', text: '24' },
+    { label: 'D', text: '48' }
+  ]}
+>
+  <div slot="prompt">
+    <p>What is the least common multiple (LCM) of $8$ and $12$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      List multiples of $8$ and $12$ until you find the smallest common one,
+      or use prime factorization and take all primes with the largest exponents from either number.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Using prime factorization:</p>
+    <p>
+      $8 = 2^3$  
+      $12 = 2^2 \cdot 3$
+    </p>
+    <p>
+      Take each prime with the largest exponent:
+      $2^3$ and $3^1$.
+    </p>
+    <p>
+      So
+      $$
+      \text{LCM} = 2^3 \cdot 3 = 8 \cdot 3 = 24.
+      $$
+    </p>
+    <p>
+      The correct choice is <strong>C. 24</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={8}
+  choices={[
+    { label: 'A', text: '2' },
+    { label: 'B', text: '3' },
+    { label: 'C', text: '6' },
+    { label: 'D', text: '12' }
+  ]}
+>
+  <div slot="prompt">
+    <p>What is the greatest common factor (GCF) of $18$, $24$, and $30$?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      You can either list factors of each number or use prime factorization for all three and
+      then take the common prime factors with the smallest exponents.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Prime factorizations:</p>
+    <p>
+      $18 = 2 \cdot 3^2$  
+      $24 = 2^3 \cdot 3$  
+      $30 = 2 \cdot 3 \cdot 5$
+    </p>
+    <p>
+      Common prime factors: $2$ and $3$.
+    </p>
+    <p>
+      The smallest exponent for $2$ among them is $2^1$, and for $3$ is $3^1$.
+    </p>
+    <p>
+      So
+      $$
+      \text{GCF} = 2 \cdot 3 = 6.
+      $$
+    </p>
+    <p>
+      The correct choice is <strong>C. 6</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={9}
+  choices={[
+    { label: 'A', text: '51' },
+    { label: 'B', text: '37' },
+    { label: 'C', text: '49' },
+    { label: 'D', text: '39' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Which of the following numbers is prime?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      A prime number has exactly two positive factors: $1$ and itself.
+      Try dividing each option by small primes like $2, 3, 5,$ and $7$.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Check each option:</p>
+    <ul>
+      <li>$51$: $51 \div 3 = 17$, so $51$ is composite.</li>
+      <li>$37$: not divisible by $2, 3, 5,$ or $7$, so it has no factors other than $1$ and $37$.</li>
+      <li>$49$: $49 = 7 \cdot 7$, so it is composite.</li>
+      <li>$39$: $39 = 3 \cdot 13$, so it is composite.</li>
+    </ul>
+    <p>
+      Only $37$ is prime.
+    </p>
+    <p>
+      The correct choice is <strong>B. 37</strong>.
+    </p>
+  </div>
+</MathProblem>
+
+---
+
+<MathProblem
+  number={10}
+  choices={[
+    { label: 'A', text: '18' },
+    { label: 'B', text: '24' },
+    { label: 'C', text: '30' },
+    { label: 'D', text: '36' }
+  ]}
+>
+  <div slot="prompt">
+    <p>
+      A bakery packs cookies into boxes of $12$ cookies or boxes of $18$ cookies.  
+      The baker wants to stack boxes so that each stack has the <strong>same total number of cookies</strong>,
+      and each stack has <strong>only one type of box</strong> (all $12$-cookie boxes or all $18$-cookie boxes).  
+      What is the smallest possible number of cookies in each stack?
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      You are looking for the smallest number that is a multiple of both $12$ and $18$.  
+      This is the least common multiple (LCM) of $12$ and $18$.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Find the LCM of $12$ and $18$ using prime factorization:</p>
+    <p>
+      $12 = 2^2 \cdot 3$  
+      $18 = 2 \cdot 3^2$
+    </p>
+    <p>
+      Take each prime with the largest exponent:
+      $2^2$ and $3^2$.
+    </p>
+    <p>
+      So
+      $$
+      \text{LCM} = 2^2 \cdot 3^2 = 4 \cdot 9 = 36.
+      $$
+    </p>
+    <p>
+      The smallest number of cookies in each stack is $36$.
+    </p>
+    <p>
+      The correct choice is <strong>D. 36</strong>.
+    </p>
+  </div>
+</MathProblem>

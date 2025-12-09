@@ -1,81 +1,86 @@
 ---
-interface Choice {
-  label: string
-  text: any
-}
+import katex from 'katex'
+import type { MathProblemData } from '@/types/math.types'
 
 interface Props {
-  id?: string
-  number?: number
-  choices: Choice[]
+  data: MathProblemData
   choicesInitiallyOpen?: boolean
 }
 
-import katex from 'katex'
+const { data, choicesInitiallyOpen = false } = Astro.props as Props
 
-const { id, number, choices = [], choicesInitiallyOpen = false } = Astro.props as Props
+const renderMathHtml = (value?: string) =>
+  !value || typeof value !== 'string'
+    ? value
+    : [
+        { pattern: /\$\$([\s\S]+?)\$\$/g, displayMode: true },
+        { pattern: /\$([^\n]+?)\$/g, displayMode: false }
+      ].reduce((output, { pattern, displayMode }) => {
+        return output.replace(pattern, (_, expr) => {
+          try {
+            return katex.renderToString(expr.trim(), { displayMode, throwOnError: false })
+          } catch {
+            return _
+          }
+        })
+      }, value)
 
-const renderChoice = (value: any) => {
-  if (typeof value !== 'string') return value
-  const trimmed = value.trim()
-  if (trimmed.startsWith('$') && trimmed.endsWith('$') && trimmed.length > 2) {
-    const expr = trimmed.slice(1, -1)
-    try {
-      const html = katex.renderToString(expr, {
-        displayMode: false,
-        throwOnError: false
-      })
-      return { html }
-    } catch {
-      return value
-    }
-  }
-  return value
-}
+const promptHtml = renderMathHtml(data.promptHtml)
+const hintHtml = renderMathHtml(data.hintHtml)
+const solutionHtml = renderMathHtml(data.solutionHtml)
 ---
 
-<article class="math-problem" id={id}>
+<article class="math-problem" id={data.id}>
   <header class="math-problem__header">
     <span class="math-problem__eyebrow">
-      {number ? `Problem ${number.toString().padStart(2, '0')}` : 'Practice'}
+      {`Problem ${data.number.toString().padStart(2, '0')}`}
     </span>
+
+    <div class="math-problem__meta">
+      {data.difficulty && <span class={`pill pill--${data.difficulty}`}>{data.difficulty}</span>}
+      {data.tags?.map((tag) => <span class="pill pill--tag">{tag}</span>)}
+    </div>
   </header>
 
-  <div class="math-problem__prompt">
-    <slot name="prompt">
-      <p>This problem is missing its prompt.</p>
-    </slot>
-  </div>
+  <div class="math-problem__prompt" set:html={promptHtml} />
 
   {
-    choices.length > 0 ? (
+    data.skills.length > 0 && (
+      <div class="math-problem__skills">
+        {data.skills.map((skill) => (
+          <span class="skill-pill" data-role={skill.role ?? 'primary'}>
+            {skill.skillId}
+            {typeof skill.weight === 'number' && <span class="skill-weight">({skill.weight})</span>}
+          </span>
+        ))}
+      </div>
+    )
+  }
+
+  {
+    data.choices.length > 0 ? (
       <details class="math-problem__choices-wrapper" open={choicesInitiallyOpen}>
         <summary class="math-problem__choices-toggle">
-          <span class="math-problem__choices-toggle-text" data-state="hide">Hide choices</span>
-          <span class="math-problem__choices-toggle-text" data-state="show">Show choices</span>
-          <span class="math-problem__choices-toggle-icon" aria-hidden="true"></span>
+          <span class="math-problem__choices-toggle-text" data-state="hide">
+            Hide choices
+          </span>
+          <span class="math-problem__choices-toggle-text" data-state="show">
+            Show choices
+          </span>
+          <span class="math-problem__choices-toggle-icon" aria-hidden="true" />
         </summary>
 
         <div class="math-problem__choices" role="list">
-          {choices.map((choice) => {
-            const rendered = renderChoice(choice.text)
-            return (
-              <div class="math-problem__choice" role="listitem">
-                <span class="math-problem__choice-label">{choice.label}</span>
-                {typeof rendered === 'string' ? (
-                  <span class="math-problem__choice-text">{rendered}</span>
-                ) : rendered && typeof rendered === 'object' && 'html' in rendered ? (
-                  <span class="math-problem__choice-text" set:html={rendered.html}></span>
-                ) : (
-                  <span class="math-problem__choice-text">{rendered}</span>
-                )}
-              </div>
-            )
-          })}
+          {data.choices.map((choice) => (
+            <div class="math-problem__choice" role="listitem">
+              <span class="math-problem__choice-label">{choice.id}</span>
+              <span class="math-problem__choice-text" set:html={renderMathHtml(choice.textHtml)} />
+            </div>
+          ))}
         </div>
       </details>
     ) : (
-      <p class="math-problem__empty">Add choices to this problem.</p>
+      <p class="math-problem__empty">No choices provided.</p>
     )
   }
 
@@ -86,11 +91,7 @@ const renderChoice = (value: any) => {
         <span class="math-problem__accordion-icon" aria-hidden="true"></span>
       </summary>
       <div class="math-problem__accordion-body">
-        <div class="math-problem__accordion-content">
-          <slot name="hint">
-            <p>No hint provided yet.</p>
-          </slot>
-        </div>
+        <div class="math-problem__accordion-content" set:html={hintHtml} />
       </div>
     </details>
 
@@ -100,11 +101,7 @@ const renderChoice = (value: any) => {
         <span class="math-problem__accordion-icon" aria-hidden="true"></span>
       </summary>
       <div class="math-problem__accordion-body">
-        <div class="math-problem__accordion-content">
-          <slot name="solution">
-            <p>No solution provided yet.</p>
-          </slot>
-        </div>
+        <div class="math-problem__accordion-content" set:html={solutionHtml} />
       </div>
     </details>
   </div>
@@ -112,10 +109,10 @@ const renderChoice = (value: any) => {
 
 <style>
   .math-problem {
-    position: relative;
     --mp-toggle-icon-size: 1.05rem;
     --mp-toggle-icon-radius: 0.28rem;
     --mp-toggle-gap: 0.4rem;
+    position: relative;
     padding: 0.9rem 0.8rem;
     margin: 1.1rem 0 3.2rem;
     border-radius: 0.2rem;
@@ -126,9 +123,10 @@ const renderChoice = (value: any) => {
 
   .math-problem__header {
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    margin-bottom: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
   }
 
   .math-problem__eyebrow {
@@ -145,10 +143,53 @@ const renderChoice = (value: any) => {
     color: var(--text-secondary);
   }
 
+  .math-problem__meta {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .pill,
+  .skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+
+  .pill {
+    padding: 0.05rem 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 0.72rem;
+  }
+
+  .pill--easy {
+    color: #3ac277;
+  }
+  .pill--medium {
+    color: #f0b429;
+  }
+  .pill--hard {
+    color: #ff6b6b;
+  }
+  .pill--easy,
+  .pill--medium,
+  .pill--hard {
+    border-color: currentColor;
+  }
+
+  .pill--tag {
+    border-color: var(--border);
+    font-size: 0.68rem;
+    padding: 0.04rem 0.32rem;
+  }
+
   .math-problem__prompt {
     padding: 0.4rem 0.8rem 0.5rem;
     display: grid;
-    gap: 0.1rem;
+    gap: 0.15rem;
     align-items: start;
     border-radius: 0.2rem;
   }
@@ -160,6 +201,31 @@ const renderChoice = (value: any) => {
 
   :global(.math-problem__prompt p:last-child) {
     margin-bottom: 0;
+  }
+
+  .math-problem__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.35rem 0 0.6rem;
+  }
+
+  .skill-pill {
+    gap: 0.25rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: 0.35rem;
+    background: var(--code-bg);
+    font-size: 0.82rem;
+  }
+
+  .skill-pill[data-role='primary'] {
+    border-color: var(--text-tertiary);
+    color: var(--text-primary);
+  }
+
+  .skill-weight {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
   }
 
   .math-problem__choices {
@@ -215,12 +281,13 @@ const renderChoice = (value: any) => {
     border: 1px solid var(--border);
     background: var(--code-bg);
     padding: 0.05rem 0.35rem;
-    transition: border-color 0.12s ease, background 0.12s ease;
+    transition:
+      border-color 0.12s ease,
+      background 0.12s ease;
   }
 
   .math-problem__accordion[open] {
     border-color: var(--text-tertiary);
-    background: var(--code-bg);
   }
 
   .math-problem__accordion summary {
@@ -229,7 +296,7 @@ const renderChoice = (value: any) => {
     align-items: center;
     justify-content: space-between;
     gap: var(--mp-toggle-gap);
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .math-problem__accordion-label {
@@ -288,7 +355,6 @@ const renderChoice = (value: any) => {
 
   .math-problem__choices-wrapper {
     margin: 0.25rem 0 0.5rem;
-    border-radius: 0;
   }
 
   .math-problem__choices-toggle {
@@ -296,7 +362,7 @@ const renderChoice = (value: any) => {
     display: inline-flex;
     align-items: center;
     gap: var(--mp-toggle-gap);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-secondary);
   }
 
@@ -324,6 +390,7 @@ const renderChoice = (value: any) => {
     cursor: pointer;
     list-style: none;
     border: none;
+    background: transparent;
   }
 
   .math-problem__accordion summary::-webkit-details-marker,

@@ -9,3 +9,6 @@ export * from './component.types'
 
 // Quiz types
 export * from './quiz.types'
+
+// Math types
+export * from './math.types'

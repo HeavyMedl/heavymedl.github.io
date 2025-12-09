@@ -11,4 +11,6 @@ Say to yourself first thing in the morning: today I shall meet people who are me
 
 > From this point forward, passages are from Meditations: A New Translation (Modern Library), Marcus Aurelius, Gregory Hays
 
- Whatever this is that I am, it is flesh and a little spirit and an intelligence. Throw away your books; stop letting yourself be distracted. That is not allowed. Instead, as if you were dying right now, despise your flesh. A mess of blood, pieces of bone, a woven tangle of nerves, veins, arteries. Consider what the spirit is: air, and never the same air, but vomited out and gulped in again every instant. Finally, the intelligence. Think of it this way: You are an old man. Stop allowing your mind to be a slave, to be jerked about by selfish impulses, to kick against fate and the present, and to mistrust the future.
+Whatever this is that I am, it is flesh and a little spirit and an intelligence. Throw away your books; stop letting yourself be distracted. That is not allowed. Instead, as if you were dying right now, despise your flesh. A mess of blood, pieces of bone, a woven tangle of nerves, veins, arteries. Consider what the spirit is: air, and never the same air, but vomited out and gulped in again every instant. Finally, the intelligence. Think of it this way: You are an old man. Stop allowing your mind to be a slave, to be jerked about by selfish impulses, to kick against fate and the present, and to mistrust the future.
+
+## 3

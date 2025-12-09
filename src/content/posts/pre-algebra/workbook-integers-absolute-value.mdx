@@ -1,0 +1,507 @@
+---
+title: 'Pre-Algebra Workbook: Integers & Absolute Value'
+pubDate: '2025-12-08'
+tags: ['math', 'pre-algebra', 'workbook', 'integers']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+
+<MathProblem
+  number={1}
+  title="Problem 1"
+  choices={[
+    { label: 'A', text: '-5' },
+    { label: 'B', text: '5' },
+    { label: 'C', text: '19' },
+    { label: 'D', text: '-19' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      -7 - 12
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>Rewrite subtraction as “adding the opposite”:</p>
+    <p>
+      $$
+      -7 - 12 = -7 + (-12).
+      $$
+    </p>
+    <p>Then add the two negative numbers by adding their absolute values and keeping the negative sign.</p>
+  </div>
+
+  <div slot="solution">
+    <p>Rewrite:</p>
+    <p>
+      $$
+      -7 - 12 = -7 + (-12).
+      $$
+    </p>
+    <p>Add the absolute values:</p>
+    <p>
+      $$
+      7 + 12 = 19.
+      $$
+    </p>
+    <p>
+      Since both numbers are negative, the result is negative:
+      $$
+      -7 + (-12) = -19.
+      $$
+    </p>
+    <p>So the correct choice is <strong>D.</strong> $-19$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={2}
+  title="Problem 2"
+  choices={[
+    { label: 'A', text: '24' },
+    { label: 'B', text: '-6' },
+    { label: 'C', text: '-24' },
+    { label: 'D', text: '6' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      15 + (-9)
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      You’re adding a positive and a negative number. Compare their absolute values, subtract the smaller from
+      the larger, and keep the sign of the number with the larger absolute value.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Compute absolute values:</p>
+    <p>
+      $$
+      |15| = 15, \quad |-9| = 9.
+      $$
+    </p>
+    <p>Subtract:</p>
+    <p>
+      $$
+      15 - 9 = 6.
+      $$
+    </p>
+    <p>
+      Since $15$ has the larger absolute value and is positive, the result is positive:
+      $$
+      15 + (-9) = 6.
+      $$
+    </p>
+    <p>So the correct choice is <strong>D.</strong> $6$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={3}
+  title="Problem 3"
+  choices={[
+    { label: 'A', text: '24' },
+    { label: 'B', text: '-24' },
+    { label: 'C', text: '-10' },
+    { label: 'D', text: '10' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      -4 \cdot 6
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>Use the sign rule for multiplication:</p>
+    <ul>
+      <li>Negative $\times$ positive = negative.</li>
+    </ul>
+    <p>Multiply the absolute values, then apply the correct sign.</p>
+  </div>
+
+  <div slot="solution">
+    <p>Compute absolute values:</p>
+    <p>
+      $$
+      |{-4}| = 4, \quad |6| = 6.
+      $$
+    </p>
+    <p>Multiply:</p>
+    <p>
+      $$
+      4 \cdot 6 = 24.
+      $$
+    </p>
+    <p>
+      Since one factor is negative and the other is positive, the product is negative:
+      $$
+      -4 \cdot 6 = -24.
+      $$
+    </p>
+    <p>So the correct choice is <strong>B.</strong> $-24$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={4}
+  title="Problem 4"
+  choices={[
+    { label: 'A', text: '-8' },
+    { label: 'B', text: '-42' },
+    { label: 'C', text: '8' },
+    { label: 'D', text: '42' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      -48 \div (-6)
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>Use the sign rule for division:</p>
+    <ul>
+      <li>Negative $\div$ negative = positive.</li>
+    </ul>
+    <p>Then divide the absolute values.</p>
+  </div>
+
+  <div slot="solution">
+    <p>Absolute values:</p>
+    <p>
+      $$
+      |{-48}| = 48, \quad |{-6}| = 6.
+      $$
+    </p>
+    <p>Divide:</p>
+    <p>
+      $$
+      48 \div 6 = 8.
+      $$
+    </p>
+    <p>
+      Negative divided by negative is positive:
+      $$
+      -48 \div (-6) = 8.
+      $$
+    </p>
+    <p>So the correct choice is <strong>C.</strong> $8$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={5}
+  title="Problem 5"
+  choices={[
+    { label: 'A', text: '0' },
+    { label: 'B', text: '-10' },
+    { label: 'C', text: '10' },
+    { label: 'D', text: '4' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      -2 - (-5) - 3
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>First rewrite subtraction as addition of the opposite, then work left to right:</p>
+    <p>
+      $$
+      -2 - (-5) - 3 = -2 + 5 - 3.
+      $$
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Rewrite:</p>
+    <p>
+      $$
+      -2 - (-5) - 3 = -2 + 5 - 3.
+      $$
+    </p>
+    <p>Step 1:</p>
+    <p>
+      $$
+      -2 + 5 = 3.
+      $$
+    </p>
+    <p>Step 2:</p>
+    <p>
+      $$
+      3 - 3 = 0.
+      $$
+    </p>
+    <p>So $-2 - (-5) - 3 = 0$ and the correct choice is <strong>A.</strong> $0$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={6}
+  title="Problem 6"
+  choices={[
+    { label: 'A', text: '4' },
+    { label: 'B', text: '10' },
+    { label: 'C', text: '-10' },
+    { label: 'D', text: '14' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      |-3| + |-7|
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Use the definition of absolute value: it’s the distance from $0$, always nonnegative. Replace each absolute
+      value with a positive number, then add.
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Compute:</p>
+    <p>
+      $$
+      |-3| = 3, \quad |-7| = 7.
+      $$
+    </p>
+    <p>Add:</p>
+    <p>
+      $$
+      3 + 7 = 10.
+      $$
+    </p>
+    <p>So the correct choice is <strong>B.</strong> $10$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={7}
+  title="Problem 7"
+  choices={[
+    { label: 'A', text: '-7' },
+    { label: 'B', text: '7' },
+    { label: 'C', text: '-3' },
+    { label: 'D', text: '3' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      -\bigl|7 - 3 - 2\bigr| - |-5|
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>First simplify inside each absolute value, then take the absolute value, then apply the outside signs. Finally combine the results.</p>
+  </div>
+
+  <div slot="solution">
+    <p>Inside the first absolute value:</p>
+    <p>
+      $$
+      7 - 3 - 2 = 4 - 2 = 2.
+      $$
+    </p>
+    <p>
+      Then:
+      $$
+      \bigl|7 - 3 - 2\bigr| = |2| = 2,
+      $$
+      so
+      $$
+      -\bigl|7 - 3 - 2\bigr| = -2.
+      $$
+    </p>
+    <p>Second absolute value:</p>
+    <p>
+      $$
+      |-5| = 5.
+      $$
+    </p>
+    <p>Combine:</p>
+    <p>
+      $$
+      -\bigl|7 - 3 - 2\bigr| - |-5| = -2 - 5 = -7.
+      $$
+    </p>
+    <p>So the correct choice is <strong>A.</strong> $-7$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={8}
+  title="Problem 8"
+  choices={[
+    { label: 'A', text: '-13' },
+    { label: 'B', text: '3' },
+    { label: 'C', text: '13' },
+    { label: 'D', text: '-3' }
+  ]}
+>
+  <div slot="prompt">
+    <p>Evaluate:</p>
+    <p>
+      $$
+      |-5 - 8|
+      $$
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>First combine the integers inside the absolute value to get a single number, then take its absolute value.</p>
+  </div>
+
+  <div slot="solution">
+    <p>Inside:</p>
+    <p>
+      $$
+      -5 - 8 = -13.
+      $$
+    </p>
+    <p>
+      Then:
+      $$
+      |-13| = 13.
+      $$
+    </p>
+    <p>So the correct choice is <strong>C.</strong> $13$.</p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={9}
+  title="Problem 9"
+  choices={[
+    { label: 'A', text: '-3°C' },
+    { label: 'B', text: '3°C' },
+    { label: 'C', text: '11°C' },
+    { label: 'D', text: '-11°C' }
+  ]}
+>
+  <div slot="prompt">
+    <p>
+      The temperature at sunrise is $8^\circ\text{C}$. By midday, it drops by $15^\circ\text{C}$, and by evening it
+      rises by $4^\circ\text{C}$. What is the temperature in the evening?
+    </p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Represent each change as adding an integer: a drop is adding a negative number, a rise is adding a positive
+      number. Start from $8$ and apply the changes:
+    </p>
+    <p>
+      $$
+      8 + (\text{change}_1) + (\text{change}_2).
+      $$
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Drop of $15^\circ\text{C}$: add $-15$</p>
+    <p>Rise of $4^\circ\text{C}$: add $+4$</p>
+    <p>Expression:</p>
+    <p>
+      $$
+      8 + (-15) + 4.
+      $$
+    </p>
+    <p>
+      Compute:
+      $$
+      8 + (-15) = -7,
+      $$
+      then
+      $$
+      -7 + 4 = -3.
+      $$
+    </p>
+    <p>So the evening temperature is $-3^\circ\text{C}$. The correct choice is <strong>A.</strong></p>
+  </div>
+</MathProblem>
+
+<MathProblem
+  number={10}
+  title="Problem 10"
+  choices={[
+    { label: 'A', text: '20' },
+    { label: 'B', text: '40' },
+    { label: 'C', text: '60' },
+    { label: 'D', text: '80' }
+  ]}
+>
+  <div slot="prompt">
+    <p>A bank account starts with a balance of $120$. A withdrawal of $75$ is made. Then a deposit of $40$ is made. Finally, another withdrawal of $25$ is made.</p>
+    <p>What is the final balance?</p>
+  </div>
+
+  <div slot="hint">
+    <p>
+      Write each transaction as an integer (withdrawal = negative, deposit = positive) and add them with the
+      starting balance:
+    </p>
+    <p>
+      $$
+      120 + (\text{change}_1) + (\text{change}_2) + (\text{change}_3).
+      $$
+    </p>
+  </div>
+
+  <div slot="solution">
+    <p>Transactions as integers:</p>
+    <ul>
+      <li>Starting balance: $120$</li>
+      <li>Withdrawal of $75$: $-75$</li>
+      <li>Deposit of $40$: $+40$</li>
+      <li>Withdrawal of $25$: $-25$</li>
+    </ul>
+    <p>Expression:</p>
+    <p>
+      $$
+      120 - 75 + 40 - 25.
+      $$
+    </p>
+    <p>Compute step by step:</p>
+    <p>
+      $$
+      120 - 75 = 45,
+      $$
+      $$
+      45 + 40 = 85,
+      $$
+      $$
+      85 - 25 = 60.
+      $$
+    </p>
+    <p>So the final balance is $60$. The correct choice is <strong>C.</strong> $60$.</p>
+  </div>
+</MathProblem>

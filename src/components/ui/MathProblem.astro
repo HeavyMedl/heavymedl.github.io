@@ -1,0 +1,278 @@
+---
+interface Choice {
+  label: string
+  text: string
+}
+
+interface Props {
+  id?: string
+  number?: number
+  choices: Choice[]
+}
+
+const { id, number, choices = [] } = Astro.props as Props
+---
+
+<article class="math-problem" id={id}>
+  <header class="math-problem__header">
+    <span class="math-problem__eyebrow">
+      {number ? `Problem ${number.toString().padStart(2, '0')}` : 'Practice'}
+    </span>
+  </header>
+
+  <div class="math-problem__prompt">
+    <slot name="prompt">
+      <p>This problem is missing its prompt.</p>
+    </slot>
+  </div>
+
+  {
+    choices.length > 0 ? (
+      <div class="math-problem__choices" role="list">
+        {choices.map((choice) => (
+          <div class="math-problem__choice" role="listitem">
+            <span class="math-problem__choice-label">{choice.label}</span>
+            <span class="math-problem__choice-text">{choice.text}</span>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="math-problem__empty">Add choices to this problem.</p>
+    )
+  }
+
+  <div class="math-problem__accordions">
+    <details class="math-problem__accordion">
+      <summary>
+        <span class="math-problem__accordion-label">Hint</span>
+        <span class="math-problem__accordion-icon" aria-hidden="true"></span>
+      </summary>
+      <div class="math-problem__accordion-body">
+        <div class="math-problem__accordion-content">
+          <slot name="hint">
+            <p>No hint provided yet.</p>
+          </slot>
+        </div>
+      </div>
+    </details>
+
+    <details class="math-problem__accordion">
+      <summary>
+        <span class="math-problem__accordion-label">Solution</span>
+        <span class="math-problem__accordion-icon" aria-hidden="true"></span>
+      </summary>
+      <div class="math-problem__accordion-body">
+        <div class="math-problem__accordion-content">
+          <slot name="solution">
+            <p>No solution provided yet.</p>
+          </slot>
+        </div>
+      </div>
+    </details>
+  </div>
+</article>
+
+<style>
+  .math-problem {
+    position: relative;
+    padding: 0.9rem 0.8rem;
+    margin: 1.1rem 0 3.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    color: var(--text-primary);
+  }
+
+  .math-problem__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .math-problem__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.1rem 0.55rem;
+    border-radius: 0.45rem;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+
+  .math-problem__prompt {
+    padding: 0.4rem 0.8rem 0.5rem;
+    display: grid;
+    gap: 0.1rem;
+    align-items: start;
+    border-radius: 0.2rem;
+    background: transparent;
+    color: var(--text-primary);
+  }
+
+  :global(.math-problem__prompt p) {
+    margin: 0 0 0.5rem;
+    line-height: 1.5;
+  }
+
+  :global(.math-problem__prompt p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .math-problem__choices {
+    margin: 0 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .math-problem__choice {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.55rem;
+    align-items: center;
+    padding: 0.32rem 0.1rem;
+    cursor: default;
+    transition: color 0.12s ease;
+  }
+
+  .math-problem__choice:hover {
+    color: #fff;
+  }
+
+  .math-problem__choice-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 0.18rem;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+  }
+
+  .math-problem__choice-text {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .math-problem__empty {
+    margin: 1.5rem 0 0;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  .math-problem__accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
+
+  .math-problem__accordion {
+    border-radius: 0.25rem;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    padding: 0.05rem 0.35rem;
+    transition: border-color 0.12s ease, background 0.12s ease;
+  }
+
+  .math-problem__accordion[open] {
+    border-color: var(--text-tertiary);
+    background: var(--code-bg);
+  }
+
+  .math-problem__accordion summary {
+    cursor: pointer;
+    list-style: none;
+    border: none;
+    background: transparent;
+    padding: 0.75rem 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.45rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .math-problem__accordion-label {
+    padding: 0.05rem 0.1rem;
+    color: var(--text-primary);
+  }
+
+  .math-problem__accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .math-problem__accordion-icon {
+    display: inline-flex;
+    width: 1.1rem;
+    height: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    background: transparent;
+    border: none;
+    font-weight: 800;
+    position: relative;
+    color: var(--text-primary);
+  }
+
+  .math-problem__accordion-icon::before {
+    content: '+';
+  }
+
+  .math-problem__accordion[open] .math-problem__accordion-icon::before {
+    content: '−';
+  }
+
+  .math-problem__accordion-body {
+    padding: 0;
+    color: var(--text-primary);
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+      max-height 0.24s ease,
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .math-problem__accordion[open] .math-problem__accordion-body {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .math-problem__accordion-content {
+    padding: 0.75rem 0.55rem 0.9rem;
+  }
+
+  .math-problem__accordion-body p {
+    margin: 0.2rem 0 0.7rem;
+  }
+
+  .math-problem__accordion-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 640px) {
+    .math-problem {
+      padding: 1rem 0.9rem;
+    }
+
+    .math-problem__choice {
+      grid-template-columns: 2.25rem 1fr;
+    }
+  }
+</style>

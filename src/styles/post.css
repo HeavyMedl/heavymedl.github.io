@@ -499,7 +499,8 @@
 /* Ensure display math is centered */
 .katex-display {
   text-align: center;
-  margin: 1.75em 0;
+  margin: 0.35em 0 0.45em;
+  font-size: 1.05em;
 }
 
 /* Reset any conflicting styles that might interfere with KaTeX */
@@ -511,6 +512,27 @@
 .katex,
 .katex * {
   color: inherit;
+  font-size: 0.96em;
+}
+
+@media (min-width: 640px) {
+  .katex-display {
+    font-size: 1.15em;
+  }
+  .katex,
+  .katex * {
+    font-size: 0.99em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .katex-display {
+    font-size: 1.25em;
+  }
+  .katex,
+  .katex * {
+    font-size: 1.01em;
+  }
 }
 
 /* Specific fixes for common CSS framework conflicts */

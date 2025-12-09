@@ -8,11 +8,12 @@ interface Props {
   id?: string
   number?: number
   choices: Choice[]
+  choicesInitiallyOpen?: boolean
 }
 
 import katex from 'katex'
 
-const { id, number, choices = [] } = Astro.props as Props
+const { id, number, choices = [], choicesInitiallyOpen = false } = Astro.props as Props
 
 const renderChoice = (value: any) => {
   if (typeof value !== 'string') return value
@@ -48,23 +49,31 @@ const renderChoice = (value: any) => {
 
   {
     choices.length > 0 ? (
-      <div class="math-problem__choices" role="list">
-        {choices.map((choice) => {
-          const rendered = renderChoice(choice.text)
-          return (
-            <div class="math-problem__choice" role="listitem">
-              <span class="math-problem__choice-label">{choice.label}</span>
-              {typeof rendered === 'string' ? (
-                <span class="math-problem__choice-text">{rendered}</span>
-              ) : rendered && typeof rendered === 'object' && 'html' in rendered ? (
-                <span class="math-problem__choice-text" set:html={rendered.html}></span>
-              ) : (
-                <span class="math-problem__choice-text">{rendered}</span>
-              )}
-            </div>
-          )
-        })}
-      </div>
+      <details class="math-problem__choices-wrapper" open={choicesInitiallyOpen}>
+        <summary class="math-problem__choices-toggle">
+          <span class="math-problem__choices-toggle-text" data-state="hide">Hide choices</span>
+          <span class="math-problem__choices-toggle-text" data-state="show">Show choices</span>
+          <span class="math-problem__choices-toggle-icon" aria-hidden="true"></span>
+        </summary>
+
+        <div class="math-problem__choices" role="list">
+          {choices.map((choice) => {
+            const rendered = renderChoice(choice.text)
+            return (
+              <div class="math-problem__choice" role="listitem">
+                <span class="math-problem__choice-label">{choice.label}</span>
+                {typeof rendered === 'string' ? (
+                  <span class="math-problem__choice-text">{rendered}</span>
+                ) : rendered && typeof rendered === 'object' && 'html' in rendered ? (
+                  <span class="math-problem__choice-text" set:html={rendered.html}></span>
+                ) : (
+                  <span class="math-problem__choice-text">{rendered}</span>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      </details>
     ) : (
       <p class="math-problem__empty">Add choices to this problem.</p>
     )
@@ -104,6 +113,9 @@ const renderChoice = (value: any) => {
 <style>
   .math-problem {
     position: relative;
+    --mp-toggle-icon-size: 1.05rem;
+    --mp-toggle-icon-radius: 0.28rem;
+    --mp-toggle-gap: 0.4rem;
     padding: 0.9rem 0.8rem;
     margin: 1.1rem 0 3.2rem;
     border-radius: 0.2rem;
@@ -139,8 +151,6 @@ const renderChoice = (value: any) => {
     gap: 0.1rem;
     align-items: start;
     border-radius: 0.2rem;
-    background: transparent;
-    color: var(--text-primary);
   }
 
   :global(.math-problem__prompt p) {
@@ -153,8 +163,8 @@ const renderChoice = (value: any) => {
   }
 
   .math-problem__choices {
-    margin: 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 0.1rem 0 0.35rem;
     display: grid;
     gap: 0.4rem;
   }
@@ -165,7 +175,6 @@ const renderChoice = (value: any) => {
     gap: 0.55rem;
     align-items: center;
     padding: 0.32rem 0.1rem;
-    cursor: default;
     transition: color 0.12s ease;
   }
 
@@ -180,16 +189,12 @@ const renderChoice = (value: any) => {
     width: 1.45rem;
     height: 1.45rem;
     border-radius: 0.18rem;
-    background: transparent;
-    border: none;
     font-weight: 700;
     letter-spacing: 0.02em;
-    color: var(--text-primary);
   }
 
   .math-problem__choice-text {
     font-weight: 600;
-    color: var(--text-primary);
   }
 
   .math-problem__empty {
@@ -219,40 +224,27 @@ const renderChoice = (value: any) => {
   }
 
   .math-problem__accordion summary {
-    cursor: pointer;
-    list-style: none;
-    border: none;
-    background: transparent;
     padding: 0.75rem 0.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.45rem;
+    gap: var(--mp-toggle-gap);
     font-weight: 700;
-    color: var(--text-primary);
   }
 
   .math-problem__accordion-label {
     padding: 0.05rem 0.1rem;
-    color: var(--text-primary);
   }
 
-  .math-problem__accordion summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .math-problem__accordion-icon {
+  .math-problem__accordion-icon,
+  .math-problem__choices-toggle-icon {
     display: inline-flex;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: var(--mp-toggle-icon-size);
+    height: var(--mp-toggle-icon-size);
     align-items: center;
     justify-content: center;
-    border-radius: 0.3rem;
-    background: transparent;
-    border: none;
+    border-radius: var(--mp-toggle-icon-radius);
     font-weight: 800;
-    position: relative;
-    color: var(--text-primary);
   }
 
   .math-problem__accordion-icon::before {
@@ -265,7 +257,6 @@ const renderChoice = (value: any) => {
 
   .math-problem__accordion-body {
     padding: 0;
-    color: var(--text-primary);
     line-height: 1.5;
     max-height: 0;
     overflow: hidden;
@@ -293,6 +284,51 @@ const renderChoice = (value: any) => {
 
   .math-problem__accordion-body p:last-child {
     margin-bottom: 0;
+  }
+
+  .math-problem__choices-wrapper {
+    margin: 0.25rem 0 0.5rem;
+    border-radius: 0;
+  }
+
+  .math-problem__choices-toggle {
+    padding: 0.15rem 0.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--mp-toggle-gap);
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  .math-problem__choices-toggle-text {
+    display: none;
+    font: inherit;
+    color: inherit;
+  }
+
+  .math-problem__choices-wrapper[open] .math-problem__choices-toggle-text[data-state='hide'],
+  .math-problem__choices-wrapper:not([open]) .math-problem__choices-toggle-text[data-state='show'] {
+    display: inline-flex;
+  }
+
+  .math-problem__choices-toggle-icon::before {
+    content: '−';
+  }
+
+  .math-problem__choices-wrapper:not([open]) .math-problem__choices-toggle-icon::before {
+    content: '+';
+  }
+
+  .math-problem__accordion summary,
+  .math-problem__choices-toggle {
+    cursor: pointer;
+    list-style: none;
+    border: none;
+  }
+
+  .math-problem__accordion summary::-webkit-details-marker,
+  .math-problem__choices-toggle::-webkit-details-marker {
+    display: none;
   }
 
   @media (max-width: 640px) {

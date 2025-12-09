@@ -139,6 +139,7 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
           body.style.overflow = ''
           body.style.transition = ''
           details.dataset.animating = ''
+          details.dataset.toggling = ''
           if (!opening) details.removeAttribute('open')
         },
         { once: true }
@@ -163,8 +164,11 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
 
         summary.addEventListener('click', (event) => {
           event.preventDefault()
+          const opening = !details.open
+          // Flip icon immediately by toggling a data flag before we animate height.
+          details.dataset.toggling = opening ? 'open' : 'closed'
           if (details.dataset.animating === 'true') return
-          animateDetails(details, body, !details.open)
+          animateDetails(details, body, opening)
         })
       })
   }
@@ -374,19 +378,25 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     border-radius: var(--mp-toggle-icon-radius);
     font-weight: 800;
     transition: transform var(--mp-accordion-duration) var(--mp-accordion-ease);
-  }
-
-  .math-problem__accordion-icon::before {
-    content: '+';
-  }
-
-  .math-problem__accordion[open] .math-problem__accordion-icon::before {
-    content: '−';
+    background: currentColor;
+    mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 5l8 7-8 7'/></svg>");
+    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 5l8 7-8 7'/></svg>");
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-position: center;
+    -webkit-mask-position: center;
   }
 
   .math-problem__accordion[open] .math-problem__accordion-icon,
   .math-problem__choices-wrapper[open] .math-problem__choices-toggle-icon {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+  }
+
+  .math-problem__accordion[data-toggling='closed'] .math-problem__accordion-icon,
+  .math-problem__choices-wrapper[data-toggling='closed'] .math-problem__choices-toggle-icon {
+    transform: rotate(0deg);
   }
 
   .math-problem__accordion-body {
@@ -449,8 +459,13 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     color: inherit;
   }
 
-  .math-problem__choices-wrapper[open] .math-problem__choices-toggle-text[data-state='hide'],
-  .math-problem__choices-wrapper:not([open]) .math-problem__choices-toggle-text[data-state='show'] {
+  .math-problem__choices-wrapper[data-toggling='open'] .math-problem__choices-toggle-text[data-state='hide'],
+  .math-problem__choices-wrapper[open]:not([data-toggling='closed'])
+    .math-problem__choices-toggle-text[data-state='hide'],
+  .math-problem__choices-wrapper[data-toggling='closed']
+    .math-problem__choices-toggle-text[data-state='show'],
+  .math-problem__choices-wrapper:not([open]):not([data-toggling='open'])
+    .math-problem__choices-toggle-text[data-state='show'] {
     display: inline-flex;
   }
 

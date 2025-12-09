@@ -64,19 +64,21 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
           <span class="math-problem__choices-toggle-text" data-state="hide">
             Hide choices
           </span>
-          <span class="math-problem__choices-toggle-text" data-state="show">
-            Show choices
-          </span>
-          <span class="math-problem__choices-toggle-icon" aria-hidden="true" />
-        </summary>
+        <span class="math-problem__choices-toggle-text" data-state="show">
+          Show choices
+        </span>
+        <span class="math-problem__choices-toggle-icon" aria-hidden="true" />
+      </summary>
 
-        <div class="math-problem__choices" role="list">
-          {data.choices.map((choice) => (
-            <div class="math-problem__choice" role="listitem">
-              <span class="math-problem__choice-label">{choice.id}</span>
-              <span class="math-problem__choice-text" set:html={renderMathHtml(choice.textHtml)} />
-            </div>
-          ))}
+        <div class="math-problem__choices-body">
+          <div class="math-problem__choices" role="list">
+            {data.choices.map((choice) => (
+              <div class="math-problem__choice" role="listitem">
+                <span class="math-problem__choice-label">{choice.id}</span>
+                <span class="math-problem__choice-text" set:html={renderMathHtml(choice.textHtml)} />
+              </div>
+            ))}
+          </div>
         </div>
       </details>
     ) : (
@@ -107,11 +109,74 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
   </div>
 </article>
 
+<script>
+  // Smoothly animate details/summary open/close for accordions and choices.
+  if (typeof window !== 'undefined') {
+    const TRANSITION = `height var(--mp-accordion-duration) var(--mp-accordion-ease), opacity var(--mp-accordion-duration) var(--mp-accordion-ease), transform var(--mp-accordion-duration) var(--mp-accordion-ease)`
+
+    const animateDetails = (details: HTMLDetailsElement, body: HTMLElement, opening: boolean) => {
+      details.dataset.animating = 'true'
+      const start = body.getBoundingClientRect().height
+      if (opening) details.setAttribute('open', '')
+
+      body.style.overflow = 'hidden'
+      body.style.transition = 'none'
+      body.style.height = `${start}px`
+      body.style.opacity = opening ? '0' : '1'
+      body.style.transform = opening ? 'translateY(-6px)' : 'translateY(0)'
+
+      requestAnimationFrame(() => {
+        body.style.transition = TRANSITION
+        body.style.height = opening ? `${body.scrollHeight}px` : '0px'
+        body.style.opacity = opening ? '1' : '0'
+        body.style.transform = opening ? 'translateY(0)' : 'translateY(-6px)'
+      })
+
+      body.addEventListener(
+        'transitionend',
+        () => {
+          body.style.height = ''
+          body.style.overflow = ''
+          body.style.transition = ''
+          details.dataset.animating = ''
+          if (!opening) details.removeAttribute('open')
+        },
+        { once: true }
+      )
+    }
+
+    document
+      .querySelectorAll<HTMLDetailsElement>('.math-problem__accordion, .math-problem__choices-wrapper')
+      .forEach((details) => {
+        const body = details.querySelector<HTMLElement>(
+          '.math-problem__accordion-body, .math-problem__choices-body'
+        )
+        const summary = details.querySelector('summary')
+        if (!body || !summary) return
+
+        if (!details.open) {
+          body.style.height = '0px'
+          body.style.opacity = '0'
+          body.style.transform = 'translateY(-6px)'
+          body.style.overflow = 'hidden'
+        }
+
+        summary.addEventListener('click', (event) => {
+          event.preventDefault()
+          if (details.dataset.animating === 'true') return
+          animateDetails(details, body, !details.open)
+        })
+      })
+  }
+</script>
+
 <style>
   .math-problem {
     --mp-toggle-icon-size: 1.05rem;
     --mp-toggle-icon-radius: 0.28rem;
     --mp-toggle-gap: 0.4rem;
+    --mp-accordion-duration: 0.6s;
+    --mp-accordion-ease: cubic-bezier(0.25, 0.85, 0.1, 1);
     position: relative;
     padding: 0.9rem 0.8rem;
     margin: 1.1rem 0 3.2rem;
@@ -241,11 +306,6 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     gap: 0.55rem;
     align-items: center;
     padding: 0.32rem 0.1rem;
-    transition: color 0.12s ease;
-  }
-
-  .math-problem__choice:hover {
-    color: #fff;
   }
 
   .math-problem__choice-label {
@@ -297,6 +357,7 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     justify-content: space-between;
     gap: var(--mp-toggle-gap);
     font-weight: 500;
+    transition: color 0.2s ease;
   }
 
   .math-problem__accordion-label {
@@ -312,6 +373,7 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     justify-content: center;
     border-radius: var(--mp-toggle-icon-radius);
     font-weight: 800;
+    transition: transform var(--mp-accordion-duration) var(--mp-accordion-ease);
   }
 
   .math-problem__accordion-icon::before {
@@ -322,17 +384,18 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     content: '−';
   }
 
+  .math-problem__accordion[open] .math-problem__accordion-icon,
+  .math-problem__choices-wrapper[open] .math-problem__choices-toggle-icon {
+    transform: rotate(-90deg);
+  }
+
   .math-problem__accordion-body {
     padding: 0;
     line-height: 1.5;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transform: translateY(-4px);
-    transition:
-      max-height 0.24s ease,
-      opacity 0.2s ease,
-      transform 0.2s ease;
+    transform: translateY(-6px);
   }
 
   .math-problem__accordion[open] .math-problem__accordion-body {
@@ -343,6 +406,7 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
 
   .math-problem__accordion-content {
     padding: 0.75rem 0.55rem 0.9rem;
+    overflow: hidden;
   }
 
   .math-problem__accordion-body p {
@@ -355,6 +419,19 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
 
   .math-problem__choices-wrapper {
     margin: 0.25rem 0 0.5rem;
+  }
+
+  .math-problem__choices-body {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    max-height: 0;
+  }
+
+  .math-problem__choices-wrapper[open] .math-problem__choices-body {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .math-problem__choices-toggle {

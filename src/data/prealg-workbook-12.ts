@@ -363,7 +363,7 @@ export const problems: MathProblemData[] = [
       { id: 'A', textHtml: '$2\\sqrt{3}$', isCorrect: false },
       { id: 'B', textHtml: '$\\dfrac{\\sqrt{3}}{2}$', isCorrect: false },
       { id: 'C', textHtml: '$\\sqrt{2}$', isCorrect: false },
-      { id: 'D', textHtml: '2', isCorrect: true }
+      { id: 'D', textHtml: '$2$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.radicals.simplify-basic', role: 'primary' }],
     tags: ['pre-algebra', 'radicals', 'simplifying']

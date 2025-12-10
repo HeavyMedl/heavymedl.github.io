@@ -30,10 +30,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $81$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '12', isCorrect: false },
-      { id: 'B', textHtml: '27', isCorrect: false },
-      { id: 'C', textHtml: '81', isCorrect: true },
-      { id: 'D', textHtml: '64', isCorrect: false }
+      { id: 'A', textHtml: '$12$', isCorrect: false },
+      { id: 'B', textHtml: '$27$', isCorrect: false },
+      { id: 'C', textHtml: '$81$', isCorrect: true },
+      { id: 'D', textHtml: '$64$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.exp.evaluate', role: 'primary' }],
     tags: ['pre-algebra', 'exponents', 'evaluation']
@@ -67,10 +67,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $-8$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '8', isCorrect: false },
-      { id: 'B', textHtml: '-8', isCorrect: true },
-      { id: 'C', textHtml: '4', isCorrect: false },
-      { id: 'D', textHtml: '-4', isCorrect: false }
+      { id: 'A', textHtml: '$8$', isCorrect: false },
+      { id: 'B', textHtml: '$-8$', isCorrect: true },
+      { id: 'C', textHtml: '$4$', isCorrect: false },
+      { id: 'D', textHtml: '$-4$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.exp.evaluate', role: 'primary' },
@@ -110,8 +110,8 @@ export const problems: MathProblemData[] = [
     choices: [
       { id: 'A', textHtml: '$2^{12}$', isCorrect: false },
       { id: 'B', textHtml: '$2^1$', isCorrect: false },
-      { id: 'C', textHtml: '32', isCorrect: false },
-      { id: 'D', textHtml: '128', isCorrect: true }
+      { id: 'C', textHtml: '$32$', isCorrect: false },
+      { id: 'D', textHtml: '$128$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.exp.rules-basic', role: 'primary' }],
     tags: ['pre-algebra', 'exponents', 'product-rule']
@@ -178,10 +178,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $729$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '36', isCorrect: false },
-      { id: 'B', textHtml: '243', isCorrect: false },
-      { id: 'C', textHtml: '729', isCorrect: true },
-      { id: 'D', textHtml: '81', isCorrect: false }
+      { id: 'A', textHtml: '$36$', isCorrect: false },
+      { id: 'B', textHtml: '$243$', isCorrect: false },
+      { id: 'C', textHtml: '$729$', isCorrect: true },
+      { id: 'D', textHtml: '$81$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.exp.rules-basic', role: 'primary' }],
     tags: ['pre-algebra', 'exponents', 'power-rule']
@@ -217,9 +217,9 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $200$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '40', isCorrect: false },
-      { id: 'B', textHtml: '200', isCorrect: true },
-      { id: 'C', textHtml: '100', isCorrect: false },
+      { id: 'A', textHtml: '$40$', isCorrect: false },
+      { id: 'B', textHtml: '$200$', isCorrect: true },
+      { id: 'C', textHtml: '$100$', isCorrect: false },
       { id: 'D', textHtml: '$10^5$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.exp.evaluate', role: 'primary' }],

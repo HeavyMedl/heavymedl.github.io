@@ -250,10 +250,10 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     choices: [
-      { id: 'A', textHtml: '3', isCorrect: false },
-      { id: 'B', textHtml: '-4', isCorrect: false },
-      { id: 'C', textHtml: '0', isCorrect: false },
-      { id: 'D', textHtml: '2.7', isCorrect: true }
+      { id: 'A', textHtml: '$3$', isCorrect: false },
+      { id: 'B', textHtml: '$-4$', isCorrect: false },
+      { id: 'C', textHtml: '$0$', isCorrect: false },
+      { id: 'D', textHtml: '$2.7$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.number-sets', role: 'primary' }],
     tags: ['pre-algebra', 'number-sets']
@@ -289,10 +289,10 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     choices: [
-      { id: 'A', textHtml: '0', isCorrect: false },
-      { id: 'B', textHtml: '-6', isCorrect: false },
-      { id: 'C', textHtml: '7', isCorrect: false },
-      { id: 'D', textHtml: '14', isCorrect: true }
+      { id: 'A', textHtml: '$0$', isCorrect: false },
+      { id: 'B', textHtml: '$-6$', isCorrect: false },
+      { id: 'C', textHtml: '$7$', isCorrect: false },
+      { id: 'D', textHtml: '$14$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.number-sets', role: 'primary' }],
     tags: ['pre-algebra', 'number-sets']
@@ -417,8 +417,8 @@ export const problems: MathProblemData[] = [
     choices: [
       { id: 'A', textHtml: '$\\sqrt{2}$', isCorrect: true },
       { id: 'B', textHtml: '$\\frac{4}{9}$', isCorrect: false },
-      { id: 'C', textHtml: '-3', isCorrect: false },
-      { id: 'D', textHtml: '0.75', isCorrect: false }
+      { id: 'C', textHtml: '$-3$', isCorrect: false },
+      { id: 'D', textHtml: '$0.75$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.number-sets', role: 'primary' }],
     tags: ['pre-algebra', 'number-sets']

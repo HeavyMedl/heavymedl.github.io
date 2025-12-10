@@ -197,10 +197,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $15$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '5', isCorrect: false },
-      { id: 'B', textHtml: '6', isCorrect: false },
-      { id: 'C', textHtml: '10', isCorrect: false },
-      { id: 'D', textHtml: '15', isCorrect: true }
+      { id: 'A', textHtml: '$5$', isCorrect: false },
+      { id: 'B', textHtml: '$6$', isCorrect: false },
+      { id: 'C', textHtml: '$10$', isCorrect: false },
+      { id: 'D', textHtml: '$15$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.proportion.solve', role: 'primary' }],
     tags: ['pre-algebra', 'proportions', 'equations']
@@ -388,10 +388,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $16$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '16', isCorrect: true },
-      { id: 'B', textHtml: '21', isCorrect: false },
-      { id: 'C', textHtml: '32', isCorrect: false },
-      { id: 'D', textHtml: '49', isCorrect: false }
+      { id: 'A', textHtml: '$16$', isCorrect: true },
+      { id: 'B', textHtml: '$21$', isCorrect: false },
+      { id: 'C', textHtml: '$32$', isCorrect: false },
+      { id: 'D', textHtml: '$49$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.ratio.basic', role: 'primary' },

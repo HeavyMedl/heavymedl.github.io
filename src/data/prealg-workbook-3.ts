@@ -25,10 +25,10 @@ export const problems: MathProblemData[] = [
       <p>So the correct choice is <strong>B. 135</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '121', isCorrect: false },
-      { id: 'B', textHtml: '135', isCorrect: true },
-      { id: 'C', textHtml: '142', isCorrect: false },
-      { id: 'D', textHtml: '208', isCorrect: false }
+      { id: 'A', textHtml: '$121$', isCorrect: false },
+      { id: 'B', textHtml: '$135$', isCorrect: true },
+      { id: 'C', textHtml: '$142$', isCorrect: false },
+      { id: 'D', textHtml: '$208$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'divisibility']
@@ -57,10 +57,10 @@ export const problems: MathProblemData[] = [
       <p>So the GCF of $16$ and $36$ is $4$, and the correct choice is <strong>B. 4</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '2', isCorrect: false },
-      { id: 'B', textHtml: '4', isCorrect: true },
-      { id: 'C', textHtml: '8', isCorrect: false },
-      { id: 'D', textHtml: '16', isCorrect: false }
+      { id: 'A', textHtml: '$2$', isCorrect: false },
+      { id: 'B', textHtml: '$4$', isCorrect: true },
+      { id: 'C', textHtml: '$8$', isCorrect: false },
+      { id: 'D', textHtml: '$16$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'gcf']
@@ -95,10 +95,10 @@ export const problems: MathProblemData[] = [
       <p>So the correct choice is <strong>A. 30</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '30', isCorrect: true },
-      { id: 'B', textHtml: '45', isCorrect: false },
-      { id: 'C', textHtml: '60', isCorrect: false },
-      { id: 'D', textHtml: '90', isCorrect: false }
+      { id: 'A', textHtml: '$30$', isCorrect: true },
+      { id: 'B', textHtml: '$45$', isCorrect: false },
+      { id: 'C', textHtml: '$60$', isCorrect: false },
+      { id: 'D', textHtml: '$90$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm']
@@ -198,10 +198,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. 40</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '18', isCorrect: false },
-      { id: 'B', textHtml: '25', isCorrect: false },
-      { id: 'C', textHtml: '32', isCorrect: false },
-      { id: 'D', textHtml: '40', isCorrect: true }
+      { id: 'A', textHtml: '$18$', isCorrect: false },
+      { id: 'B', textHtml: '$25$', isCorrect: false },
+      { id: 'C', textHtml: '$32$', isCorrect: false },
+      { id: 'D', textHtml: '$40$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'multiples', 'divisibility']
@@ -235,10 +235,10 @@ export const problems: MathProblemData[] = [
       <p>So the correct choice is <strong>C. 24</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '12', isCorrect: false },
-      { id: 'B', textHtml: '16', isCorrect: false },
-      { id: 'C', textHtml: '24', isCorrect: true },
-      { id: 'D', textHtml: '48', isCorrect: false }
+      { id: 'A', textHtml: '$12$', isCorrect: false },
+      { id: 'B', textHtml: '$16$', isCorrect: false },
+      { id: 'C', textHtml: '$24$', isCorrect: true },
+      { id: 'D', textHtml: '$48$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm']
@@ -274,10 +274,10 @@ export const problems: MathProblemData[] = [
       <p>So the correct choice is <strong>C. 6</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '2', isCorrect: false },
-      { id: 'B', textHtml: '3', isCorrect: false },
-      { id: 'C', textHtml: '6', isCorrect: true },
-      { id: 'D', textHtml: '12', isCorrect: false }
+      { id: 'A', textHtml: '$2$', isCorrect: false },
+      { id: 'B', textHtml: '$3$', isCorrect: false },
+      { id: 'C', textHtml: '$6$', isCorrect: true },
+      { id: 'D', textHtml: '$12$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'gcf']
@@ -308,10 +308,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. 37</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '51', isCorrect: false },
-      { id: 'B', textHtml: '37', isCorrect: true },
-      { id: 'C', textHtml: '49', isCorrect: false },
-      { id: 'D', textHtml: '39', isCorrect: false }
+      { id: 'A', textHtml: '$51$', isCorrect: false },
+      { id: 'B', textHtml: '$37$', isCorrect: true },
+      { id: 'C', textHtml: '$49$', isCorrect: false },
+      { id: 'D', textHtml: '$39$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'prime-composite']
@@ -351,10 +351,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. 36</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '18', isCorrect: false },
-      { id: 'B', textHtml: '24', isCorrect: false },
-      { id: 'C', textHtml: '30', isCorrect: false },
-      { id: 'D', textHtml: '36', isCorrect: true }
+      { id: 'A', textHtml: '$18$', isCorrect: false },
+      { id: 'B', textHtml: '$24$', isCorrect: false },
+      { id: 'C', textHtml: '$30$', isCorrect: false },
+      { id: 'D', textHtml: '$36$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm', 'word-problem']

@@ -160,10 +160,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. 10</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '5', isCorrect: false },
-      { id: 'B', textHtml: '8', isCorrect: false },
-      { id: 'C', textHtml: '10', isCorrect: true },
-      { id: 'D', textHtml: '12', isCorrect: false }
+      { id: 'A', textHtml: '$5$', isCorrect: false },
+      { id: 'B', textHtml: '$8$', isCorrect: false },
+      { id: 'C', textHtml: '$10$', isCorrect: true },
+      { id: 'D', textHtml: '$12$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.frac.equivalent', role: 'primary' },

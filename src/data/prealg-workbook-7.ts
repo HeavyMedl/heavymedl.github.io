@@ -38,10 +38,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $6.15$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '5.15', isCorrect: false },
-      { id: 'B', textHtml: '5.85', isCorrect: false },
-      { id: 'C', textHtml: '6.15', isCorrect: true },
-      { id: 'D', textHtml: '6.45', isCorrect: false }
+      { id: 'A', textHtml: '$5.15$', isCorrect: false },
+      { id: 'B', textHtml: '$5.85$', isCorrect: false },
+      { id: 'C', textHtml: '$6.15$', isCorrect: true },
+      { id: 'D', textHtml: '$6.45$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.decimal.ops', role: 'primary' }],
     tags: ['pre-algebra', 'decimals', 'addition']
@@ -87,10 +87,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $1.45$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '2.45', isCorrect: false },
-      { id: 'B', textHtml: '1.45', isCorrect: true },
-      { id: 'C', textHtml: '1.55', isCorrect: false },
-      { id: 'D', textHtml: '0.45', isCorrect: false }
+      { id: 'A', textHtml: '$2.45$', isCorrect: false },
+      { id: 'B', textHtml: '$1.45$', isCorrect: true },
+      { id: 'C', textHtml: '$1.55$', isCorrect: false },
+      { id: 'D', textHtml: '$0.45$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.decimal.ops', role: 'primary' }],
     tags: ['pre-algebra', 'decimals', 'subtraction']
@@ -119,10 +119,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $4.4$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '4.3', isCorrect: false },
-      { id: 'B', textHtml: '4.37', isCorrect: false },
-      { id: 'C', textHtml: '4.38', isCorrect: false },
-      { id: 'D', textHtml: '4.4', isCorrect: true }
+      { id: 'A', textHtml: '$4.3$', isCorrect: false },
+      { id: 'B', textHtml: '$4.37$', isCorrect: false },
+      { id: 'C', textHtml: '$4.38$', isCorrect: false },
+      { id: 'D', textHtml: '$4.4$', isCorrect: true }
     ],
     skills: [{ skillId: 'math.skill.decimal.ops', role: 'primary' }],
     tags: ['pre-algebra', 'decimals', 'rounding']
@@ -163,10 +163,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $0.5$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '0.45', isCorrect: false },
-      { id: 'B', textHtml: '0.5', isCorrect: true },
-      { id: 'C', textHtml: '0.405', isCorrect: false },
-      { id: 'D', textHtml: '0.495', isCorrect: false }
+      { id: 'A', textHtml: '$0.45$', isCorrect: false },
+      { id: 'B', textHtml: '$0.5$', isCorrect: true },
+      { id: 'C', textHtml: '$0.405$', isCorrect: false },
+      { id: 'D', textHtml: '$0.495$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.decimal.ops', role: 'primary' }],
     tags: ['pre-algebra', 'decimals', 'comparison', 'ordering']
@@ -237,10 +237,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $0.15$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '0.15', isCorrect: true },
-      { id: 'B', textHtml: '0.3', isCorrect: false },
-      { id: 'C', textHtml: '0.015', isCorrect: false },
-      { id: 'D', textHtml: '0.2', isCorrect: false }
+      { id: 'A', textHtml: '$0.15$', isCorrect: true },
+      { id: 'B', textHtml: '$0.3$', isCorrect: false },
+      { id: 'C', textHtml: '$0.015$', isCorrect: false },
+      { id: 'D', textHtml: '$0.2$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.decimal-fraction-percent', role: 'primary' }],
     tags: ['pre-algebra', 'decimals', 'fractions', 'conversions']

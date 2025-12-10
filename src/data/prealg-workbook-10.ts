@@ -29,10 +29,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $9$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '8', isCorrect: false },
-      { id: 'B', textHtml: '9', isCorrect: true },
-      { id: 'C', textHtml: '-9', isCorrect: false },
-      { id: 'D', textHtml: '81', isCorrect: false }
+      { id: 'A', textHtml: '$8$', isCorrect: false },
+      { id: 'B', textHtml: '$9$', isCorrect: true },
+      { id: 'C', textHtml: '$-9$', isCorrect: false },
+      { id: 'D', textHtml: '$81$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.radicals.evaluate', role: 'primary' }],
     tags: ['pre-algebra', 'radicals', 'square-roots', 'evaluation']

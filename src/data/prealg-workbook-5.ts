@@ -215,7 +215,7 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $3$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '3', isCorrect: true },
+      { id: 'A', textHtml: '$3$', isCorrect: true },
       { id: 'B', textHtml: '$2 \\dfrac{3}{4}$', isCorrect: false },
       { id: 'C', textHtml: '$2 \\dfrac{1}{2}$', isCorrect: false },
       { id: 'D', textHtml: '$3 \\dfrac{1}{4}$', isCorrect: false }

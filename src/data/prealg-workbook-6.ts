@@ -120,7 +120,7 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $1$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '1', isCorrect: true },
+      { id: 'A', textHtml: '$1$', isCorrect: true },
       { id: 'B', textHtml: '$\\dfrac{1}{3}$', isCorrect: false },
       { id: 'C', textHtml: '$\\dfrac{3}{4}$', isCorrect: false },
       { id: 'D', textHtml: '$2$', isCorrect: false }
@@ -351,10 +351,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $12$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '9', isCorrect: false },
-      { id: 'B', textHtml: '12', isCorrect: true },
-      { id: 'C', textHtml: '6', isCorrect: false },
-      { id: 'D', textHtml: '18', isCorrect: false }
+      { id: 'A', textHtml: '$9$', isCorrect: false },
+      { id: 'B', textHtml: '$12$', isCorrect: true },
+      { id: 'C', textHtml: '$6$', isCorrect: false },
+      { id: 'D', textHtml: '$18$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.frac.of-number', role: 'primary' },

@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Convert $4$ feet to inches.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the fact that $1$ foot $= 12$ inches. Multiply the number of feet by $12$ to get inches.
       </p>
@@ -38,7 +38,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Convert $72$ inches to feet.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Again use $1$ foot $= 12$ inches. Divide the number of inches by $12$ to get feet.
       </p>
@@ -69,7 +69,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Convert $3$ yards to feet.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use $1$ yard $= 3$ feet. Multiply the number of yards by $3$ to get feet.
       </p>
@@ -100,7 +100,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Convert $2.5$ hours to minutes.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         There are $60$ minutes in $1$ hour. Multiply the number of hours by $60$ to get minutes.
       </p>
@@ -142,7 +142,7 @@ export const problems: MathProblemData[] = [
         Convert $135$ minutes to hours and minutes.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         There are $60$ minutes in an hour. Divide $135$ by $60$ to find how many full hours fit, and
         use the remainder as minutes.
@@ -180,7 +180,7 @@ export const problems: MathProblemData[] = [
         Add the times: $1$ hour $35$ minutes $+$ $2$ hours $50$ minutes.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Add hours to hours and minutes to minutes. If the minutes add to $60$ or more, convert
         $60$ minutes to $1$ hour and adjust.
@@ -225,7 +225,7 @@ export const problems: MathProblemData[] = [
         Subtract the times: $2$ hours $5$ minutes $-$ $47$ minutes.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You can borrow $1$ hour as $60$ minutes. Rewrite $2$ hours $5$ minutes as $1$ hour $65$
         minutes, then subtract.
@@ -269,7 +269,7 @@ export const problems: MathProblemData[] = [
         About how many miles did the runner travel?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the number of kilometers by $0.62$ miles per kilometer to convert to miles.
       </p>
@@ -306,7 +306,7 @@ export const problems: MathProblemData[] = [
         What is the perimeter of the garden?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The perimeter of a rectangle is $2 \\times (\\text{length} + \\text{width})$.
         Add the length and width, then multiply by $2$.
@@ -348,7 +348,7 @@ export const problems: MathProblemData[] = [
         How long does he spend watching in total, in hours and minutes?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Add the two times in minutes, then convert the total minutes to hours and minutes using
         $60$ minutes $= 1$ hour.

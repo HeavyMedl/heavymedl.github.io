@@ -10,7 +10,7 @@ export interface MathProblemData {
   id: string // e.g. 'prealg-01-q1'
   number: number // display number
   promptHtml: string // full HTML block for prompt
-  hintHtml: string // full HTML block for hint
+  strategyHtml: string // full HTML block for strategy
   solutionHtml: string // full HTML block for solution
   choices: MathChoice[]
   skills: SkillRef[]

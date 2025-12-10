@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Evaluate: $\\sqrt{81}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Think of $\\sqrt{81}$ as “the number which, when squared, equals $81$.”
         Look for a whole number $n$ such that $n^2 = 81$.
@@ -44,7 +44,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Evaluate: $\\sqrt{\\dfrac{49}{64}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the fact that $\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$ for positive $a$ and $b$.
         Take the square root of the numerator and of the denominator separately.
@@ -90,7 +90,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\sqrt{50}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Look for a perfect square factor of $50$.  
         Write $50$ as $25 \\cdot 2$ and use $\\sqrt{ab} = \\sqrt{a} \\cdot \\sqrt{b}$.
@@ -133,7 +133,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\sqrt{72}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Look for the largest perfect square factor of $72$.  
         Try $36$, $16$, $9$, or $4$.  
@@ -177,7 +177,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $3\\sqrt{5} + 2\\sqrt{5}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Like radicals (with the same number under the square root) combine like like terms in algebra.
         Add the coefficients and keep $\\sqrt{5}$ the same.
@@ -208,7 +208,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $4\\sqrt{3} - \\sqrt{12}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First simplify $\\sqrt{12}$ by factoring out a perfect square.  
         Then check if the radicals are like terms so you can combine them.
@@ -254,7 +254,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $2\\sqrt{7} + 3\\sqrt{28}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Start by simplifying $\\sqrt{28}$ using a perfect square factor.  
         Then see if the radicals become like terms and can be combined.
@@ -303,7 +303,7 @@ export const problems: MathProblemData[] = [
         What is the length of one side of the square?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         For a square, area $= s^2$, where $s$ is the side length.  
         Set $s^2 = 64$ and take the square root to find $s$.
@@ -346,7 +346,7 @@ export const problems: MathProblemData[] = [
         Which number is greater: $\\sqrt{5}$ or $2.2$?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Estimate $\\sqrt{5}$ by noting that $2^2 = 4$ and $3^2 = 9$.  
         Decide whether $\\sqrt{5}$ is closer to $2$ or $3$, then compare with $2.2$.
@@ -387,7 +387,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\sqrt{18} + \\sqrt{8}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First simplify each square root by factoring out perfect squares:
         $18 = 9 \\cdot 2$ and $8 = 4 \\cdot 2$.  

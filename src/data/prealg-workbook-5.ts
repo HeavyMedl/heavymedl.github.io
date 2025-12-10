@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{3}{8} + \\dfrac{1}{8}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The denominators are the same, so keep the denominator and add the numerators. Then check if
         the result can be simplified.
@@ -50,7 +50,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{7}{9} - \\dfrac{2}{9}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The denominators are the same, so subtract the numerators and keep the denominator. Simplify
         if possible.
@@ -88,7 +88,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{1}{4} + \\dfrac{1}{6}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The denominators are different. Find the least common denominator (LCD), rewrite each fraction
         with that denominator, then add.
@@ -136,7 +136,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{5}{6} - \\dfrac{1}{4}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The denominators are different. Find the least common denominator, rewrite each fraction with
         that denominator, then subtract.
@@ -184,7 +184,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $2 \\dfrac{1}{4} + \\dfrac{3}{4}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You can add the fractional parts first, then combine with the whole number. Remember that
         $\\dfrac{1}{4} + \\dfrac{3}{4}$ makes a whole.
@@ -233,7 +233,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $1 \\dfrac{1}{2} + 2 \\dfrac{2}{3}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You can either convert both mixed numbers to improper fractions, or add whole numbers and
         fractional parts separately. For the fractions, find a common denominator.
@@ -290,7 +290,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $3 \\dfrac{1}{4} - 1 \\dfrac{2}{3}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert both mixed numbers to improper fractions, subtract, and then convert back to a mixed
         number. Use a common denominator for the fractional parts.
@@ -351,7 +351,7 @@ export const problems: MathProblemData[] = [
         afternoon. How far did Freya walk in all?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Add the two fractions. The denominators are the same, so add the numerators and keep the
         denominator.
@@ -392,7 +392,7 @@ export const problems: MathProblemData[] = [
         sugar. How much sugar is in the bowl now?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Add the mixed number and the fraction. You can convert $1 \\dfrac{1}{2}$ to an improper
         fraction, or add $1$ and the fractional parts separately using a common denominator.
@@ -453,7 +453,7 @@ export const problems: MathProblemData[] = [
         How much more of his money did Sam spend than Alex?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Find the difference between $\\dfrac{5}{8}$ and $\\dfrac{3}{8}$. The denominators are the same,
         so subtract the numerators.

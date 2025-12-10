@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $3.45 + 2.7$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Line up the decimal points, add as with whole numbers, and then place the decimal point in
         the answer directly below the others.
@@ -53,7 +53,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $5.2 - 3.75$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Line up the decimal points. You can write $5.2$ as $5.20$ so both numbers have the same number
         of decimal places, then subtract.
@@ -102,7 +102,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Round $4.376$ to the nearest tenth.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To round to the nearest tenth, look at the hundredths digit. If it is $5$ or more, round the
         tenths digit up by $1$; otherwise leave it the same.
@@ -139,7 +139,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Line up the decimal places by writing each number with three decimal digits if needed
         (for example, $0.5$ as $0.500$), then compare digit by digit from left to right.
@@ -178,7 +178,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $0.6$ as a fraction in simplest form.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Read $0.6$ as "six tenths" and write it as $\\dfrac{6}{10}$, then simplify by dividing
         the numerator and denominator by their greatest common factor.
@@ -219,7 +219,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $\\dfrac{3}{20}$ as a decimal.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert the fraction to an equivalent fraction with denominator $100$, or divide $3 \\div 20$
         to get the decimal.
@@ -252,7 +252,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $0.37$ as a percent.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To convert a decimal to a percent, multiply by $100$ and attach the percent symbol.
       </p>
@@ -292,7 +292,7 @@ export const problems: MathProblemData[] = [
         What is the sale price of the shirt?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First find $25\\%$ of $40$ to get the discount, then subtract that amount from the original
         price.
@@ -336,7 +336,7 @@ export const problems: MathProblemData[] = [
         A value increases from $50$ to $65$. What is the percent increase?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Percent increase = $\\dfrac{\\text{amount of increase}}{\\text{original amount}} \\times 100\\%$.
         Find the increase, divide by $50$, then multiply by $100$.
@@ -393,7 +393,7 @@ export const problems: MathProblemData[] = [
         How much money should he leave for the tip?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert $18\\%$ to a decimal and multiply by $35$ to find the tip amount.
       </p>

@@ -12,7 +12,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>Rewrite subtraction as “adding the opposite”:</p>
       <p>$$ -7 - 12 = -7 + (-12). $$</p>
       <p>
@@ -55,7 +55,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You’re adding a positive and a negative number. Compare their absolute values, subtract the
         smaller from the larger, and keep the sign of the number with the larger absolute value.
@@ -91,7 +91,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>Use the sign rule for multiplication:</p>
       <ul>
         <li>Negative $\\times$ positive = negative.</li>
@@ -129,7 +129,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>Use the sign rule for division:</p>
       <ul>
         <li>Negative $\\div$ negative = positive.</li>
@@ -167,7 +167,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>First rewrite subtraction as addition of the opposite, then work left to right:</p>
       <p>$$ -2 - (-5) - 3 = -2 + 5 - 3. $$</p>
     `,
@@ -207,7 +207,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the definition of absolute value: it’s the distance from $0$, always nonnegative. Replace
         each absolute value with a positive number, then add.
@@ -252,7 +252,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First simplify inside each absolute value, then take the absolute value, then apply the outside
         signs. Finally combine the results.
@@ -297,7 +297,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First combine the integers inside the absolute value to get a single number, then take its
         absolute value.
@@ -334,7 +334,7 @@ export const problems: MathProblemData[] = [
         rises by $4^\\circ\\text{C}$. What is the temperature in the evening?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Represent each change as adding an integer: a drop is adding a negative number, a rise is adding
         a positive number. Start from $8$ and apply the changes:
@@ -373,7 +373,7 @@ export const problems: MathProblemData[] = [
       <p>A bank account starts with a balance of $120$. A withdrawal of $75$ is made. Then a deposit of $40$ is made. Finally, another withdrawal of $25$ is made.</p>
       <p>What is the final balance?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Write each transaction as an integer (withdrawal = negative, deposit = positive) and add them
         with the starting balance:

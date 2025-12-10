@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{2}{3} \\cdot \\dfrac{3}{5}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To multiply fractions, multiply the numerators together and the denominators together, then
         simplify the answer if possible.
@@ -50,7 +50,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $4 \\cdot \\dfrac{2}{5}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Think of the whole number $4$ as $\\dfrac{4}{1}$, then multiply the fractions and simplify.
       </p>
@@ -94,7 +94,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $1 \\dfrac{1}{2} \\cdot \\dfrac{2}{3}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert the mixed number $1 \\dfrac{1}{2}$ to an improper fraction, then multiply and simplify
         the result.
@@ -138,7 +138,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{3}{4} \\div \\dfrac{2}{5}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To divide by a fraction, multiply by its reciprocal. Flip $\\dfrac{2}{5}$ to get $\\dfrac{5}{2}$
         and then multiply.
@@ -190,7 +190,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $2 \\dfrac{1}{3} \\div \\dfrac{1}{6}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert $2 \\dfrac{1}{3}$ to an improper fraction, then multiply by the reciprocal of
         $\\dfrac{1}{6}$.
@@ -236,7 +236,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $-\\dfrac{3}{5} \\cdot \\dfrac{4}{7}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the fractions as usual, then determine the sign of the result. A negative times a
         positive is negative.
@@ -274,7 +274,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{-5}{6} \\div \\left(-\\dfrac{1}{3}\\right)$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Divide by multiplying by the reciprocal. Pay attention to the signs: a negative divided by a
         negative is positive.
@@ -326,7 +326,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Compute: $\\dfrac{2}{3}$ of $18$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The phrase “$\\dfrac{2}{3}$ of $18$” means $\\dfrac{2}{3} \\cdot 18$. Multiply and simplify.
       </p>
@@ -372,7 +372,7 @@ export const problems: MathProblemData[] = [
         full, how many ounces of water are in the bottle?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         “$\\dfrac{3}{4}$ of $32$” means $\\dfrac{3}{4} \\cdot 32$. Multiply and simplify.
       </p>
@@ -414,7 +414,7 @@ export const problems: MathProblemData[] = [
         What is the area of the rectangle?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the two fractions $\\dfrac{3}{4}$ and $\\dfrac{2}{5}$ to find the area. Then simplify
         the result if possible.

@@ -10,7 +10,7 @@ export const problems: MathProblemData[] = [
         What is the ratio of boys to girls <strong>in simplest form</strong>?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Write the ratio as $8:12$, then simplify by dividing both numbers by their greatest common
         factor (GCF).
@@ -49,7 +49,7 @@ export const problems: MathProblemData[] = [
         What is the ratio of dogs to total animals <strong>in simplest form</strong>?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First find the total number of animals, then write the ratio dogs : total and simplify.
       </p>
@@ -85,7 +85,7 @@ export const problems: MathProblemData[] = [
         What is the car's speed in miles per hour?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         A unit rate has “$1$” in the denominator. Divide total miles by total hours to find
         miles per $1$ hour.
@@ -127,7 +127,7 @@ export const problems: MathProblemData[] = [
         What is the cost per bar?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To find unit price, divide total cost by number of items.
       </p>
@@ -168,7 +168,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Solve the proportion: $\\dfrac{2}{5} = \\dfrac{6}{x}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use cross multiplication: $2 \\cdot x = 5 \\cdot 6$. Then solve the resulting equation
         for $x$.
@@ -215,7 +215,7 @@ export const problems: MathProblemData[] = [
         If two cities are $3.5$ inches apart on the map, how far apart are they in miles?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the scale as a rate: $50$ miles per inch. Multiply $3.5$ inches by $50$ miles per inch.
       </p>
@@ -258,7 +258,7 @@ export const problems: MathProblemData[] = [
         At the same rate, how many cookies can be made with $5$ cups of flour?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Set up a proportion: $\\dfrac{3 \\text{ cups}}{12 \\text{ cookies}} = \\dfrac{5 \\text{ cups}}{x \\text{ cookies}}$
         and solve for $x$.
@@ -314,7 +314,7 @@ export const problems: MathProblemData[] = [
         Which brand is the better buy (lower cost per ounce)?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Find the unit price for each brand by dividing cost by ounces. Compare the cost per ounce.
       </p>
@@ -359,7 +359,7 @@ export const problems: MathProblemData[] = [
         If there are $28$ blue marbles, how many red marbles are there?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the ratio $4:7$ = red : blue.  
         Set up a proportion $\\dfrac{4}{7} = \\dfrac{x}{28}$ and solve for $x$.
@@ -409,7 +409,7 @@ export const problems: MathProblemData[] = [
         What is his average speed in miles per hour?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Average speed is total distance divided by total time.  
         Compute $\\dfrac{150}{2.5}$ to find miles per hour.

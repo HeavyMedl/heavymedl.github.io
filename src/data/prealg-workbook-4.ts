@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify the fraction $\\dfrac{12}{18}$ to lowest terms.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Find the greatest common factor (GCF) of $12$ and $18$, and divide both the numerator and
         denominator by that number.
@@ -49,7 +49,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify the fraction $\\dfrac{45}{60}$ to lowest terms.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Look for a common factor of $45$ and $60$. You can use prime factorization or find the GCF
         by listing factors.
@@ -91,7 +91,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which fraction is <strong>equivalent</strong> to $\\dfrac{3}{5}$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To find an equivalent fraction, multiply or divide both the numerator and denominator by the
         <strong>same</strong> nonzero number.
@@ -141,7 +141,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Think about how to get from $6$ to $12$ in the denominator, and then apply the <strong>same</strong>
         change to the numerator.
@@ -178,7 +178,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $\\dfrac{3}{5}$ as a percent.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert the fraction to a decimal by dividing $3 \\div 5$, then multiply by $100$ to get the
         percent.
@@ -219,7 +219,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $54\\%$ as a fraction in simplest form.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Start by writing $54\\%$ as $\\dfrac{54}{100}$, then simplify the fraction by dividing the
         numerator and denominator by their GCF.
@@ -267,7 +267,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which is greater: $\\dfrac{3}{4}$ or $\\dfrac{4}{5}$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Compare the fractions by rewriting them with a common denominator, or convert both to decimals
         and compare the decimal values.
@@ -310,7 +310,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Either convert each fraction to a decimal or rewrite them with a common denominator so you can
         compare their sizes.
@@ -371,7 +371,7 @@ export const problems: MathProblemData[] = [
         Who ate more pizza?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Compare $\\dfrac{3}{4}$ and $\\dfrac{5}{8}$ either by using a common denominator or by
         converting each to a decimal.
@@ -412,7 +412,7 @@ export const problems: MathProblemData[] = [
         Who had the higher score?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Convert $\\dfrac{18}{20}$ to a percent, or convert $90\\%$ to a fraction with denominator $20$,
         then compare the two.

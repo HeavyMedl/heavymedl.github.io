@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which number is divisible by $3$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the divisibility rule for $3$: add the digits of the number. If the sum of the digits is
         divisible by $3$, then the whole number is divisible by $3$.
@@ -40,7 +40,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>What is the greatest common factor (GCF) of $16$ and $36$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Either list the factors of each number and find the largest one they share, or use prime
         factorization and take the common prime factors with the smallest exponents.
@@ -72,7 +72,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>What is the least common multiple (LCM) of $6$ and $15$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         One way is to list multiples of each number until you find the smallest one they share. Another
         way is to use prime factorization and take all primes with the largest exponents from either
@@ -110,7 +110,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>How is the number $21$ classified?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         A prime number has exactly two positive factors: $1$ and itself. A composite number has more
         than two positive factors. Check whether $21$ has any factors besides $1$ and $21$.
@@ -143,7 +143,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>What is the prime factorization of $84$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Break $84$ down by dividing by small prime numbers ($2, 3, 5, 7,\\dots$) until all factors are
         prime.
@@ -180,7 +180,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which of the following is a multiple of $5$ and also a multiple of $2$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         A number that is a multiple of both $5$ and $2$ must be divisible by $10$. Look for a number
         that ends in $0$.
@@ -213,7 +213,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>What is the least common multiple (LCM) of $8$ and $12$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         List multiples of $8$ and $12$ until you find the smallest common one, or use prime
         factorization and take all primes with the largest exponents from either number.
@@ -250,7 +250,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>What is the greatest common factor (GCF) of $18$, $24$, and $30$?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You can either list factors of each number or use prime factorization for all three and then
         take the common prime factors with the smallest exponents.
@@ -289,7 +289,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which of the following numbers is prime?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         A prime number has exactly two positive factors: $1$ and itself. Try dividing each option by
         small primes like $2, 3, 5,$ and $7$.
@@ -328,7 +328,7 @@ export const problems: MathProblemData[] = [
         What is the smallest possible number of cookies in each stack?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You are looking for the smallest number that is a multiple of both $12$ and $18$. This is the
         least common multiple (LCM) of $12$ and $18$.

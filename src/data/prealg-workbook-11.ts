@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Evaluate: $3^4$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Expand the power as repeated multiplication:
         $3^4$ means $3 \\cdot 3 \\cdot 3 \\cdot 3$.
@@ -45,7 +45,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Evaluate: $(-2)^3$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Expand $(-2)^3$ as $(-2) \\cdot (-2) \\cdot (-2)$.
         Remember: the product of two negatives is positive, and then multiply by another negative.
@@ -85,7 +85,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $2^3 \\cdot 2^4$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         When multiplying powers with the same base, keep the base and add the exponents:
         $a^m \\cdot a^n = a^{m+n}$.
@@ -123,7 +123,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\dfrac{x^5}{x^2}$ (assume $x \\ne 0$).</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         For a quotient with the same base, subtract exponents:
         $\\dfrac{a^m}{a^n} = a^{m-n}$.
@@ -155,7 +155,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $(3^2)^3$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Use the power-of-a-power rule:
         $(a^m)^n = a^{m \\cdot n}$.
@@ -195,7 +195,7 @@ export const problems: MathProblemData[] = [
         Simplify: $2^3 \\cdot 5^2$.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         The bases are different, so the exponent rules for combining exponents do not apply across
         $2$ and $5$. Evaluate each power separately, then multiply the results.
@@ -232,7 +232,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $4{,}500{,}000$ in scientific notation.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Move the decimal so you have a number between $1$ and $10$, then count how many places
         you moved it. That count becomes the positive exponent of $10$.
@@ -275,7 +275,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Write $0.00032$ in scientific notation.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Move the decimal to get a number between $1$ and $10$.  
         Count how many places you move it to the right; that count becomes a negative exponent:
@@ -321,7 +321,7 @@ export const problems: MathProblemData[] = [
         Simplify: $(3 \\times 10^4)(2 \\times 10^3)$.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the numbers in front and use the product rule on the powers of $10$:
         $(3 \\times 2) \\times 10^{4+3}$.
@@ -371,7 +371,7 @@ export const problems: MathProblemData[] = [
         Simplify: $\\dfrac{4.8 \\times 10^5}{6 \\times 10^2}$.
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Divide the coefficients and subtract the exponents:  
         $\\dfrac{4.8}{6} \\times 10^{5-2}$.  

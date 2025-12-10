@@ -12,7 +12,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Think about which sets $12$ belongs to: it is positive, has no fractional part, and is not zero.
         Start with the most specific set (like the counting numbers) and move outward to larger sets.
@@ -54,7 +54,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Ask: Is $0$ a counting number? Is it included when we start counting $1,2,3,\\dots$?
         Then think about which set is the smallest one that still includes $0$.
@@ -97,7 +97,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Negative numbers are not natural or whole. Think about which set is the smallest one that
         includes all negative whole numbers.
@@ -135,7 +135,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Ask: Is $\\frac{3}{4}$ a whole number or integer?
         Remember that rational numbers are fractions of integers with a nonzero denominator.
@@ -183,7 +183,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Check whether $-2.5$ can be written as a fraction of integers. If it can, it is rational. Then
         ask which set is the smallest one that includes it.
@@ -226,7 +226,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which of the following numbers is <strong>not</strong> an integer?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Integers are all the whole numbers and their negatives: $\\dots,-3,-2,-1,0,1,2,3,\\dots$.
         Look for the number that has a fractional or decimal part.
@@ -267,7 +267,7 @@ export const problems: MathProblemData[] = [
         Which number is a <strong>natural number</strong> that is also <strong>even</strong>?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Natural numbers are the counting numbers $1,2,3,\\dots$.
         Even numbers are divisible by $2$ with no remainder. Look for a positive counting number that is even.
@@ -307,7 +307,7 @@ export const problems: MathProblemData[] = [
         The number of students is best classified as which kind of number?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Think about how we count people: $1$ student, $2$ students, etc.
         We never have $2.5$ students. Which set describes positive counting quantities?
@@ -346,7 +346,7 @@ export const problems: MathProblemData[] = [
         Which is the <strong>best</strong> classification for this quantity?
       </p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Bank balances can include decimals (like &dollar;45.75) and can also be negative.
         Think about which set includes fractions and decimals made from integers.
@@ -384,7 +384,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Which of the following numbers is <strong>irrational</strong>?</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Rational numbers can be written as a fraction of integers with a nonzero denominator.
         Look for the number that <strong>cannot</strong> be written as a fraction of integers.

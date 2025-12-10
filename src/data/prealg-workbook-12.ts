@@ -7,7 +7,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{5}{\\sqrt{3}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         To remove the square root from the denominator, multiply the numerator and denominator
         by $\\sqrt{3}$.
@@ -48,7 +48,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{2}{\\sqrt{5}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the top and bottom by $\\sqrt{5}$ so that the denominator becomes $5$.
       </p>
@@ -81,7 +81,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{\\sqrt{2}}{\\sqrt{3}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply numerator and denominator by $\\sqrt{3}$ so the denominator becomes $3$.
         Use $\\sqrt{2}\\cdot\\sqrt{3} = \\sqrt{6}$.
@@ -118,7 +118,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{7}{2\\sqrt{3}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Treat $2\\sqrt{3}$ as a single denominator. Multiply numerator and denominator by $\\sqrt{3}$,
         then simplify the denominator.
@@ -157,7 +157,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\dfrac{\\sqrt{6}}{\\sqrt{2}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         You can combine the radicals first:
         $\\dfrac{\\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\dfrac{6}{2}}$,
@@ -190,7 +190,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{3 + \\sqrt{5}}{\\sqrt{5}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply the entire numerator and the denominator by $\\sqrt{5}$.  
         Distribute $\\sqrt{5}$ across $3 + \\sqrt{5}$ in the numerator.
@@ -240,7 +240,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify and rationalize the denominator: $\\dfrac{4 - \\sqrt{2}}{\\sqrt{2}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Multiply numerator and denominator by $\\sqrt{2}$.  
         Distribute $\\sqrt{2}$ over $4 - \\sqrt{2}$ in the numerator, then simplify.
@@ -293,7 +293,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\dfrac{\\sqrt{8}}{4\\sqrt{2}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First simplify $\\sqrt{8}$ using a perfect square factor.  
         Then see if any radicals cancel before worrying about rationalizing.
@@ -337,7 +337,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\dfrac{2\\sqrt{3}}{\\sqrt{3}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         Notice the same radical appears in numerator and denominator.  
         You can cancel $\\sqrt{3}$ as long as it is not zero.
@@ -375,7 +375,7 @@ export const problems: MathProblemData[] = [
     promptHtml: `
       <p>Simplify: $\\dfrac{5\\sqrt{2}}{\\sqrt{8}}$.</p>
     `,
-    hintHtml: `
+    strategyHtml: `
       <p>
         First simplify $\\sqrt{8}$, then look for common radical factors to cancel.
         Remember $8 = 4\\cdot 2$.

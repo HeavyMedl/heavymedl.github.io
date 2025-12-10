@@ -27,7 +27,7 @@ const renderMathHtml = (value?: string) =>
       }, value)
 
 const promptHtml = renderMathHtml(data.promptHtml)
-const hintHtml = renderMathHtml(data.hintHtml)
+const strategyHtml = renderMathHtml(data.strategyHtml)
 const solutionHtml = renderMathHtml(data.solutionHtml)
 const primarySkillId = data.skills.find((s) => s.role === 'primary')?.skillId ?? data.skills[0]?.skillId
 const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label ?? primarySkillId : undefined
@@ -79,11 +79,11 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
   <div class="math-problem__accordions">
     <details class="math-problem__accordion">
       <summary>
-        <span class="math-problem__accordion-label">Hint</span>
+        <span class="math-problem__accordion-label">Strategy</span>
         <span class="math-problem__accordion-icon" aria-hidden="true"></span>
       </summary>
       <div class="math-problem__accordion-body">
-        <div class="math-problem__accordion-content" set:html={hintHtml} />
+        <div class="math-problem__accordion-content" set:html={strategyHtml} />
       </div>
     </details>
 

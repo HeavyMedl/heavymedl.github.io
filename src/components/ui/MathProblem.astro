@@ -136,31 +136,42 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
       )
     }
 
-    document
-      .querySelectorAll<HTMLDetailsElement>('.math-problem__accordion, .math-problem__choices-wrapper')
-      .forEach((details) => {
-        const body = details.querySelector<HTMLElement>(
-          '.math-problem__accordion-body, .math-problem__choices-body'
-        )
-        const summary = details.querySelector('summary')
-        if (!body || !summary) return
+    const initAnimations = () => {
+      document
+        .querySelectorAll<HTMLDetailsElement>('.math-problem__accordion, .math-problem__choices-wrapper')
+        .forEach((details) => {
+          if (details.dataset.animBound === 'true') return
+          details.dataset.animBound = 'true'
 
-        if (!details.open) {
-          body.style.height = '0px'
-          body.style.opacity = '0'
-          body.style.transform = 'translateY(-6px)'
-          body.style.overflow = 'hidden'
-        }
+          const body = details.querySelector<HTMLElement>(
+            '.math-problem__accordion-body, .math-problem__choices-body'
+          )
+          const summary = details.querySelector('summary')
+          if (!body || !summary) return
 
-        summary.addEventListener('click', (event) => {
-          event.preventDefault()
-          const opening = !details.open
-          // Flip icon immediately by toggling a data flag before we animate height.
-          details.dataset.toggling = opening ? 'open' : 'closed'
-          if (details.dataset.animating === 'true') return
-          animateDetails(details, body, opening)
+          if (!details.open) {
+            body.style.height = '0px'
+            body.style.opacity = '0'
+            body.style.transform = 'translateY(-6px)'
+            body.style.overflow = 'hidden'
+          }
+
+          summary.addEventListener('click', (event) => {
+            event.preventDefault()
+            const opening = !details.open
+            details.dataset.toggling = opening ? 'open' : 'closed'
+            if (details.dataset.animating === 'true') return
+            animateDetails(details, body, opening)
+          })
         })
-      })
+    }
+
+    initAnimations()
+    document.addEventListener('astro:page-load', initAnimations)
+    document.addEventListener('astro:after-swap', initAnimations)
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted) initAnimations()
+    })
   }
 </script>
 

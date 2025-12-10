@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 7: Decimals & Percent'
+pubDate: '2025-12-14'
+tags: ['math', 'pre-algebra', 'workbook', 'decimals', 'percents']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-7'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 10: Radicals & Roots'
+pubDate: '2025-12-17'
+tags: ['math', 'pre-algebra', 'workbook', 'radicals', 'square-roots']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-10'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

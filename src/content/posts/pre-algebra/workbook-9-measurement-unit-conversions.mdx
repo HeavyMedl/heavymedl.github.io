@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 9: Measurement & Unit Conversions'
+pubDate: '2025-12-16'
+tags: ['math', 'pre-algebra', 'workbook', 'measurement', 'unit-conversions']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-9'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 11: Exponents & Scientific Notation'
+pubDate: '2025-12-18'
+tags: ['math', 'pre-algebra', 'workbook', 'exponents', 'scientific-notation']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-11'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

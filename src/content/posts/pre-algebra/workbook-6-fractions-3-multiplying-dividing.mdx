@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 6: Fractions III – Multiplying, Dividing & Mixed Numbers'
+pubDate: '2025-12-13'
+tags: ['math', 'pre-algebra', 'workbook', 'fractions']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-6'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

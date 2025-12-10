@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 4: Fractions I – Simplifying & Equivalent Forms'
+pubDate: '2025-12-11'
+tags: ['math', 'pre-algebra', 'workbook', 'fractions']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-4'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

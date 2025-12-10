@@ -40,7 +40,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '19', isCorrect: false },
       { id: 'D', textHtml: '-19', isCorrect: true }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.int.add-sub', role: 'primary' }],
     tags: ['pre-algebra', 'integers']
   },
 
@@ -76,7 +76,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '-24', isCorrect: false },
       { id: 'D', textHtml: '6', isCorrect: true }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.int.add-sub', role: 'primary' }],
     tags: ['pre-algebra', 'integers']
   },
 
@@ -114,7 +114,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '-10', isCorrect: false },
       { id: 'D', textHtml: '10', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.int.mul-div', role: 'primary' }],
     tags: ['pre-algebra', 'integers']
   },
 
@@ -152,7 +152,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '8', isCorrect: true },
       { id: 'D', textHtml: '42', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.int.mul-div', role: 'primary' }],
     tags: ['pre-algebra', 'integers']
   },
 
@@ -192,7 +192,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '10', isCorrect: false },
       { id: 'D', textHtml: '4', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.int.add-sub', role: 'primary' }],
     tags: ['pre-algebra', 'integers']
   },
 
@@ -234,7 +234,10 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '-10', isCorrect: false },
       { id: 'D', textHtml: '14', isCorrect: false }
     ],
-    skills: [],
+    skills: [
+      { skillId: 'math.skill.abs.value', role: 'primary' },
+      { skillId: 'math.skill.int.add-sub', role: 'secondary' }
+    ],
     tags: ['pre-algebra', 'integers', 'absolute-value']
   },
 
@@ -276,7 +279,10 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '-3', isCorrect: false },
       { id: 'D', textHtml: '3', isCorrect: false }
     ],
-    skills: [],
+    skills: [
+      { skillId: 'math.skill.abs.value', role: 'primary' },
+      { skillId: 'math.skill.int.add-sub', role: 'secondary' }
+    ],
     tags: ['pre-algebra', 'integers', 'absolute-value']
   },
 
@@ -312,7 +318,10 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '13', isCorrect: true },
       { id: 'D', textHtml: '-3', isCorrect: false }
     ],
-    skills: [],
+    skills: [
+      { skillId: 'math.skill.abs.value', role: 'primary' },
+      { skillId: 'math.skill.int.add-sub', role: 'secondary' }
+    ],
     tags: ['pre-algebra', 'integers', 'absolute-value']
   },
 
@@ -350,7 +359,10 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '11°C', isCorrect: false },
       { id: 'D', textHtml: '-11°C', isCorrect: false }
     ],
-    skills: [],
+    skills: [
+      { skillId: 'math.skill.int.word', role: 'primary' },
+      { skillId: 'math.skill.int.add-sub', role: 'secondary' }
+    ],
     tags: ['pre-algebra', 'integers', 'word-problem']
   },
 
@@ -391,7 +403,10 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '60', isCorrect: true },
       { id: 'D', textHtml: '80', isCorrect: false }
     ],
-    skills: [],
+    skills: [
+      { skillId: 'math.skill.int.word', role: 'primary' },
+      { skillId: 'math.skill.int.add-sub', role: 'secondary' }
+    ],
     tags: ['pre-algebra', 'integers', 'word-problem']
   }
 ]

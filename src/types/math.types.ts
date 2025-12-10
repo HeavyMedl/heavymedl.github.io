@@ -1,13 +1,9 @@
+import type { SkillRef } from './skill-tree.types'
+
 export interface MathChoice {
   id: string // 'A', 'B', 'C', 'D', ...
   textHtml: string // HTML for the choice label (may include math markup)
   isCorrect: boolean
-}
-
-export interface SkillRef {
-  skillId: string // e.g. 'math.int-add-sub'
-  weight?: number
-  role?: 'primary' | 'secondary'
 }
 
 export interface MathProblemData {

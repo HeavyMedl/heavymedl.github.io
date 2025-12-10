@@ -30,7 +30,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '142', isCorrect: false },
       { id: 'D', textHtml: '208', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'divisibility']
   },
 
@@ -62,7 +62,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '8', isCorrect: false },
       { id: 'D', textHtml: '16', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'gcf']
   },
 
@@ -100,7 +100,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '60', isCorrect: false },
       { id: 'D', textHtml: '90', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm']
   },
 
@@ -133,7 +133,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: 'Neither prime nor composite', isCorrect: false },
       { id: 'D', textHtml: 'Irrational', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'prime-composite']
   },
 
@@ -170,7 +170,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '2^3 · 21', isCorrect: false },
       { id: 'D', textHtml: '2 · 42', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'prime-factorization']
   },
 
@@ -203,7 +203,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '32', isCorrect: false },
       { id: 'D', textHtml: '40', isCorrect: true }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'multiples', 'divisibility']
   },
 
@@ -240,7 +240,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '24', isCorrect: true },
       { id: 'D', textHtml: '48', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm']
   },
 
@@ -279,7 +279,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '6', isCorrect: true },
       { id: 'D', textHtml: '12', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'gcf']
   },
 
@@ -313,7 +313,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '49', isCorrect: false },
       { id: 'D', textHtml: '39', isCorrect: false }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'prime-composite']
   },
 
@@ -356,7 +356,7 @@ export const problems: MathProblemData[] = [
       { id: 'C', textHtml: '30', isCorrect: false },
       { id: 'D', textHtml: '36', isCorrect: true }
     ],
-    skills: [],
+    skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'lcm', 'word-problem']
   }
 ]

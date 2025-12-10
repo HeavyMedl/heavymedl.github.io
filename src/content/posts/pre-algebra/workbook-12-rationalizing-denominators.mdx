@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 12: Radicals & Rationalizing the Denominator'
+pubDate: '2025-12-19'
+tags: ['math', 'pre-algebra', 'workbook', 'radicals', 'rationalizing']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-12'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

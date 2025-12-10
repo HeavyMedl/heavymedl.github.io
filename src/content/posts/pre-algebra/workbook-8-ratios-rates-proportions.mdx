@@ -1,0 +1,16 @@
+---
+title: 'Pre-Algebra Workbook 8: Ratios, Rates, and Proportions'
+pubDate: '2025-12-15'
+tags: ['math', 'pre-algebra', 'workbook', 'ratios', 'rates', 'proportions']
+---
+
+import MathProblem from '@/components/ui/MathProblem.astro'
+import { problems } from '@/data/prealg-workbook-8'
+
+{problems.map((p, idx) => (
+
+  <>
+    {idx > 0 && <hr />}
+    <MathProblem data={p} />
+  </>
+))}

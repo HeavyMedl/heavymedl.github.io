@@ -133,18 +133,19 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Write the rate as dollars per bar:</p>
+      <p>Write the unit rate as a fraction of cost over number of bars:</p>
       <p>
         $$
-        \\text{&dollar;}\\dfrac{9}{6 \\text{ bars}}.
+        \\dfrac{9}{6}
         $$
       </p>
       <p>Divide $9$ by $6$:</p>
       <p>
         $$
-        9 \\div 6 = 1.5.
+        9 \\div 6 = 1.5
         $$
       </p>
+      <p>So the unit price is $1.5$ dollars per bar.</p>
       <p>So each bar costs &dollar;$1.50$.</p>
       <p>The correct choice is <strong>C. &dollar;$1.50$</strong>.</p>
     `,
@@ -323,13 +324,13 @@ export const problems: MathProblemData[] = [
       <p>Brand A:</p>
       <p>
         $$
-        \\text{&dollar;}\\dfrac{3.60}{12 \\text{ oz}} = 0.30 \\text{ per ounce}.
+        \\dfrac{3.60}{12 \\text{ oz}} = 0.30 \\text{ dollars per ounce}.
         $$
       </p>
       <p>Brand B:</p>
       <p>
         $$
-        \\text{&dollar;}\\dfrac{4.68}{18 \\text{ oz}} = 0.26 \\text{ per ounce}
+        \\dfrac{4.68}{18 \\text{ oz}} = 0.26 \\text{ dollars per ounce}
         $$
       </p>
       <p>(since $4.68 \\div 18 = 0.26$).</p>

@@ -1,5 +1,3 @@
-// src/types/skill-tree.types.ts
-
 export type SkillNodeKind = 'module' | 'skill'
 
 /**
@@ -16,6 +14,9 @@ export interface SkillNode {
 
   /** Human-readable label, e.g. "Pre-Algebra", "Integer Addition & Subtraction" */
   label: string
+
+  /** Short description of the module or skill, used for tooltips or overviews. */
+  description?: string
 
   /**
    * For skill nodes: the module they belong to.

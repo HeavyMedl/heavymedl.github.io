@@ -201,10 +201,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $60\\%$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '30\\%', isCorrect: false },
-      { id: 'B', textHtml: '60\\%', isCorrect: true },
-      { id: 'C', textHtml: '75\\%', isCorrect: false },
-      { id: 'D', textHtml: '80\\%', isCorrect: false }
+      { id: 'A', textHtml: '$30\\%$', isCorrect: false },
+      { id: 'B', textHtml: '$60\\%$', isCorrect: true },
+      { id: 'C', textHtml: '$75\\%$', isCorrect: false },
+      { id: 'D', textHtml: '$80\\%$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.frac.to-percent', role: 'primary' },

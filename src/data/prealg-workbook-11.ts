@@ -108,8 +108,8 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $128$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '2^12', isCorrect: false },
-      { id: 'B', textHtml: '2^1', isCorrect: false },
+      { id: 'A', textHtml: '$2^{12}$', isCorrect: false },
+      { id: 'B', textHtml: '$2^1$', isCorrect: false },
       { id: 'C', textHtml: '32', isCorrect: false },
       { id: 'D', textHtml: '128', isCorrect: true }
     ],
@@ -220,7 +220,7 @@ export const problems: MathProblemData[] = [
       { id: 'A', textHtml: '40', isCorrect: false },
       { id: 'B', textHtml: '200', isCorrect: true },
       { id: 'C', textHtml: '100', isCorrect: false },
-      { id: 'D', textHtml: '10^5', isCorrect: false }
+      { id: 'D', textHtml: '$10^5$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.exp.evaluate', role: 'primary' }],
     tags: ['pre-algebra', 'exponents', 'evaluation']

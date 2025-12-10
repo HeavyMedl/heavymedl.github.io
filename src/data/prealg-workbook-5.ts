@@ -372,7 +372,7 @@ export const problems: MathProblemData[] = [
     `,
     choices: [
       { id: 'A', textHtml: '$\\dfrac{4}{5}$ mile', isCorrect: false },
-      { id: 'B', textHtml: '1 mile', isCorrect: true },
+      { id: 'B', textHtml: '$1$ mile', isCorrect: true },
       { id: 'C', textHtml: '$1 \\dfrac{1}{5}$ miles', isCorrect: false },
       { id: 'D', textHtml: '$\\dfrac{5}{2}$ miles', isCorrect: false }
     ],

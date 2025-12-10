@@ -354,10 +354,10 @@ export const problems: MathProblemData[] = [
       <p>So the evening temperature is $-3^\\circ\\text{C}$. The correct choice is <strong>A.</strong></p>
     `,
     choices: [
-      { id: 'A', textHtml: '-3°C', isCorrect: true },
-      { id: 'B', textHtml: '3°C', isCorrect: false },
-      { id: 'C', textHtml: '11°C', isCorrect: false },
-      { id: 'D', textHtml: '-11°C', isCorrect: false }
+      { id: 'A', textHtml: '$-3$°C', isCorrect: true },
+      { id: 'B', textHtml: '$3$°C', isCorrect: false },
+      { id: 'C', textHtml: '$11$°C', isCorrect: false },
+      { id: 'D', textHtml: '$-11$°C', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.int.word', role: 'primary' },

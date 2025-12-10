@@ -23,10 +23,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $48$ inches</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '16 inches', isCorrect: false },
-      { id: 'B', textHtml: '36 inches', isCorrect: false },
-      { id: 'C', textHtml: '48 inches', isCorrect: true },
-      { id: 'D', textHtml: '52 inches', isCorrect: false }
+      { id: 'A', textHtml: '$16$ inches', isCorrect: false },
+      { id: 'B', textHtml: '$36$ inches', isCorrect: false },
+      { id: 'C', textHtml: '$48$ inches', isCorrect: true },
+      { id: 'D', textHtml: '$52$ inches', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.convert', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'unit-conversion', 'length']
@@ -54,10 +54,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $6$ feet</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '5 feet', isCorrect: false },
-      { id: 'B', textHtml: '6 feet', isCorrect: true },
-      { id: 'C', textHtml: '7 feet', isCorrect: false },
-      { id: 'D', textHtml: '8 feet', isCorrect: false }
+      { id: 'A', textHtml: '$5$ feet', isCorrect: false },
+      { id: 'B', textHtml: '$6$ feet', isCorrect: true },
+      { id: 'C', textHtml: '$7$ feet', isCorrect: false },
+      { id: 'D', textHtml: '$8$ feet', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.convert', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'unit-conversion', 'length']
@@ -85,10 +85,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $9$ feet</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '9 feet', isCorrect: true },
-      { id: 'B', textHtml: '12 feet', isCorrect: false },
-      { id: 'C', textHtml: '6 feet', isCorrect: false },
-      { id: 'D', textHtml: '15 feet', isCorrect: false }
+      { id: 'A', textHtml: '$9$ feet', isCorrect: true },
+      { id: 'B', textHtml: '$12$ feet', isCorrect: false },
+      { id: 'C', textHtml: '$6$ feet', isCorrect: false },
+      { id: 'D', textHtml: '$15$ feet', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.convert', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'unit-conversion', 'length']
@@ -122,10 +122,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $150$ minutes</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '90 minutes', isCorrect: false },
-      { id: 'B', textHtml: '100 minutes', isCorrect: false },
-      { id: 'C', textHtml: '120 minutes', isCorrect: false },
-      { id: 'D', textHtml: '150 minutes', isCorrect: true }
+      { id: 'A', textHtml: '$90$ minutes', isCorrect: false },
+      { id: 'B', textHtml: '$100$ minutes', isCorrect: false },
+      { id: 'C', textHtml: '$120$ minutes', isCorrect: false },
+      { id: 'D', textHtml: '$150$ minutes', isCorrect: true }
     ],
     skills: [
       { skillId: 'math.skill.measure.convert', role: 'primary' },
@@ -160,10 +160,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $2$ hours $15$ minutes</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '1 hour 35 minutes', isCorrect: false },
-      { id: 'B', textHtml: '2 hours 15 minutes', isCorrect: true },
-      { id: 'C', textHtml: '2 hours 30 minutes', isCorrect: false },
-      { id: 'D', textHtml: '3 hours 15 minutes', isCorrect: false }
+      { id: 'A', textHtml: '$1$ hour $35$ minutes', isCorrect: false },
+      { id: 'B', textHtml: '$2$ hours $15$ minutes', isCorrect: true },
+      { id: 'C', textHtml: '$2$ hours $30$ minutes', isCorrect: false },
+      { id: 'D', textHtml: '$3$ hours $15$ minutes', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.measure.convert', role: 'primary' },
@@ -208,10 +208,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $4$ hours $25$ minutes</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '3 hours 85 minutes', isCorrect: false },
-      { id: 'B', textHtml: '3 hours 25 minutes', isCorrect: false },
-      { id: 'C', textHtml: '4 hours 25 minutes', isCorrect: true },
-      { id: 'D', textHtml: '4 hours 15 minutes', isCorrect: false }
+      { id: 'A', textHtml: '$3$ hours $85$ minutes', isCorrect: false },
+      { id: 'B', textHtml: '$3$ hours $25$ minutes', isCorrect: false },
+      { id: 'C', textHtml: '$4$ hours $25$ minutes', isCorrect: true },
+      { id: 'D', textHtml: '$4$ hours $15$ minutes', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.time-arith', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'time', 'addition']
@@ -251,10 +251,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>A. $1$ hour $18$ minutes</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '1 hour 18 minutes', isCorrect: true },
-      { id: 'B', textHtml: '1 hour 52 minutes', isCorrect: false },
-      { id: 'C', textHtml: '2 hours 18 minutes', isCorrect: false },
-      { id: 'D', textHtml: '0 hours 58 minutes', isCorrect: false }
+      { id: 'A', textHtml: '$1$ hour $18$ minutes', isCorrect: true },
+      { id: 'B', textHtml: '$1$ hour $52$ minutes', isCorrect: false },
+      { id: 'C', textHtml: '$2$ hours $18$ minutes', isCorrect: false },
+      { id: 'D', textHtml: '$0$ hours $58$ minutes', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.time-arith', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'time', 'subtraction']
@@ -285,10 +285,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $6.2$ miles</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '3.1 miles', isCorrect: false },
-      { id: 'B', textHtml: '5 miles', isCorrect: false },
-      { id: 'C', textHtml: '10 miles', isCorrect: false },
-      { id: 'D', textHtml: '6.2 miles', isCorrect: true }
+      { id: 'A', textHtml: '$3.1$ miles', isCorrect: false },
+      { id: 'B', textHtml: '$5$ miles', isCorrect: false },
+      { id: 'C', textHtml: '$10$ miles', isCorrect: false },
+      { id: 'D', textHtml: '$6.2$ miles', isCorrect: true }
     ],
     skills: [
       { skillId: 'math.skill.measure.convert', role: 'primary' },
@@ -329,10 +329,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $40$ feet</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '20 feet', isCorrect: false },
-      { id: 'B', textHtml: '32 feet', isCorrect: false },
-      { id: 'C', textHtml: '40 feet', isCorrect: true },
-      { id: 'D', textHtml: '96 feet', isCorrect: false }
+      { id: 'A', textHtml: '$20$ feet', isCorrect: false },
+      { id: 'B', textHtml: '$32$ feet', isCorrect: false },
+      { id: 'C', textHtml: '$40$ feet', isCorrect: true },
+      { id: 'D', textHtml: '$96$ feet', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.measure.word', role: 'primary' }],
     tags: ['pre-algebra', 'measurement', 'perimeter', 'word-problem']
@@ -371,10 +371,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $1$ hour $20$ minutes</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '1 hour 10 minutes', isCorrect: false },
-      { id: 'B', textHtml: '1 hour 20 minutes', isCorrect: true },
-      { id: 'C', textHtml: '80 hours', isCorrect: false },
-      { id: 'D', textHtml: '2 hours 0 minutes', isCorrect: false }
+      { id: 'A', textHtml: '$1$ hour $10$ minutes', isCorrect: false },
+      { id: 'B', textHtml: '$1$ hour $20$ minutes', isCorrect: true },
+      { id: 'C', textHtml: '$80$ hours', isCorrect: false },
+      { id: 'D', textHtml: '$2$ hours $0$ minutes', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.measure.time-arith', role: 'primary' },

@@ -392,10 +392,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $24$ ounces</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '8 ounces', isCorrect: false },
-      { id: 'B', textHtml: '16 ounces', isCorrect: false },
-      { id: 'C', textHtml: '24 ounces', isCorrect: true },
-      { id: 'D', textHtml: '32 ounces', isCorrect: false }
+      { id: 'A', textHtml: '$8$ ounces', isCorrect: false },
+      { id: 'B', textHtml: '$16$ ounces', isCorrect: false },
+      { id: 'C', textHtml: '$24$ ounces', isCorrect: true },
+      { id: 'D', textHtml: '$32$ ounces', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.frac.of-number', role: 'primary' },

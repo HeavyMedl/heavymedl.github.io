@@ -28,10 +28,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $2:3$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '4:6', isCorrect: false },
-      { id: 'B', textHtml: '2:3', isCorrect: true },
-      { id: 'C', textHtml: '3:2', isCorrect: false },
-      { id: 'D', textHtml: '8:20', isCorrect: false }
+      { id: 'A', textHtml: '$4$:$6$', isCorrect: false },
+      { id: 'B', textHtml: '$2$:$3$', isCorrect: true },
+      { id: 'C', textHtml: '$3$:$2$', isCorrect: false },
+      { id: 'D', textHtml: '$8$:$20$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.ratio.basic', role: 'primary' },
@@ -67,10 +67,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $2:5$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '10:25', isCorrect: false },
-      { id: 'B', textHtml: '3:5', isCorrect: false },
-      { id: 'C', textHtml: '2:5', isCorrect: true },
-      { id: 'D', textHtml: '5:2', isCorrect: false }
+      { id: 'A', textHtml: '$10$:$25$', isCorrect: false },
+      { id: 'B', textHtml: '$3$:$5$', isCorrect: false },
+      { id: 'C', textHtml: '$2$:$5$', isCorrect: true },
+      { id: 'D', textHtml: '$5$:$2$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.ratio.basic', role: 'primary' }],
     tags: ['pre-algebra', 'ratios']
@@ -109,10 +109,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $60$ miles per hour</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '30 miles per hour', isCorrect: false },
-      { id: 'B', textHtml: '60 miles per hour', isCorrect: true },
-      { id: 'C', textHtml: '90 miles per hour', isCorrect: false },
-      { id: 'D', textHtml: '120 miles per hour', isCorrect: false }
+      { id: 'A', textHtml: '$30$ miles per hour', isCorrect: false },
+      { id: 'B', textHtml: '$60$ miles per hour', isCorrect: true },
+      { id: 'C', textHtml: '$90$ miles per hour', isCorrect: false },
+      { id: 'D', textHtml: '$120$ miles per hour', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.unit-rate', role: 'primary' }],
     tags: ['pre-algebra', 'rates', 'unit-rate']
@@ -237,10 +237,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>B. $175$ miles</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '150 miles', isCorrect: false },
-      { id: 'B', textHtml: '175 miles', isCorrect: true },
-      { id: 'C', textHtml: '200 miles', isCorrect: false },
-      { id: 'D', textHtml: '250 miles', isCorrect: false }
+      { id: 'A', textHtml: '$150$ miles', isCorrect: false },
+      { id: 'B', textHtml: '$175$ miles', isCorrect: true },
+      { id: 'C', textHtml: '$200$ miles', isCorrect: false },
+      { id: 'D', textHtml: '$250$ miles', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.rate.word', role: 'primary' },
@@ -287,10 +287,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $20$ cookies</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '15 cookies', isCorrect: false },
-      { id: 'B', textHtml: '18 cookies', isCorrect: false },
-      { id: 'C', textHtml: '19 cookies', isCorrect: false },
-      { id: 'D', textHtml: '20 cookies', isCorrect: true }
+      { id: 'A', textHtml: '$15$ cookies', isCorrect: false },
+      { id: 'B', textHtml: '$18$ cookies', isCorrect: false },
+      { id: 'C', textHtml: '$19$ cookies', isCorrect: false },
+      { id: 'D', textHtml: '$20$ cookies', isCorrect: true }
     ],
     skills: [
       { skillId: 'math.skill.rate.word', role: 'primary' },
@@ -436,10 +436,10 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>D. $60$ miles per hour</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '50 miles per hour', isCorrect: false },
-      { id: 'B', textHtml: '55 miles per hour', isCorrect: false },
-      { id: 'C', textHtml: '75 miles per hour', isCorrect: false },
-      { id: 'D', textHtml: '60 miles per hour', isCorrect: true }
+      { id: 'A', textHtml: '$50$ miles per hour', isCorrect: false },
+      { id: 'B', textHtml: '$55$ miles per hour', isCorrect: false },
+      { id: 'C', textHtml: '$75$ miles per hour', isCorrect: false },
+      { id: 'D', textHtml: '$60$ miles per hour', isCorrect: true }
     ],
     skills: [
       { skillId: 'math.skill.unit-rate', role: 'primary' },

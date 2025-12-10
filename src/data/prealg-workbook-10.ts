@@ -326,9 +326,9 @@ export const problems: MathProblemData[] = [
       <p>The correct choice is <strong>C. $8$ m</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '4 m', isCorrect: false },
-      { id: 'B', textHtml: '16 m', isCorrect: false },
-      { id: 'C', textHtml: '8 m', isCorrect: true },
+      { id: 'A', textHtml: '$4$ m', isCorrect: false },
+      { id: 'B', textHtml: '$16$ m', isCorrect: false },
+      { id: 'C', textHtml: '$8$ m', isCorrect: true },
       { id: 'D', textHtml: '$\\sqrt{64}$ m', isCorrect: false }
     ],
     skills: [

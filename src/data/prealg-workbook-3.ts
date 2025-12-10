@@ -165,10 +165,10 @@ export const problems: MathProblemData[] = [
       <p>So the correct choice is <strong>A. 2 · 2 · 3 · 7</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '2 · 2 · 3 · 7', isCorrect: true },
-      { id: 'B', textHtml: '4 · 21', isCorrect: false },
-      { id: 'C', textHtml: '2^3 · 21', isCorrect: false },
-      { id: 'D', textHtml: '2 · 42', isCorrect: false }
+      { id: 'A', textHtml: '$2$ · $2$ · $3$ · $7$', isCorrect: true },
+      { id: 'B', textHtml: '$4$ · $21$', isCorrect: false },
+      { id: 'C', textHtml: '$2$^$3$ · $21$', isCorrect: false },
+      { id: 'D', textHtml: '$2$ · $42$', isCorrect: false }
     ],
     skills: [{ skillId: 'math.skill.factors-multiples', role: 'primary' }],
     tags: ['pre-algebra', 'factors-multiples', 'prime-factorization']

@@ -123,7 +123,7 @@ export const problems: MathProblemData[] = [
     number: 4,
     promptHtml: `
       <p>
-        A package of $6$ energy bars costs $\\$9$.  
+        A package of $6$ energy bars costs $\&dollar;9$.  
         What is the cost per bar?
       </p>
     `,
@@ -136,7 +136,7 @@ export const problems: MathProblemData[] = [
       <p>Write the rate as dollars per bar:</p>
       <p>
         $$
-        \\dfrac{\\$9}{6 \\text{ bars}}.
+        \\dfrac{\&dollar;9}{6 \\text{ bars}}.
         $$
       </p>
       <p>Divide $9$ by $6$:</p>
@@ -145,14 +145,14 @@ export const problems: MathProblemData[] = [
         9 \\div 6 = 1.5.
         $$
       </p>
-      <p>So each bar costs $\\$1.50$.</p>
-      <p>The correct choice is <strong>C. $\\$1.50$</strong>.</p>
+      <p>So each bar costs $\&dollar;1.50$.</p>
+      <p>The correct choice is <strong>C. $\&dollar;1.50$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '$\\$0.60$', isCorrect: false },
-      { id: 'B', textHtml: '$\\$1.25$', isCorrect: false },
-      { id: 'C', textHtml: '$\\$1.50$', isCorrect: true },
-      { id: 'D', textHtml: '$\\$2.00$', isCorrect: false }
+      { id: 'A', textHtml: '$\&dollar;0.60$', isCorrect: false },
+      { id: 'B', textHtml: '$\&dollar;1.25$', isCorrect: false },
+      { id: 'C', textHtml: '$\&dollar;1.50$', isCorrect: true },
+      { id: 'D', textHtml: '$\&dollar;2.00$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.unit-rate', role: 'primary' },
@@ -306,8 +306,8 @@ export const problems: MathProblemData[] = [
         Two different brands of cereal are on sale:
       </p>
       <ul>
-        <li>Brand A: $12$ ounces for $\\$3.60$</li>
-        <li>Brand B: $18$ ounces for $\\$4.68$</li>
+        <li>Brand A: $12$ ounces for $\&dollar;3.60$</li>
+        <li>Brand B: $18$ ounces for $\&dollar;4.68$</li>
       </ul>
       <p>
         Which brand is the better buy (lower cost per ounce)?
@@ -323,13 +323,13 @@ export const problems: MathProblemData[] = [
       <p>Brand A:</p>
       <p>
         $$
-        \\dfrac{\\$3.60}{12 \\text{ oz}} = \\$0.30 \\text{ per ounce}.
+        \\dfrac{\&dollar;3.60}{12 \\text{ oz}} = \&dollar;0.30 \\text{ per ounce}.
         $$
       </p>
       <p>Brand B:</p>
       <p>
         $$
-        \\dfrac{\\$4.68}{18 \\text{ oz}} = \\$0.26 \\text{ per ounce}
+        \\dfrac{\&dollar;4.68}{18 \\text{ oz}} = \&dollar;0.26 \\text{ per ounce}
         $$
       </p>
       <p>(since $4.68 \\div 18 = 0.26$).</p>

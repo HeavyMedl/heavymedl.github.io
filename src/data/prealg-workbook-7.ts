@@ -288,7 +288,7 @@ export const problems: MathProblemData[] = [
     number: 8,
     promptHtml: `
       <p>
-        A shirt originally costs $\\$40$. It is on sale for $25\\%$ off.
+        A shirt originally costs $\&dollar;40$. It is on sale for $25\\%$ off.
         What is the sale price of the shirt?
       </p>
     `,
@@ -305,21 +305,21 @@ export const problems: MathProblemData[] = [
         25\\% = 0.25, \\quad 0.25 \\cdot 40 = 10.
         $$
       </p>
-      <p>So the discount is $\\$10$.</p>
+      <p>So the discount is $\&dollar;10$.</p>
       <p>Subtract the discount from the original price:</p>
       <p>
         $$
         40 - 10 = 30.
         $$
       </p>
-      <p>So the sale price is $\\$30$.</p>
-      <p>The correct choice is <strong>C. $\\$30$</strong>.</p>
+      <p>So the sale price is $\&dollar;30$.</p>
+      <p>The correct choice is <strong>C. $\&dollar;30$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '$\\$10$', isCorrect: false },
-      { id: 'B', textHtml: '$\\$25$', isCorrect: false },
-      { id: 'C', textHtml: '$\\$30$', isCorrect: true },
-      { id: 'D', textHtml: '$\\$35$', isCorrect: false }
+      { id: 'A', textHtml: '$\&dollar;10$', isCorrect: false },
+      { id: 'B', textHtml: '$\&dollar;25$', isCorrect: false },
+      { id: 'C', textHtml: '$\&dollar;30$', isCorrect: true },
+      { id: 'D', textHtml: '$\&dollar;35$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.percent.change', role: 'primary' },
@@ -389,7 +389,7 @@ export const problems: MathProblemData[] = [
     number: 10,
     promptHtml: `
       <p>
-        Kurt's restaurant bill is $\\$35$. He wants to leave an $18\\%$ tip.
+        Kurt's restaurant bill is $\&dollar;35$. He wants to leave an $18\\%$ tip.
         How much money should he leave for the tip?
       </p>
     `,
@@ -411,14 +411,14 @@ export const problems: MathProblemData[] = [
         0.18 \\cdot 35 = 6.3.
         $$
       </p>
-      <p>So the tip should be $\\$6.30$.</p>
-      <p>The correct choice is <strong>B. $\\$6.30$</strong>.</p>
+      <p>So the tip should be $\&dollar;6.30$.</p>
+      <p>The correct choice is <strong>B. $\&dollar;6.30$</strong>.</p>
     `,
     choices: [
-      { id: 'A', textHtml: '$\\$3.50$', isCorrect: false },
-      { id: 'B', textHtml: '$\\$6.30$', isCorrect: true },
-      { id: 'C', textHtml: '$\\$18.00$', isCorrect: false },
-      { id: 'D', textHtml: '$\\$41.30$', isCorrect: false }
+      { id: 'A', textHtml: '$\&dollar;3.50$', isCorrect: false },
+      { id: 'B', textHtml: '$\&dollar;6.30$', isCorrect: true },
+      { id: 'C', textHtml: '$\&dollar;18.00$', isCorrect: false },
+      { id: 'D', textHtml: '$\&dollar;41.30$', isCorrect: false }
     ],
     skills: [
       { skillId: 'math.skill.percent.change', role: 'primary' },

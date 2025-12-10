@@ -1,5 +1,6 @@
 ---
 import katex from 'katex'
+import { mathTree } from '@/data/math-skill-tree'
 import type { MathProblemData } from '@/types/math.types'
 
 interface Props {
@@ -28,6 +29,8 @@ const renderMathHtml = (value?: string) =>
 const promptHtml = renderMathHtml(data.promptHtml)
 const hintHtml = renderMathHtml(data.hintHtml)
 const solutionHtml = renderMathHtml(data.solutionHtml)
+const primarySkillId = data.skills.find((s) => s.role === 'primary')?.skillId ?? data.skills[0]?.skillId
+const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label ?? primarySkillId : undefined
 ---
 
 <article class="math-problem" id={data.id}>
@@ -37,25 +40,12 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     </span>
 
     <div class="math-problem__meta">
+      {primarySkillLabel && <span class="meta-label">{primarySkillLabel}</span>}
       {data.difficulty && <span class={`pill pill--${data.difficulty}`}>{data.difficulty}</span>}
-      {data.tags?.map((tag) => <span class="pill pill--tag">{tag}</span>)}
     </div>
   </header>
 
   <div class="math-problem__prompt" set:html={promptHtml} />
-
-  {
-    data.skills.length > 0 && (
-      <div class="math-problem__skills">
-        {data.skills.map((skill) => (
-          <span class="skill-pill" data-role={skill.role ?? 'primary'}>
-            {skill.skillId}
-            {typeof skill.weight === 'number' && <span class="skill-weight">({skill.weight})</span>}
-          </span>
-        ))}
-      </div>
-    )
-  }
 
   {
     data.choices.length > 0 ? (
@@ -217,6 +207,7 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     gap: 0.25rem;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .pill,
@@ -255,6 +246,12 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
     padding: 0.04rem 0.32rem;
   }
 
+  .meta-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+  }
+
   .math-problem__prompt {
     padding: 0.4rem 0.8rem 0.5rem;
     display: grid;
@@ -270,31 +267,6 @@ const solutionHtml = renderMathHtml(data.solutionHtml)
 
   :global(.math-problem__prompt p:last-child) {
     margin-bottom: 0;
-  }
-
-  .math-problem__skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    margin: 0.35rem 0 0.6rem;
-  }
-
-  .skill-pill {
-    gap: 0.25rem;
-    padding: 0.05rem 0.45rem;
-    border-radius: 0.35rem;
-    background: var(--code-bg);
-    font-size: 0.82rem;
-  }
-
-  .skill-pill[data-role='primary'] {
-    border-color: var(--text-tertiary);
-    color: var(--text-primary);
-  }
-
-  .skill-weight {
-    font-size: 0.78rem;
-    color: var(--text-secondary);
   }
 
   .math-problem__choices {

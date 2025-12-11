@@ -20,6 +20,7 @@ export const prealgIntegerNodes: SkillNodeMap = {
     description: 'Add and subtract integers, including negatives; base for most later skills.',
     parentId: 'math.module.prealg',
     order: 1,
+    difficulty: 1,
     prereqIds: [],
     tags: ['pre-algebra', 'integers']
   },
@@ -31,6 +32,7 @@ export const prealgIntegerNodes: SkillNodeMap = {
       'Multiply and divide integers; supports factors, fractions, exponents, and radicals.',
     parentId: 'math.module.prealg',
     order: 2,
+    difficulty: 2,
     prereqIds: ['math.skill.int.add-sub'],
     tags: ['pre-algebra', 'integers']
   },
@@ -41,6 +43,7 @@ export const prealgIntegerNodes: SkillNodeMap = {
     description: 'Interpret absolute value as distance from zero on the number line.',
     parentId: 'math.module.prealg',
     order: 3,
+    difficulty: 1,
     prereqIds: ['math.skill.int.add-sub'],
     tags: ['pre-algebra', 'absolute-value']
   },
@@ -51,6 +54,7 @@ export const prealgIntegerNodes: SkillNodeMap = {
     description: 'Apply integer operations and absolute value to simple real-world situations.',
     parentId: 'math.module.prealg',
     order: 6,
+    difficulty: 2,
     prereqIds: ['math.skill.int.add-sub', 'math.skill.abs.value'],
     tags: ['pre-algebra', 'word-problems', 'integers']
   }
@@ -64,6 +68,7 @@ export const prealgNumberSetNodes: SkillNodeMap = {
     description: 'Classify numbers as natural, whole, integer, rational, irrational, or real.',
     parentId: 'math.module.prealg',
     order: 4,
+    difficulty: 1,
     prereqIds: [],
     tags: ['pre-algebra', 'number-sets']
   }
@@ -77,6 +82,7 @@ export const prealgFactorNodes: SkillNodeMap = {
     description: 'Find factors, multiples, GCF, and LCM to support fraction work.',
     parentId: 'math.module.prealg',
     order: 5,
+    difficulty: 2,
     prereqIds: ['math.skill.int.mul-div'],
     tags: ['pre-algebra', 'factors-multiples']
   }
@@ -90,6 +96,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Reduce fractions to simplest form using common factors or GCF.',
     parentId: 'math.module.prealg',
     order: 7,
+    difficulty: 2,
     prereqIds: ['math.skill.factors-multiples'],
     tags: ['pre-algebra', 'fractions', 'simplifying']
   },
@@ -100,6 +107,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Generate equivalent fractions by scaling numerators and denominators.',
     parentId: 'math.module.prealg',
     order: 8,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify'],
     tags: ['pre-algebra', 'fractions', 'equivalent-fractions']
   },
@@ -110,6 +118,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Convert between fractions and percents in both directions.',
     parentId: 'math.module.prealg',
     order: 9,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify', 'math.skill.number-sets'],
     tags: ['pre-algebra', 'fractions', 'percents']
   },
@@ -120,6 +129,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Compare fractions using common denominators or benchmark fractions.',
     parentId: 'math.module.prealg',
     order: 10,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.equivalent'],
     tags: ['pre-algebra', 'fractions', 'comparison']
   },
@@ -130,6 +140,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Add and subtract fractions that already share a common denominator.',
     parentId: 'math.module.prealg',
     order: 11,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify'],
     tags: ['pre-algebra', 'fractions', 'add-sub', 'like-denominators']
   },
@@ -140,6 +151,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Add and subtract fractions by creating and using a common denominator.',
     parentId: 'math.module.prealg',
     order: 12,
+    difficulty: 3,
     prereqIds: [
       'math.skill.frac.simplify',
       'math.skill.frac.equivalent',
@@ -154,6 +166,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Add and subtract mixed numbers using improper fractions or regrouping.',
     parentId: 'math.module.prealg',
     order: 13,
+    difficulty: 3,
     prereqIds: ['math.skill.frac.add-sub-unlike'],
     tags: ['pre-algebra', 'fractions', 'mixed-numbers', 'add-sub']
   },
@@ -164,6 +177,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Model and solve word problems involving fraction addition and subtraction.',
     parentId: 'math.module.prealg',
     order: 14,
+    difficulty: 3,
     prereqIds: ['math.skill.frac.add-sub-like', 'math.skill.frac.add-sub-unlike'],
     tags: ['pre-algebra', 'fractions', 'word-problems', 'add-sub']
   },
@@ -174,6 +188,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Multiply fractions and mixed numbers, often followed by simplifying.',
     parentId: 'math.module.prealg',
     order: 15,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify'],
     tags: ['pre-algebra', 'fractions', 'multiplication']
   },
@@ -184,6 +199,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Divide fractions using reciprocal multiplication and simplification.',
     parentId: 'math.module.prealg',
     order: 16,
+    difficulty: 3,
     prereqIds: ['math.skill.frac.mul', 'math.skill.frac.simplify'],
     tags: ['pre-algebra', 'fractions', 'division']
   },
@@ -194,6 +210,7 @@ export const prealgFractionNodes: SkillNodeMap = {
     description: 'Find a fraction of a whole number in numeric and word problems.',
     parentId: 'math.module.prealg',
     order: 17,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.mul'],
     tags: ['pre-algebra', 'fractions', 'word-problems', '"of"-problems']
   }
@@ -207,6 +224,7 @@ export const prealgDecimalPercentNodes: SkillNodeMap = {
     description: 'Add, subtract, multiply, and divide decimals with correct place-value alignment.',
     parentId: 'math.module.prealg',
     order: 18,
+    difficulty: 2,
     prereqIds: ['math.skill.int.add-sub'],
     tags: ['pre-algebra', 'decimals', 'operations', 'rounding']
   },
@@ -217,6 +235,7 @@ export const prealgDecimalPercentNodes: SkillNodeMap = {
     description: 'Convert between decimals, fractions, and percents fluently.',
     parentId: 'math.module.prealg',
     order: 19,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify'],
     tags: ['pre-algebra', 'decimals', 'fractions', 'percents', 'conversions']
   },
@@ -227,6 +246,7 @@ export const prealgDecimalPercentNodes: SkillNodeMap = {
     description: 'Compute percent of a number and simple percent increase or decrease.',
     parentId: 'math.module.prealg',
     order: 20,
+    difficulty: 3,
     prereqIds: ['math.skill.decimal-fraction-percent'],
     tags: ['pre-algebra', 'percents', 'word-problems', 'percent-change']
   }
@@ -240,6 +260,7 @@ export const prealgRatioRateNodes: SkillNodeMap = {
     description: 'Write and simplify ratios as fraction-like comparisons.',
     parentId: 'math.module.prealg',
     order: 21,
+    difficulty: 2,
     prereqIds: ['math.skill.frac.simplify'],
     tags: ['pre-algebra', 'ratios', 'fractions', 'simplifying']
   },
@@ -250,6 +271,7 @@ export const prealgRatioRateNodes: SkillNodeMap = {
     description: 'Find unit rates and unit prices from ratio information.',
     parentId: 'math.module.prealg',
     order: 22,
+    difficulty: 2,
     prereqIds: ['math.skill.ratio.basic', 'math.skill.decimal.ops'],
     tags: ['pre-algebra', 'ratios', 'rates', 'unit-rate']
   },
@@ -260,6 +282,7 @@ export const prealgRatioRateNodes: SkillNodeMap = {
     description: 'Solve proportions by cross-multiplying or reasoning about equivalent ratios.',
     parentId: 'math.module.prealg',
     order: 23,
+    difficulty: 3,
     prereqIds: ['math.skill.ratio.basic', 'math.skill.frac.mul'],
     tags: ['pre-algebra', 'proportions', 'equations']
   },
@@ -270,6 +293,7 @@ export const prealgRatioRateNodes: SkillNodeMap = {
     description: 'Solve real-world problems using ratios, rates, and proportions together.',
     parentId: 'math.module.prealg',
     order: 24,
+    difficulty: 3,
     prereqIds: ['math.skill.unit-rate', 'math.skill.proportion.solve'],
     tags: ['pre-algebra', 'word-problems', 'ratios', 'rates', 'proportions']
   }
@@ -283,6 +307,7 @@ export const prealgMeasurementNodes: SkillNodeMap = {
     description: 'Convert between common units of length, time, and other measures.',
     parentId: 'math.module.prealg',
     order: 25,
+    difficulty: 2,
     prereqIds: ['math.skill.decimal.ops', 'math.skill.frac.simplify'],
     tags: ['pre-algebra', 'measurement', 'unit-conversion']
   },
@@ -293,6 +318,7 @@ export const prealgMeasurementNodes: SkillNodeMap = {
     description: 'Add and subtract times using hours, minutes, and sometimes seconds.',
     parentId: 'math.module.prealg',
     order: 26,
+    difficulty: 2,
     prereqIds: ['math.skill.measure.convert'],
     tags: ['pre-algebra', 'measurement', 'time', 'addition', 'subtraction']
   },
@@ -303,6 +329,7 @@ export const prealgMeasurementNodes: SkillNodeMap = {
     description: 'Interpret and solve word problems involving measurements and units.',
     parentId: 'math.module.prealg',
     order: 27,
+    difficulty: 3,
     prereqIds: ['math.skill.measure.convert', 'math.skill.decimal.ops'],
     tags: ['pre-algebra', 'measurement', 'word-problem']
   }
@@ -316,6 +343,7 @@ export const prealgRadicalNodes: SkillNodeMap = {
     description: 'Evaluate simple square roots of perfect squares and related expressions.',
     parentId: 'math.module.prealg',
     order: 28,
+    difficulty: 2,
     prereqIds: ['math.skill.int.mul-div'],
     tags: ['pre-algebra', 'radicals', 'square-roots', 'evaluation']
   },
@@ -326,6 +354,7 @@ export const prealgRadicalNodes: SkillNodeMap = {
     description: 'Simplify square roots by factoring out perfect square factors.',
     parentId: 'math.module.prealg',
     order: 29,
+    difficulty: 3,
     prereqIds: ['math.skill.radicals.evaluate', 'math.skill.factors-multiples'],
     tags: ['pre-algebra', 'radicals', 'simplifying', 'perfect-squares']
   },
@@ -336,6 +365,7 @@ export const prealgRadicalNodes: SkillNodeMap = {
     description: 'Add and subtract like radicals after simplifying them.',
     parentId: 'math.module.prealg',
     order: 30,
+    difficulty: 3,
     prereqIds: ['math.skill.radicals.simplify-basic'],
     tags: ['pre-algebra', 'radicals', 'like-terms']
   },
@@ -346,6 +376,7 @@ export const prealgRadicalNodes: SkillNodeMap = {
     description: 'Remove simple radicals from denominators using multiplication by a form of 1.',
     parentId: 'math.module.prealg',
     order: 35,
+    difficulty: 4,
     prereqIds: ['math.skill.radicals.simplify-basic'],
     tags: ['pre-algebra', 'radicals', 'rationalizing', 'denominators']
   },
@@ -357,6 +388,7 @@ export const prealgRadicalNodes: SkillNodeMap = {
       'Combine simplification and rationalizing in multi-term or fractional radical expressions.',
     parentId: 'math.module.prealg',
     order: 36,
+    difficulty: 4,
     prereqIds: ['math.skill.radicals.simplify-basic', 'math.skill.radicals.rationalize-simple'],
     tags: ['pre-algebra', 'radicals', 'simplifying', 'rationalizing']
   }
@@ -370,6 +402,7 @@ export const prealgExponentSciNodes: SkillNodeMap = {
     description: 'Evaluate basic powers, including negative bases, using repeated multiplication.',
     parentId: 'math.module.prealg',
     order: 31,
+    difficulty: 2,
     prereqIds: ['math.skill.int.mul-div'],
     tags: ['pre-algebra', 'exponents', 'numeric']
   },
@@ -380,6 +413,7 @@ export const prealgExponentSciNodes: SkillNodeMap = {
     description: 'Use product, quotient, and power rules for exponents with the same base.',
     parentId: 'math.module.prealg',
     order: 32,
+    difficulty: 3,
     prereqIds: ['math.skill.exp.evaluate'],
     tags: ['pre-algebra', 'exponents', 'rules']
   },
@@ -390,6 +424,7 @@ export const prealgExponentSciNodes: SkillNodeMap = {
     description: 'Write standard numbers in scientific notation and convert back again.',
     parentId: 'math.module.prealg',
     order: 33,
+    difficulty: 3,
     prereqIds: ['math.skill.decimal.ops'],
     tags: ['pre-algebra', 'scientific-notation', 'representation']
   },
@@ -400,6 +435,7 @@ export const prealgExponentSciNodes: SkillNodeMap = {
     description: 'Multiply and divide numbers in scientific notation, then rewrite in proper form.',
     parentId: 'math.module.prealg',
     order: 34,
+    difficulty: 4,
     prereqIds: ['math.skill.exp.rules-basic', 'math.skill.sci-notation.write'],
     tags: ['pre-algebra', 'scientific-notation', 'operations']
   }

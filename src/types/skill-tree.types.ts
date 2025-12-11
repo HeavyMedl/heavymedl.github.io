@@ -1,3 +1,4 @@
+export type SkillDifficulty = 1 | 2 | 3 | 4 | 5
 export type SkillNodeKind = 'module' | 'skill'
 
 /**
@@ -28,6 +29,12 @@ export interface SkillNode {
    * Approximate position within the module.
    */
   order?: number
+
+  /**
+   * Relative difficulty of the skill (1 = very basic, 5 = most challenging in this tree).
+   * Optional so simpler trees don't have to use it.
+   */
+  difficulty?: SkillDifficulty
 
   /**
    * Other skill IDs that should come before this one.

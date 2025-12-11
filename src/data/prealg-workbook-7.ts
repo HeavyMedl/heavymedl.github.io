@@ -5,7 +5,7 @@ export const problems: MathProblemData[] = [
     id: 'prealg-07-q1',
     number: 1,
     promptHtml: `
-      <p>Compute: $3.45 + 2.7$.</p>
+      <p>Compute: $3.45 + 2.7$</p>
     `,
     strategyHtml: `
       <p>
@@ -32,7 +32,7 @@ export const problems: MathProblemData[] = [
       <p>So</p>
       <p>
         $$
-        3.45 + 2.70 = 6.15.
+        3.45 + 2.70 = 6.15
         $$
       </p>
       <p>The correct choice is <strong>C. $6.15$</strong>.</p>
@@ -51,7 +51,7 @@ export const problems: MathProblemData[] = [
     id: 'prealg-07-q2',
     number: 2,
     promptHtml: `
-      <p>Compute: $5.2 - 3.75$.</p>
+      <p>Compute: $5.2 - 3.75$</p>
     `,
     strategyHtml: `
       <p>
@@ -71,17 +71,17 @@ export const problems: MathProblemData[] = [
       </p>
       <p>Subtract starting from the hundredths place:</p>
       <ul>
-        <li>Hundredths: need to subtract $5$ from $0$, so borrow from the tenths.</li>
-        <li>After borrowing: tenths become $1$, hundredths become $10$.</li>
+        <li>Hundredths: need to subtract $5$ from $0$ so borrow from the tenths.</li>
+        <li>After borrowing: tenths become $1$ hundredths become $10$</li>
         <li>Hundredths: $10 - 5 = 5$</li>
-        <li>Tenths: now $1 - 7$, borrow from the ones: ones become $4$, tenths become $11$.</li>
+        <li>Tenths: now $1 - 7$ borrow from the ones: ones become $4$ tenths become $11$</li>
         <li>Tenths: $11 - 7 = 4$</li>
         <li>Ones: $4 - 3 = 1$</li>
       </ul>
       <p>So</p>
       <p>
         $$
-        5.20 - 3.75 = 1.45.
+        5.20 - 3.75 = 1.45
         $$
       </p>
       <p>The correct choice is <strong>B. $1.45$</strong>.</p>
@@ -105,17 +105,17 @@ export const problems: MathProblemData[] = [
     strategyHtml: `
       <p>
         To round to the nearest tenth, look at the hundredths digit. If it is $5$ or more, round the
-        tenths digit up by $1$; otherwise leave it the same.
+        tenths digit up by $1$ otherwise leave it the same.
       </p>
     `,
     solutionHtml: `
-      <p>In $4.376$:</p>
+      <p>In $4.376$</p>
       <ul>
-        <li>The tenths digit is $3$.</li>
-        <li>The hundredths digit is $7$.</li>
+        <li>The tenths digit is $3$</li>
+        <li>The hundredths digit is $7$</li>
       </ul>
-      <p>Since $7 \\ge 5$, round the tenths digit up from $3$ to $4$.</p>
-      <p>So $4.376$ rounded to the nearest tenth is $4.4$.</p>
+      <p>Since $7 \\ge 5$ round the tenths digit up from $3$ to $4$</p>
+      <p>So $4.376$ rounded to the nearest tenth is $4.4$</p>
       <p>The correct choice is <strong>D. $4.4$</strong>.</p>
     `,
     choices: [
@@ -156,10 +156,10 @@ export const problems: MathProblemData[] = [
       <p>Now compare:</p>
       <p>
         $$
-        0.405 < 0.450 < 0.495 < 0.500.
+        0.405 < 0.450 < 0.495 < 0.500
         $$
       </p>
-      <p>The greatest value is $0.5$.</p>
+      <p>The greatest value is $0.5$</p>
       <p>The correct choice is <strong>B. $0.5$</strong>.</p>
     `,
     choices: [
@@ -180,7 +180,7 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Read $0.6$ as "six tenths" and write it as $\\dfrac{6}{10}$, then simplify by dividing
+        Read $0.6$ as "six tenths" and write it as $\\dfrac{6}{10}$ then simplify by dividing
         the numerator and denominator by their greatest common factor.
       </p>
     `,
@@ -188,16 +188,16 @@ export const problems: MathProblemData[] = [
       <p>Write $0.6$ as a fraction:</p>
       <p>
         $$
-        0.6 = \\dfrac{6}{10}.
+        0.6 = \\dfrac{6}{10}
         $$
       </p>
-      <p>The greatest common factor of $6$ and $10$ is $2$, so divide numerator and denominator by $2$:</p>
+      <p>The greatest common factor of $6$ and $10$ is $2$ so divide numerator and denominator by $2$</p>
       <p>
         $$
-        \\dfrac{6}{10} = \\dfrac{6 \\div 2}{10 \\div 2} = \\dfrac{3}{5}.
+        \\dfrac{6}{10} = \\dfrac{6 \\div 2}{10 \\div 2} = \\dfrac{3}{5}
         $$
       </p>
-      <p>So $0.6$ as a fraction in simplest form is $\\dfrac{3}{5}$.</p>
+      <p>So $0.6$ as a fraction in simplest form is $\\dfrac{3}{5}$</p>
       <p>The correct choice is <strong>C. $\\dfrac{3}{5}$</strong>.</p>
     `,
     choices: [
@@ -221,19 +221,19 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Convert the fraction to an equivalent fraction with denominator $100$, or divide $3 \\div 20$
+        Convert the fraction to an equivalent fraction with denominator $100$ or divide $3 \\div 20$
         to get the decimal.
       </p>
     `,
     solutionHtml: `
-      <p>Find an equivalent fraction with denominator $100$:</p>
+      <p>Find an equivalent fraction with denominator $100$</p>
       <p>
         $$
-        \\dfrac{3}{20} = \\dfrac{3 \\times 5}{20 \\times 5} = \\dfrac{15}{100}.
+        \\dfrac{3}{20} = \\dfrac{3 \\times 5}{20 \\times 5} = \\dfrac{15}{100}
         $$
       </p>
-      <p>As a decimal, $\\dfrac{15}{100} = 0.15$.</p>
-      <p>So $\\dfrac{3}{20}$ as a decimal is $0.15$.</p>
+      <p>As a decimal, $\\dfrac{15}{100} = 0.15$</p>
+      <p>So $\\dfrac{3}{20}$ as a decimal is $0.15$</p>
       <p>The correct choice is <strong>A. $0.15$</strong>.</p>
     `,
     choices: [
@@ -258,19 +258,19 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Multiply $0.37$ by $100$:</p>
+      <p>Multiply $0.37$ by $100$</p>
       <p>
         $$
-        0.37 \\times 100 = 37.
+        0.37 \\times 100 = 37
         $$
       </p>
       <p>Attach the percent symbol:</p>
       <p>
         $$
-        0.37 = 37\\%.
+        0.37 = 37\\%
         $$
       </p>
-      <p>So $0.37$ as a percent is $37\\%$.</p>
+      <p>So $0.37$ as a percent is $37\\%$</p>
       <p>The correct choice is <strong>B. $37\\%$</strong>.</p>
     `,
     choices: [
@@ -288,7 +288,7 @@ export const problems: MathProblemData[] = [
     number: 8,
     promptHtml: `
       <p>
-        A shirt originally costs &dollar;$40$. It is on sale for $25\\%$ off.
+        A shirt originally costs &dollar;$40$ It is on sale for $25\\%$ off.
         What is the sale price of the shirt?
       </p>
     `,
@@ -299,20 +299,20 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Find $25\\%$ of $40$:</p>
+      <p>Find $25\\%$ of $40$</p>
       <p>
         $$
-        25\\% = 0.25, \\quad 0.25 \\cdot 40 = 10.
+        25\\% = 0.25, \\quad 0.25 \\cdot 40 = 10
         $$
       </p>
-      <p>So the discount is &dollar;$10$.</p>
+      <p>So the discount is &dollar;$10$</p>
       <p>Subtract the discount from the original price:</p>
       <p>
         $$
-        40 - 10 = 30.
+        40 - 10 = 30
         $$
       </p>
-      <p>So the sale price is &dollar;$30$.</p>
+      <p>So the sale price is &dollar;$30$</p>
       <p>The correct choice is <strong>C. &dollar;$30$</strong>.</p>
     `,
     choices: [
@@ -333,42 +333,42 @@ export const problems: MathProblemData[] = [
     number: 9,
     promptHtml: `
       <p>
-        A value increases from $50$ to $65$. What is the percent increase?
+        A value increases from $50$ to $65$ What is the percent increase?
       </p>
     `,
     strategyHtml: `
       <p>
-        Percent increase = $\\dfrac{\\text{amount of increase}}{\\text{original amount}} \\times 100\\%$.
-        Find the increase, divide by $50$, then multiply by $100$.
+        Percent increase = $\\dfrac{\\text{amount of increase}}{\\text{original amount}} \\times 100\\%$
+        Find the increase, divide by $50$ then multiply by $100$
       </p>
     `,
     solutionHtml: `
       <p>Find the amount of increase:</p>
       <p>
         $$
-        65 - 50 = 15.
+        65 - 50 = 15
         $$
       </p>
       <p>Use the percent increase formula:</p>
       <p>
         $$
         \\text{Percent increase}
-        = \\dfrac{15}{50} \\times 100\\%.
+        = \\dfrac{15}{50} \\times 100\\%
         $$
       </p>
-      <p>Simplify $\\dfrac{15}{50}$:</p>
+      <p>Simplify $\\dfrac{15}{50}$</p>
       <p>
         $$
-        \\dfrac{15}{50} = \\dfrac{3}{10} = 0.3.
+        \\dfrac{15}{50} = \\dfrac{3}{10} = 0.3
         $$
       </p>
-      <p>Now multiply by $100\\%$:</p>
+      <p>Now multiply by $100\\%$</p>
       <p>
         $$
-        0.3 \\times 100\\% = 30\\%.
+        0.3 \\times 100\\% = 30\\%
         $$
       </p>
-      <p>So the percent increase is $30\\%$.</p>
+      <p>So the percent increase is $30\\%$</p>
       <p>The correct choice is <strong>D. $30\\%$</strong>.</p>
     `,
     choices: [
@@ -389,7 +389,7 @@ export const problems: MathProblemData[] = [
     number: 10,
     promptHtml: `
       <p>
-        Kurt's restaurant bill is &dollar;$35$. He wants to leave an $18\\%$ tip.
+        Kurt's restaurant bill is &dollar;$35$ He wants to leave an $18\\%$ tip.
         How much money should he leave for the tip?
       </p>
     `,
@@ -402,16 +402,16 @@ export const problems: MathProblemData[] = [
       <p>Convert $18\\%$ to a decimal:</p>
       <p>
         $$
-        18\\% = 0.18.
+        18\\% = 0.18
         $$
       </p>
       <p>Multiply by the bill amount:</p>
       <p>
         $$
-        0.18 \\cdot 35 = 6.3.
+        0.18 \\cdot 35 = 6.3
         $$
       </p>
-      <p>So the tip should be &dollar;$6.30$.</p>
+      <p>So the tip should be &dollar;$6.30$</p>
       <p>The correct choice is <strong>B. &dollar;$6.30$</strong>.</p>
     `,
     choices: [

@@ -5,28 +5,28 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q1',
     number: 1,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{5}{\\sqrt{3}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{5}{\\sqrt{3}}$</p>
     `,
     strategyHtml: `
       <p>
         To remove the square root from the denominator, multiply the numerator and denominator
-        by $\\sqrt{3}$.
+        by $\\sqrt{3}$
       </p>
     `,
     solutionHtml: `
-      <p>Multiply numerator and denominator by $\\sqrt{3}$:</p>
+      <p>Multiply numerator and denominator by $\\sqrt{3}$</p>
       <p>
         $$
         \\dfrac{5}{\\sqrt{3}} \\cdot \\dfrac{\\sqrt{3}}{\\sqrt{3}}
-        = \\dfrac{5\\sqrt{3}}{(\\sqrt{3})(\\sqrt{3})}.
+        = \\dfrac{5\\sqrt{3}}{(\\sqrt{3})(\\sqrt{3})}
         $$
       </p>
       <p>
-        Since $(\\sqrt{3})(\\sqrt{3}) = 3$, the fraction becomes
+        Since $(\\sqrt{3})(\\sqrt{3}) = 3$ the fraction becomes
       </p>
       <p>
         $$
-        \\dfrac{5\\sqrt{3}}{3}.
+        \\dfrac{5\\sqrt{3}}{3}
         $$
       </p>
       <p>The denominator is now rational.</p>
@@ -46,23 +46,23 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q2',
     number: 2,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{2}{\\sqrt{5}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{2}{\\sqrt{5}}$</p>
     `,
     strategyHtml: `
       <p>
-        Multiply the top and bottom by $\\sqrt{5}$ so that the denominator becomes $5$.
+        Multiply the top and bottom by $\\sqrt{5}$ so that the denominator becomes $5$
       </p>
     `,
     solutionHtml: `
-      <p>Multiply numerator and denominator by $\\sqrt{5}$:</p>
+      <p>Multiply numerator and denominator by $\\sqrt{5}$</p>
       <p>
         $$
         \\dfrac{2}{\\sqrt{5}} \\cdot \\dfrac{\\sqrt{5}}{\\sqrt{5}}
         = \\dfrac{2\\sqrt{5}}{(\\sqrt{5})(\\sqrt{5})}
-        = \\dfrac{2\\sqrt{5}}{5}.
+        = \\dfrac{2\\sqrt{5}}{5}
         $$
       </p>
-      <p>The denominator is now $5$, a rational number.</p>
+      <p>The denominator is now $5$ a rational number.</p>
       <p>The correct choice is <strong>C. $\\dfrac{2\\sqrt{5}}{5}$</strong>.</p>
     `,
     choices: [
@@ -79,24 +79,24 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q3',
     number: 3,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{\\sqrt{2}}{\\sqrt{3}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{\\sqrt{2}}{\\sqrt{3}}$</p>
     `,
     strategyHtml: `
       <p>
-        Multiply numerator and denominator by $\\sqrt{3}$ so the denominator becomes $3$.
-        Use $\\sqrt{2}\\cdot\\sqrt{3} = \\sqrt{6}$.
+        Multiply numerator and denominator by $\\sqrt{3}$ so the denominator becomes $3$
+        Use $\\sqrt{2}\\cdot\\sqrt{3} = \\sqrt{6}$
       </p>
     `,
     solutionHtml: `
-      <p>Multiply by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$:</p>
+      <p>Multiply by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$</p>
       <p>
         $$
         \\dfrac{\\sqrt{2}}{\\sqrt{3}} \\cdot \\dfrac{\\sqrt{3}}{\\sqrt{3}}
         = \\dfrac{\\sqrt{2}\\sqrt{3}}{(\\sqrt{3})(\\sqrt{3})}
-        = \\dfrac{\\sqrt{6}}{3}.
+        = \\dfrac{\\sqrt{6}}{3}
         $$
       </p>
-      <p>The denominator is now the integer $3$.</p>
+      <p>The denominator is now the integer $3$</p>
       <p>The correct choice is <strong>A. $\\dfrac{\\sqrt{6}}{3}$</strong>.</p>
     `,
     choices: [
@@ -116,29 +116,29 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q4',
     number: 4,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{7}{2\\sqrt{3}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{7}{2\\sqrt{3}}$</p>
     `,
     strategyHtml: `
       <p>
-        Treat $2\\sqrt{3}$ as a single denominator. Multiply numerator and denominator by $\\sqrt{3}$,
+        Treat $2\\sqrt{3}$ as a single denominator. Multiply numerator and denominator by $\\sqrt{3}$
         then simplify the denominator.
       </p>
     `,
     solutionHtml: `
-      <p>Multiply by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$:</p>
+      <p>Multiply by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$</p>
       <p>
         $$
         \\dfrac{7}{2\\sqrt{3}} \\cdot \\dfrac{\\sqrt{3}}{\\sqrt{3}}
-        = \\dfrac{7\\sqrt{3}}{2(\\sqrt{3}\\cdot\\sqrt{3})}.
+        = \\dfrac{7\\sqrt{3}}{2(\\sqrt{3}\\cdot\\sqrt{3})}
         $$
       </p>
-      <p>Compute $\\sqrt{3} \\cdot \\sqrt{3} = 3$:</p>
+      <p>Compute $\\sqrt{3} \\cdot \\sqrt{3} = 3$</p>
       <p>
         $$
-        \\dfrac{7\\sqrt{3}}{2 \\cdot 3} = \\dfrac{7\\sqrt{3}}{6}.
+        \\dfrac{7\\sqrt{3}}{2 \\cdot 3} = \\dfrac{7\\sqrt{3}}{6}
         $$
       </p>
-      <p>The denominator is now $6$.</p>
+      <p>The denominator is now $6$</p>
       <p>The correct choice is <strong>D. $\\dfrac{7\\sqrt{3}}{6}$</strong>.</p>
     `,
     choices: [
@@ -155,12 +155,12 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q5',
     number: 5,
     promptHtml: `
-      <p>Simplify: $\\dfrac{\\sqrt{6}}{\\sqrt{2}}$.</p>
+      <p>Simplify: $\\dfrac{\\sqrt{6}}{\\sqrt{2}}$</p>
     `,
     strategyHtml: `
       <p>
         You can combine the radicals first:
-        $\\dfrac{\\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\dfrac{6}{2}}$,
+        $\\dfrac{\\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\dfrac{6}{2}}$
         then simplify the fraction inside the radical.
       </p>
     `,
@@ -168,7 +168,7 @@ export const problems: MathProblemData[] = [
       <p>Combine the square roots:</p>
       <p>
         $$
-        \\dfrac{\\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\dfrac{6}{2}} = \\sqrt{3}.
+        \\dfrac{\\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\dfrac{6}{2}} = \\sqrt{3}
         $$
       </p>
       <p>The result already has a rational denominator (since there is no denominator at all).</p>
@@ -188,38 +188,38 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q6',
     number: 6,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{3 + \\sqrt{5}}{\\sqrt{5}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{3 + \\sqrt{5}}{\\sqrt{5}}$</p>
     `,
     strategyHtml: `
       <p>
-        Multiply the entire numerator and the denominator by $\\sqrt{5}$.  
+        Multiply the entire numerator and the denominator by $\\sqrt{5}$  
         Distribute $\\sqrt{5}$ across $3 + \\sqrt{5}$ in the numerator.
       </p>
     `,
     solutionHtml: `
-      <p>Multiply by $\\dfrac{\\sqrt{5}}{\\sqrt{5}}$:</p>
+      <p>Multiply by $\\dfrac{\\sqrt{5}}{\\sqrt{5}}$</p>
       <p>
         $$
         \\dfrac{3 + \\sqrt{5}}{\\sqrt{5}} \\cdot \\dfrac{\\sqrt{5}}{\\sqrt{5}}
-        = \\dfrac{(3 + \\sqrt{5})\\sqrt{5}}{(\\sqrt{5})(\\sqrt{5})}.
+        = \\dfrac{(3 + \\sqrt{5})\\sqrt{5}}{(\\sqrt{5})(\\sqrt{5})}
         $$
       </p>
       <p>Distribute $\\sqrt{5}$ in the numerator:</p>
       <p>
         $$
-        (3 + \\sqrt{5})\\sqrt{5} = 3\\sqrt{5} + (\\sqrt{5})(\\sqrt{5}) = 3\\sqrt{5} + 5.
+        (3 + \\sqrt{5})\\sqrt{5} = 3\\sqrt{5} + (\\sqrt{5})(\\sqrt{5}) = 3\\sqrt{5} + 5
         $$
       </p>
       <p>The denominator is</p>
       <p>
         $$
-        (\\sqrt{5})(\\sqrt{5}) = 5.
+        (\\sqrt{5})(\\sqrt{5}) = 5
         $$
       </p>
       <p>So the fraction becomes</p>
       <p>
         $$
-        \\dfrac{3\\sqrt{5} + 5}{5}.
+        \\dfrac{3\\sqrt{5} + 5}{5}
         $$
       </p>
       <p>The correct choice is <strong>A. $\\dfrac{3\\sqrt{5} + 5}{5}$</strong>.</p>
@@ -238,38 +238,38 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q7',
     number: 7,
     promptHtml: `
-      <p>Simplify and rationalize the denominator: $\\dfrac{4 - \\sqrt{2}}{\\sqrt{2}}$.</p>
+      <p>Simplify and rationalize the denominator: $\\dfrac{4 - \\sqrt{2}}{\\sqrt{2}}$</p>
     `,
     strategyHtml: `
       <p>
-        Multiply numerator and denominator by $\\sqrt{2}$.  
+        Multiply numerator and denominator by $\\sqrt{2}$  
         Distribute $\\sqrt{2}$ over $4 - \\sqrt{2}$ in the numerator, then simplify.
       </p>
     `,
     solutionHtml: `
-      <p>Multiply by $\\dfrac{\\sqrt{2}}{\\sqrt{2}}$:</p>
+      <p>Multiply by $\\dfrac{\\sqrt{2}}{\\sqrt{2}}$</p>
       <p>
         $$
         \\dfrac{4 - \\sqrt{2}}{\\sqrt{2}} \\cdot \\dfrac{\\sqrt{2}}{\\sqrt{2}}
-        = \\dfrac{(4 - \\sqrt{2})\\sqrt{2}}{(\\sqrt{2})(\\sqrt{2})}.
+        = \\dfrac{(4 - \\sqrt{2})\\sqrt{2}}{(\\sqrt{2})(\\sqrt{2})}
         $$
       </p>
-      <p>Distribute $\\sqrt{2}$:</p>
+      <p>Distribute $\\sqrt{2}$</p>
       <p>
         $$
-        (4 - \\sqrt{2})\\sqrt{2} = 4\\sqrt{2} - (\\sqrt{2})(\\sqrt{2}) = 4\\sqrt{2} - 2.
+        (4 - \\sqrt{2})\\sqrt{2} = 4\\sqrt{2} - (\\sqrt{2})(\\sqrt{2}) = 4\\sqrt{2} - 2
         $$
       </p>
-      <p>The denominator is $(\\sqrt{2})(\\sqrt{2}) = 2$, so</p>
+      <p>The denominator is $(\\sqrt{2})(\\sqrt{2}) = 2$ so</p>
       <p>
         $$
-        \\dfrac{4\\sqrt{2} - 2}{2}.
+        \\dfrac{4\\sqrt{2} - 2}{2}
         $$
       </p>
-      <p>Now simplify by dividing each term by $2$:</p>
+      <p>Now simplify by dividing each term by $2$</p>
       <p>
         $$
-        \\dfrac{4\\sqrt{2}}{2} - \\dfrac{2}{2} = 2\\sqrt{2} - 1.
+        \\dfrac{4\\sqrt{2}}{2} - \\dfrac{2}{2} = 2\\sqrt{2} - 1
         $$
       </p>
       <p>The correct choice is <strong>C. $2\\sqrt{2} - 1$</strong>.</p>
@@ -291,7 +291,7 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q8',
     number: 8,
     promptHtml: `
-      <p>Simplify: $\\dfrac{\\sqrt{8}}{4\\sqrt{2}}$.</p>
+      <p>Simplify: $\\dfrac{\\sqrt{8}}{4\\sqrt{2}}$</p>
     `,
     strategyHtml: `
       <p>
@@ -300,25 +300,25 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Simplify $\\sqrt{8}$:</p>
+      <p>Simplify $\\sqrt{8}$</p>
       <p>
         $$
-        8 = 4 \\cdot 2, \\quad \\sqrt{8} = \\sqrt{4\\cdot 2} = 2\\sqrt{2}.
+        8 = 4 \\cdot 2, \\quad \\sqrt{8} = \\sqrt{4\\cdot 2} = 2\\sqrt{2}
         $$
       </p>
       <p>Substitute into the fraction:</p>
       <p>
         $$
-        \\dfrac{\\sqrt{8}}{4\\sqrt{2}} = \\dfrac{2\\sqrt{2}}{4\\sqrt{2}}.
+        \\dfrac{\\sqrt{8}}{4\\sqrt{2}} = \\dfrac{2\\sqrt{2}}{4\\sqrt{2}}
         $$
       </p>
       <p>Cancel $\\sqrt{2}$ from numerator and denominator:</p>
       <p>
         $$
-        \\dfrac{2}{4} = \\dfrac{1}{2}.
+        \\dfrac{2}{4} = \\dfrac{1}{2}
         $$
       </p>
-      <p>The simplified value is $\\dfrac{1}{2}$, which already has a rational denominator.</p>
+      <p>The simplified value is $\\dfrac{1}{2}$ which already has a rational denominator.</p>
       <p>The correct choice is <strong>A. $\\dfrac{1}{2}$</strong>.</p>
     `,
     choices: [
@@ -335,7 +335,7 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q9',
     number: 9,
     promptHtml: `
-      <p>Simplify: $\\dfrac{2\\sqrt{3}}{\\sqrt{3}}$.</p>
+      <p>Simplify: $\\dfrac{2\\sqrt{3}}{\\sqrt{3}}$</p>
     `,
     strategyHtml: `
       <p>
@@ -347,16 +347,16 @@ export const problems: MathProblemData[] = [
       <p>Write the fraction explicitly:</p>
       <p>
         $$
-        \\dfrac{2\\sqrt{3}}{\\sqrt{3}}.
+        \\dfrac{2\\sqrt{3}}{\\sqrt{3}}
         $$
       </p>
       <p>Cancel $\\sqrt{3}$ from top and bottom:</p>
       <p>
         $$
-        \\dfrac{2\\cancel{\\sqrt{3}}}{\\cancel{\\sqrt{3}}} = 2.
+        \\dfrac{2\\cancel{\\sqrt{3}}}{\\cancel{\\sqrt{3}}} = 2
         $$
       </p>
-      <p>The result is the integer $2$.</p>
+      <p>The result is the integer $2$</p>
       <p>The correct choice is <strong>D. $2$</strong>.</p>
     `,
     choices: [
@@ -373,34 +373,34 @@ export const problems: MathProblemData[] = [
     id: 'prealg-12-q10',
     number: 10,
     promptHtml: `
-      <p>Simplify: $\\dfrac{5\\sqrt{2}}{\\sqrt{8}}$.</p>
+      <p>Simplify: $\\dfrac{5\\sqrt{2}}{\\sqrt{8}}$</p>
     `,
     strategyHtml: `
       <p>
-        First simplify $\\sqrt{8}$, then look for common radical factors to cancel.
-        Remember $8 = 4\\cdot 2$.
+        First simplify $\\sqrt{8}$ then look for common radical factors to cancel.
+        Remember $8 = 4\\cdot 2$
       </p>
     `,
     solutionHtml: `
-      <p>Simplify $\\sqrt{8}$:</p>
+      <p>Simplify $\\sqrt{8}$</p>
       <p>
         $$
-        8 = 4 \\cdot 2, \\quad \\sqrt{8} = \\sqrt{4\\cdot 2} = 2\\sqrt{2}.
+        8 = 4 \\cdot 2, \\quad \\sqrt{8} = \\sqrt{4\\cdot 2} = 2\\sqrt{2}
         $$
       </p>
       <p>Substitute into the fraction:</p>
       <p>
         $$
-        \\dfrac{5\\sqrt{2}}{\\sqrt{8}} = \\dfrac{5\\sqrt{2}}{2\\sqrt{2}}.
+        \\dfrac{5\\sqrt{2}}{\\sqrt{8}} = \\dfrac{5\\sqrt{2}}{2\\sqrt{2}}
         $$
       </p>
       <p>Cancel $\\sqrt{2}$ from numerator and denominator:</p>
       <p>
         $$
-        \\dfrac{5}{2}.
+        \\dfrac{5}{2}
         $$
       </p>
-      <p>The simplified value is $\\dfrac{5}{2}$.</p>
+      <p>The simplified value is $\\dfrac{5}{2}$</p>
       <p>The correct choice is <strong>B. $\\dfrac{5}{2}$</strong>.</p>
     `,
     choices: [

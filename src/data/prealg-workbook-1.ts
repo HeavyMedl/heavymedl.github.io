@@ -23,16 +23,16 @@ export const problems: MathProblemData[] = [
       <p>Rewrite the subtraction as addition of the opposite:</p>
       <p>
         $$
-        -7 - 12 = -7 + (-12).
+        -7 - 12 = -7 + (-12)
         $$
       </p>
       <p>Add the integers:</p>
       <p>
         $$
-        -7 + (-12) = -19.
+        -7 + (-12) = -19
         $$
       </p>
-      <p>So the correct choice is <strong>D.</strong> $-19$.</p>
+      <p>So the correct choice is <strong>D.</strong> $-19$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$-5$', isCorrect: false },
@@ -65,10 +65,10 @@ export const problems: MathProblemData[] = [
       <p>We are adding integers with different signs. Subtract the absolute values and keep the sign of the number with the larger absolute value.</p>
       <p>
         $$
-        15 + (-9) = 15 - 9 = 6.
+        15 + (-9) = 15 - 9 = 6
         $$
       </p>
-      <p>Since $15$ has the larger absolute value and is positive, the result is positive. So the correct choice is <strong>D.</strong> $6$.</p>
+      <p>Since $15$ has the larger absolute value and is positive, the result is positive. So the correct choice is <strong>D.</strong> $6$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$24$', isCorrect: false },
@@ -103,10 +103,10 @@ export const problems: MathProblemData[] = [
       <p>Multiply the absolute values, then attach the sign:</p>
       <p>
         $$
-        -4 \\cdot 6 = -(4 \\cdot 6) = -24.
+        -4 \\cdot 6 = -(4 \\cdot 6) = -24
         $$
       </p>
-      <p>So the correct choice is <strong>B.</strong> $-24$.</p>
+      <p>So the correct choice is <strong>B.</strong> $-24$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$24$', isCorrect: false },
@@ -141,10 +141,10 @@ export const problems: MathProblemData[] = [
       <p>Divide the absolute values:</p>
       <p>
         $$
-        -48 \\div (-6) = 48 \\div 6 = 8.
+        -48 \\div (-6) = 48 \\div 6 = 8
         $$
       </p>
-      <p>So the correct choice is <strong>C.</strong> $8$.</p>
+      <p>So the correct choice is <strong>C.</strong> $8$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$-8$', isCorrect: false },
@@ -175,16 +175,16 @@ export const problems: MathProblemData[] = [
       <p>First rewrite subtraction as addition of the opposite:</p>
       <p>
         $$
-        -2 - (-5) - 3 = -2 + 5 - 3.
+        -2 - (-5) - 3 = -2 + 5 - 3
         $$
       </p>
       <p>Then simplify from left to right:</p>
       <p>
         $$
-        -2 + 5 = 3,\\quad 3 - 3 = 0.
+        -2 + 5 = 3,\\quad 3 - 3 = 0
         $$
       </p>
-      <p>So $-2 - (-5) - 3 = 0$ and the correct choice is <strong>A.</strong> $0$.</p>
+      <p>So $-2 - (-5) - 3 = 0$ and the correct choice is <strong>A.</strong> $0$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$0$', isCorrect: true },
@@ -209,24 +209,24 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Use the definition of absolute value: it’s the distance from $0$, always nonnegative. Replace
+        Use the definition of absolute value: it’s the distance from $0$ always nonnegative. Replace
         each absolute value with a positive number, then add.
       </p>
     `,
     solutionHtml: `
-      <p>Use the definition of absolute value: it is the distance from $0$, so it is always nonnegative.</p>
+      <p>Use the definition of absolute value: it is the distance from $0$ so it is always nonnegative.</p>
       <p>
         $$
-        |-3| = 3,\\quad |-7| = 7.
+        |-3| = 3,\\quad |-7| = 7
         $$
       </p>
       <p>Add the results:</p>
       <p>
         $$
-        3 + 7 = 10.
+        3 + 7 = 10
         $$
       </p>
-      <p>So the correct choice is <strong>B.</strong> $10$.</p>
+      <p>So the correct choice is <strong>B.</strong> $10$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$4$', isCorrect: false },
@@ -262,16 +262,16 @@ export const problems: MathProblemData[] = [
       <p>Simplify inside each absolute value, then apply the outside signs.</p>
       <p>
         $$
-        7 - 3 - 2 = 4 - 2 = 2,\\quad \\bigl|7 - 3 - 2\\bigr| = |2| = 2,\\quad |-5| = 5.
+        7 - 3 - 2 = 4 - 2 = 2,\\quad \\bigl|7 - 3 - 2\\bigr| = |2| = 2,\\quad |-5| = 5
         $$
       </p>
       <p>Now substitute into the original expression:</p>
       <p>
         $$
-        -\\bigl|7 - 3 - 2\\bigr| - |-5| = -2 - 5 = -7.
+        -\\bigl|7 - 3 - 2\\bigr| - |-5| = -2 - 5 = -7
         $$
       </p>
-      <p>So the correct choice is <strong>A.</strong> $-7$.</p>
+      <p>So the correct choice is <strong>A.</strong> $-7$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$-7$', isCorrect: true },
@@ -307,10 +307,10 @@ export const problems: MathProblemData[] = [
       <p>Combine the integers inside the absolute value, then take the absolute value.</p>
       <p>
         $$
-        -5 - 8 = -13,\\quad |-13| = 13.
+        -5 - 8 = -13,\\quad |-13| = 13
         $$
       </p>
-      <p>So the correct choice is <strong>C.</strong> $13$.</p>
+      <p>So the correct choice is <strong>C.</strong> $13$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$-13$', isCorrect: false },
@@ -330,8 +330,8 @@ export const problems: MathProblemData[] = [
     number: 9,
     promptHtml: `
       <p>
-        The temperature at sunrise is $8^\\circ\\text{C}$. By midday, it drops by $15^\\circ\\text{C}$, and by evening it
-        rises by $4^\\circ\\text{C}$. What is the temperature in the evening?
+        The temperature at sunrise is $8^\\circ\\text{C}$ By midday, it drops by $15^\\circ\\text{C}$ and by evening it
+        rises by $4^\\circ\\text{C}$ What is the temperature in the evening?
       </p>
     `,
     strategyHtml: `
@@ -345,13 +345,13 @@ export const problems: MathProblemData[] = [
     `,
     solutionHtml: `
       <p>Interpret each temperature change as adding an integer.</p>
-      <p>Start at $8^\\circ\\text{C}$, then subtract $15$ and add $4$:</p>
+      <p>Start at $8^\\circ\\text{C}$ then subtract $15$ and add $4$</p>
       <p>
         $$
-        8 + (-15) + 4 = 8 - 15 + 4 = -7 + 4 = -3.
+        8 + (-15) + 4 = 8 - 15 + 4 = -7 + 4 = -3
         $$
       </p>
-      <p>So the evening temperature is $-3^\\circ\\text{C}$. The correct choice is <strong>A.</strong></p>
+      <p>So the evening temperature is $-3^\\circ\\text{C}$ The correct choice is <strong>A.</strong></p>
     `,
     choices: [
       { id: 'A', textHtml: '$-3$°C', isCorrect: true },
@@ -370,7 +370,7 @@ export const problems: MathProblemData[] = [
     id: 'prealg-01-q10',
     number: 10,
     promptHtml: `
-      <p>A bank account starts with a balance of $120$. A withdrawal of $75$ is made. Then a deposit of $40$ is made. Finally, another withdrawal of $25$ is made.</p>
+      <p>A bank account starts with a balance of $120$ A withdrawal of $75$ is made. Then a deposit of $40$ is made. Finally, another withdrawal of $25$ is made.</p>
       <p>What is the final balance?</p>
     `,
     strategyHtml: `
@@ -386,16 +386,16 @@ export const problems: MathProblemData[] = [
       <p>Write each transaction as an integer and add them to the starting balance.</p>
       <p>
         $$
-        120 - 75 + 40 - 25.
+        120 - 75 + 40 - 25
         $$
       </p>
       <p>Now simplify step by step:</p>
       <p>
         $$
-        120 - 75 = 45,\\quad 45 + 40 = 85,\\quad 85 - 25 = 60.
+        120 - 75 = 45,\\quad 45 + 40 = 85,\\quad 85 - 25 = 60
         $$
       </p>
-      <p>So the final balance is $60$. The correct choice is <strong>C.</strong> $60$.</p>
+      <p>So the final balance is $60$ The correct choice is <strong>C.</strong> $60$</p>
     `,
     choices: [
       { id: 'A', textHtml: '$20$', isCorrect: false },

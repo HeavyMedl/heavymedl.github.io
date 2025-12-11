@@ -16,7 +16,7 @@ export const problems: MathProblemData[] = [
       <p>Since $1$ foot $= 12$ inches,</p>
       <p>
         $$
-        4 \\text{ ft} = 4 \\times 12 \\text{ in} = 48 \\text{ in}.
+        4 \\text{ ft} = 4 \\times 12 \\text{ in} = 48 \\text{ in}
         $$
       </p>
       <p>So $4$ feet is $48$ inches.</p>
@@ -47,7 +47,7 @@ export const problems: MathProblemData[] = [
       <p>Use the relationship $1$ foot $= 12$ inches.</p>
       <p>
         $$
-        72 \\text{ in} \\div 12 = 6 \\text{ ft}.
+        72 \\text{ in} \\div 12 = 6 \\text{ ft}
         $$
       </p>
       <p>So $72$ inches is $6$ feet.</p>
@@ -78,7 +78,7 @@ export const problems: MathProblemData[] = [
       <p>Since $1$ yard $= 3$ feet,</p>
       <p>
         $$
-        3 \\text{ yd} = 3 \\times 3 \\text{ ft} = 9 \\text{ ft}.
+        3 \\text{ yd} = 3 \\times 3 \\text{ ft} = 9 \\text{ ft}
         $$
       </p>
       <p>So $3$ yards is $9$ feet.</p>
@@ -109,13 +109,13 @@ export const problems: MathProblemData[] = [
       <p>Use $1$ hour $= 60$ minutes.</p>
       <p>
         $$
-        2.5 \\text{ h} = 2.5 \\times 60 \\text{ min}.
+        2.5 \\text{ h} = 2.5 \\times 60 \\text{ min}
         $$
       </p>
-      <p>Compute $2.5 \\times 60$:</p>
+      <p>Compute $2.5 \\times 60$</p>
       <p>
         $$
-        2.5 \\times 60 = 150.
+        2.5 \\times 60 = 150
         $$
       </p>
       <p>So $2.5$ hours is $150$ minutes.</p>
@@ -149,10 +149,10 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Divide $135$ by $60$:</p>
+      <p>Divide $135$ by $60$</p>
       <p>
         $$
-        135 \\div 60 = 2 \\text{ remainder } 15.
+        135 \\div 60 = 2 \\text{ remainder } 15
         $$
       </p>
       <p>So $135$ minutes is $2$ full hours and $15$ extra minutes.</p>
@@ -195,13 +195,13 @@ export const problems: MathProblemData[] = [
       <p>Since $85$ minutes is more than $60$ minutes, convert:</p>
       <p>
         $$
-        85 \\text{ min} = 60 \\text{ min} + 25 \\text{ min} = 1 \\text{ hour } 25 \\text{ minutes}.
+        85 \\text{ min} = 60 \\text{ min} + 25 \\text{ min} = 1 \\text{ hour } 25 \\text{ minutes}
         $$
       </p>
       <p>Add the extra hour to the hours total:</p>
       <p>
         $$
-        3 \\text{ hours} + 1 \\text{ hour} = 4 \\text{ hours}.
+        3 \\text{ hours} + 1 \\text{ hour} = 4 \\text{ hours}
         $$
       </p>
       <p>So the total time is $4$ hours $25$ minutes.</p>
@@ -237,16 +237,16 @@ export const problems: MathProblemData[] = [
         $$
         2 \\text{ h } 5 \\text{ min}
         = 1 \\text{ h } (60 + 5) \\text{ min}
-        = 1 \\text{ h } 65 \\text{ min}.
+        = 1 \\text{ h } 65 \\text{ min}
         $$
       </p>
       <p>Now subtract $47$ minutes:</p>
       <p>
         $$
-        65 \\text{ min} - 47 \\text{ min} = 18 \\text{ min}.
+        65 \\text{ min} - 47 \\text{ min} = 18 \\text{ min}
         $$
       </p>
-      <p>The hours stay at $1$.</p>
+      <p>The hours stay at $1$</p>
       <p>So the result is $1$ hour $18$ minutes.</p>
       <p>The correct choice is <strong>A. $1$ hour $18$ minutes</strong>.</p>
     `,
@@ -278,7 +278,7 @@ export const problems: MathProblemData[] = [
       <p>Use the conversion $1$ kilometer $\\approx 0.62$ miles:</p>
       <p>
         $$
-        10 \\text{ km} \\times 0.62 \\dfrac{\\text{miles}}{\\text{km}} = 6.2 \\text{ miles}.
+        10 \\text{ km} \\times 0.62 \\dfrac{\\text{miles}}{\\text{km}} = 6.2 \\text{ miles}
         $$
       </p>
       <p>So the runner traveled about $6.2$ miles.</p>
@@ -308,21 +308,21 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        The perimeter of a rectangle is $2 \\times (\\text{length} + \\text{width})$.
-        Add the length and width, then multiply by $2$.
+        The perimeter of a rectangle is $2 \\times (\\text{length} + \\text{width})$
+        Add the length and width, then multiply by $2$
       </p>
     `,
     solutionHtml: `
       <p>Use the perimeter formula for a rectangle:</p>
       <p>
         $$
-        P = 2(\\text{length} + \\text{width}).
+        P = 2(\\text{length} + \\text{width})
         $$
       </p>
       <p>Substitute length $= 12$ ft and width $= 8$ ft:</p>
       <p>
         $$
-        P = 2(12 + 8) = 2 \\times 20 = 40 \\text{ ft}.
+        P = 2(12 + 8) = 2 \\times 20 = 40 \\text{ ft}
         $$
       </p>
       <p>So the perimeter is $40$ feet.</p>
@@ -358,13 +358,13 @@ export const problems: MathProblemData[] = [
       <p>Add the lengths of the two episodes:</p>
       <p>
         $$
-        42 \\text{ min} + 38 \\text{ min} = 80 \\text{ min}.
+        42 \\text{ min} + 38 \\text{ min} = 80 \\text{ min}
         $$
       </p>
       <p>Convert $80$ minutes to hours and minutes:</p>
       <p>
         $$
-        80 \\div 60 = 1 \\text{ hour } 20 \\text{ minutes}.
+        80 \\div 60 = 1 \\text{ hour } 20 \\text{ minutes}
         $$
       </p>
       <p>So Kurt spends $1$ hour $20$ minutes watching in total.</p>

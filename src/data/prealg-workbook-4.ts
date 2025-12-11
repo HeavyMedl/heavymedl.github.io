@@ -9,25 +9,25 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Find the greatest common factor (GCF) of $12$ and $18$, and divide both the numerator and
+        Find the greatest common factor (GCF) of $12$ and $18$ and divide both the numerator and
         denominator by that number.
       </p>
     `,
     solutionHtml: `
-      <p>Find the greatest common factor (GCF) of $12$ and $18$:</p>
+      <p>Find the greatest common factor (GCF) of $12$ and $18$</p>
       <p>
         $$
         12 = 2^2 \\cdot 3, \\quad 18 = 2 \\cdot 3^2
         $$
       </p>
-      <p>The common prime factors are $2$ and $3$, so the GCF is $2 \\cdot 3 = 6$.</p>
-      <p>Divide numerator and denominator by $6$:</p>
+      <p>The common prime factors are $2$ and $3$ so the GCF is $2 \\cdot 3 = 6$</p>
+      <p>Divide numerator and denominator by $6$</p>
       <p>
         $$
-        \\dfrac{12}{18} = \\dfrac{12 \\div 6}{18 \\div 6} = \\dfrac{2}{3}.
+        \\dfrac{12}{18} = \\dfrac{12 \\div 6}{18 \\div 6} = \\dfrac{2}{3}
         $$
       </p>
-      <p>So the simplified form is $\\dfrac{2}{3}$.</p>
+      <p>So the simplified form is $\\dfrac{2}{3}$</p>
       <p>The correct choice is <strong>B. $\\dfrac{2}{3}$</strong>.</p>
     `,
     choices: [
@@ -51,7 +51,7 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Look for a common factor of $45$ and $60$. You can use prime factorization or find the GCF
+        Look for a common factor of $45$ and $60$ You can use prime factorization or find the GCF
         by listing factors.
       </p>
     `,
@@ -62,14 +62,14 @@ export const problems: MathProblemData[] = [
         45 = 3^2 \\cdot 5, \\quad 60 = 2^2 \\cdot 3 \\cdot 5
         $$
       </p>
-      <p>The common primes are $3$ and $5$, so the GCF is $3 \\cdot 5 = 15$.</p>
-      <p>Divide numerator and denominator by $15$:</p>
+      <p>The common primes are $3$ and $5$ so the GCF is $3 \\cdot 5 = 15$</p>
+      <p>Divide numerator and denominator by $15$</p>
       <p>
         $$
-        \\dfrac{45}{60} = \\dfrac{45 \\div 15}{60 \\div 15} = \\dfrac{3}{4}.
+        \\dfrac{45}{60} = \\dfrac{45 \\div 15}{60 \\div 15} = \\dfrac{3}{4}
         $$
       </p>
-      <p>So the simplified form is $\\dfrac{3}{4}$.</p>
+      <p>So the simplified form is $\\dfrac{3}{4}$</p>
       <p>The correct choice is <strong>C. $\\dfrac{3}{4}$</strong>.</p>
     `,
     choices: [
@@ -114,7 +114,7 @@ export const problems: MathProblemData[] = [
           $\\dfrac{5}{3}$ is actually the reciprocal, not equivalent.
         </li>
       </ul>
-      <p>So the fraction equivalent to $\\dfrac{3}{5}$ is $\\dfrac{6}{10}$.</p>
+      <p>So the fraction equivalent to $\\dfrac{3}{5}$ is $\\dfrac{6}{10}$</p>
       <p>The correct choice is <strong>A. $\\dfrac{6}{10}$</strong>.</p>
     `,
     choices: [
@@ -137,7 +137,7 @@ export const problems: MathProblemData[] = [
       <p>Find the missing numerator so that the fractions are equivalent:</p>
       <p>
         $$
-        \\dfrac{\\square}{12} = \\dfrac{5}{6}.
+        \\dfrac{\\square}{12} = \\dfrac{5}{6}
         $$
       </p>
     `,
@@ -149,14 +149,14 @@ export const problems: MathProblemData[] = [
     `,
     solutionHtml: `
       <p>Start with $\\dfrac{5}{6}$ and compare the denominators.</p>
-      <p>To go from $6$ to $12$, multiply by $2$.</p>
+      <p>To go from $6$ to $12$ multiply by $2$</p>
       <p>To keep the fractions equivalent, multiply the numerator by the same number:</p>
       <p>
         $$
-        5 \\times 2 = 10.
+        5 \\times 2 = 10
         $$
       </p>
-      <p>So the missing numerator is $10$, and the fraction is $\\dfrac{10}{12}$.</p>
+      <p>So the missing numerator is $10$ and the fraction is $\\dfrac{10}{12}$</p>
       <p>The correct choice is <strong>C. 10</strong>.</p>
     `,
     choices: [
@@ -180,7 +180,7 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Convert the fraction to a decimal by dividing $3 \\div 5$, then multiply by $100$ to get the
+        Convert the fraction to a decimal by dividing $3 \\div 5$ then multiply by $100$ to get the
         percent.
       </p>
     `,
@@ -188,16 +188,16 @@ export const problems: MathProblemData[] = [
       <p>First convert $\\dfrac{3}{5}$ to a decimal:</p>
       <p>
         $$
-        3 \\div 5 = 0.6.
+        3 \\div 5 = 0.6
         $$
       </p>
-      <p>Now convert the decimal to a percent by multiplying by $100$:</p>
+      <p>Now convert the decimal to a percent by multiplying by $100$</p>
       <p>
         $$
-        0.6 \\times 100 = 60\\%.
+        0.6 \\times 100 = 60\\%
         $$
       </p>
-      <p>So $\\dfrac{3}{5}$ is equal to $60\\%$.</p>
+      <p>So $\\dfrac{3}{5}$ is equal to $60\\%$</p>
       <p>The correct choice is <strong>B. $60\\%$</strong>.</p>
     `,
     choices: [
@@ -221,7 +221,7 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Start by writing $54\\%$ as $\\dfrac{54}{100}$, then simplify the fraction by dividing the
+        Start by writing $54\\%$ as $\\dfrac{54}{100}$ then simplify the fraction by dividing the
         numerator and denominator by their GCF.
       </p>
     `,
@@ -229,22 +229,22 @@ export const problems: MathProblemData[] = [
       <p>Write $54\\%$ as a fraction:</p>
       <p>
         $$
-        54\\% = \\dfrac{54}{100}.
+        54\\% = \\dfrac{54}{100}
         $$
       </p>
-      <p>Find the greatest common factor of $54$ and $100$.</p>
+      <p>Find the greatest common factor of $54$ and $100$</p>
       <p>
         $$
         54 = 2 \\cdot 3^3, \\quad 100 = 2^2 \\cdot 5^2
         $$
       </p>
-      <p>The common factor is $2$, so divide numerator and denominator by $2$:</p>
+      <p>The common factor is $2$ so divide numerator and denominator by $2$</p>
       <p>
         $$
-        \\dfrac{54}{100} = \\dfrac{54 \\div 2}{100 \\div 2} = \\dfrac{27}{50}.
+        \\dfrac{54}{100} = \\dfrac{54 \\div 2}{100 \\div 2} = \\dfrac{27}{50}
         $$
       </p>
-      <p>So $54\\%$ as a fraction in simplest form is $\\dfrac{27}{50}$.</p>
+      <p>So $54\\%$ as a fraction in simplest form is $\\dfrac{27}{50}$</p>
       <p>The correct choice is <strong>C. $\\dfrac{27}{50}$</strong>.</p>
     `,
     choices: [
@@ -274,16 +274,16 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Find a common denominator for $\\dfrac{3}{4}$ and $\\dfrac{4}{5}$.</p>
-      <p>The least common multiple of $4$ and $5$ is $20$.</p>
-      <p>Rewrite each fraction with denominator $20$:</p>
+      <p>Find a common denominator for $\\dfrac{3}{4}$ and $\\dfrac{4}{5}$</p>
+      <p>The least common multiple of $4$ and $5$ is $20$</p>
+      <p>Rewrite each fraction with denominator $20$</p>
       <p>
         $$
         \\dfrac{3}{4} = \\dfrac{3 \\times 5}{4 \\times 5} = \\dfrac{15}{20}, \\quad
-        \\dfrac{4}{5} = \\dfrac{4 \\times 4}{5 \\times 4} = \\dfrac{16}{20}.
+        \\dfrac{4}{5} = \\dfrac{4 \\times 4}{5 \\times 4} = \\dfrac{16}{20}
         $$
       </p>
-      <p>Since $\\dfrac{16}{20} > \\dfrac{15}{20}$, we have $\\dfrac{4}{5} > \\dfrac{3}{4}$.</p>
+      <p>Since $\\dfrac{16}{20} > \\dfrac{15}{20}$ we have $\\dfrac{4}{5} > \\dfrac{3}{4}$</p>
       <p>The correct choice is <strong>B. $\\dfrac{4}{5}$</strong>.</p>
     `,
     choices: [
@@ -327,7 +327,7 @@ export const problems: MathProblemData[] = [
       <p>From least to greatest:</p>
       <p>
         $$
-        \\dfrac{1}{2}, \\; \\dfrac{5}{8}, \\; \\dfrac{2}{3}, \\; \\dfrac{3}{4}.
+        \\dfrac{1}{2}, \\; \\dfrac{5}{8}, \\; \\dfrac{2}{3}, \\; \\dfrac{3}{4}
         $$
       </p>
       <p>The correct choice is the list that matches this order:
@@ -378,15 +378,15 @@ export const problems: MathProblemData[] = [
       </p>
     `,
     solutionHtml: `
-      <p>Compare $\\dfrac{3}{4}$ and $\\dfrac{5}{8}$.</p>
-      <p>Use a common denominator of $8$:</p>
+      <p>Compare $\\dfrac{3}{4}$ and $\\dfrac{5}{8}$</p>
+      <p>Use a common denominator of $8$</p>
       <p>
         $$
         \\dfrac{3}{4} = \\dfrac{3 \\times 2}{4 \\times 2} = \\dfrac{6}{8}, \\quad
-        \\dfrac{5}{8} = \\dfrac{5}{8}.
+        \\dfrac{5}{8} = \\dfrac{5}{8}
         $$
       </p>
-      <p>Since $\\dfrac{6}{8} > \\dfrac{5}{8}$, we know that $\\dfrac{3}{4} > \\dfrac{5}{8}$.</p>
+      <p>Since $\\dfrac{6}{8} > \\dfrac{5}{8}$ we know that $\\dfrac{3}{4} > \\dfrac{5}{8}$</p>
       <p>So Kurt ate more pizza.</p>
       <p>The correct choice is <strong>A. Kurt</strong>.</p>
     `,
@@ -408,13 +408,13 @@ export const problems: MathProblemData[] = [
     number: 10,
     promptHtml: `
       <p>
-        On a test, Sam answered $\\dfrac{18}{20}$ questions correctly, and Alex scored $90\\%$.
+        On a test, Sam answered $\\dfrac{18}{20}$ questions correctly, and Alex scored $90\\%$
         Who had the higher score?
       </p>
     `,
     strategyHtml: `
       <p>
-        Convert $\\dfrac{18}{20}$ to a percent, or convert $90\\%$ to a fraction with denominator $20$,
+        Convert $\\dfrac{18}{20}$ to a percent, or convert $90\\%$ to a fraction with denominator $20$
         then compare the two.
       </p>
     `,
@@ -429,10 +429,10 @@ export const problems: MathProblemData[] = [
       <p>Now write $\\dfrac{9}{10}$ as a percent:</p>
       <p>
         $$
-        9 \\div 10 = 0.9, \\quad 0.9 \\times 100 = 90\\%.
+        9 \\div 10 = 0.9, \\quad 0.9 \\times 100 = 90\\%
         $$
       </p>
-      <p>So Sam's score is $90\\%$, and Alex's score is also $90\\%$.</p>
+      <p>So Sam's score is $90\\%$ and Alex's score is also $90\\%$</p>
       <p>They have the same score.</p>
       <p>The correct choice is <strong>C. They had the same score</strong>.</p>
     `,

@@ -57,12 +57,12 @@ export const problems: MathProblemData[] = [
     strategyHtml: `
       <p>
         Ask: Is $0$ a counting number? Is it included when we start counting $1,2,3,\\dots$?
-        Then think about which set is the smallest one that still includes $0$.
+        Then think about which set is the smallest one that still includes $0$
       </p>
     `,
     solutionHtml: `
       <p>
-        The number $0$ is not one of the counting numbers $1,2,3,\\dots$, so it is not usually classified as natural.
+        The number $0$ is not one of the counting numbers $1,2,3,\\dots$ so it is not usually classified as natural.
       </p>
       <p>
         However, $0$ <strong>is</strong> a <strong>whole number</strong>, and therefore also an integer,
@@ -196,7 +196,7 @@ export const problems: MathProblemData[] = [
       </p>
       <p>
         $$
-        -2.5 = -\\frac{5}{2}.
+        -2.5 = -\\frac{5}{2}
         $$
       </p>
       <p>
@@ -228,7 +228,7 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Integers are all the whole numbers and their negatives: $\\dots,-3,-2,-1,0,1,2,3,\\dots$.
+        Integers are all the whole numbers and their negatives: $\\dots,-3,-2,-1,0,1,2,3,\\dots$
         Look for the number that has a fractional or decimal part.
       </p>
     `,
@@ -242,7 +242,7 @@ export const problems: MathProblemData[] = [
         $$
       </p>
       <p>
-        Among the choices, $3$, $-4$, and $0$ are all integers. The number $2.7$ has a decimal part,
+        Among the choices, $3$ $-4$ and $0$ are all integers. The number $2.7$ has a decimal part,
         so it is <strong>not</strong> an integer.
       </p>
       <p>
@@ -269,20 +269,20 @@ export const problems: MathProblemData[] = [
     `,
     strategyHtml: `
       <p>
-        Natural numbers are the counting numbers $1,2,3,\\dots$.
+        Natural numbers are the counting numbers $1,2,3,\\dots$
         Even numbers are divisible by $2$ with no remainder. Look for a positive counting number that is even.
       </p>
     `,
     solutionHtml: `
       <p>
-        Natural numbers are the counting numbers $1,2,3,\\dots$, and an even number is divisible by $2$.
+        Natural numbers are the counting numbers $1,2,3,\\dots$ and an even number is divisible by $2$
       </p>
       <p>Check each option:</p>
       <ul>
         <li>$0$ is even, but it is not usually counted as a natural number.</li>
         <li>$-6$ is even, but it is negative, so it is not natural.</li>
         <li>$7$ is natural, but it is odd.</li>
-        <li>$14$ is a positive counting number and divisible by $2$, so it is even and natural.</li>
+        <li>$14$ is a positive counting number and divisible by $2$ so it is even and natural.</li>
       </ul>
       <p>
         So the correct choice is <strong>D. 14</strong>.
@@ -315,7 +315,7 @@ export const problems: MathProblemData[] = [
     `,
     solutionHtml: `
       <p>
-        The number of students present must be a positive whole number: $1,2,3,\\dots$.
+        The number of students present must be a positive whole number: $1,2,3,\\dots$
       </p>
       <p>
         These are <strong>natural numbers</strong>. Natural numbers are also whole, integer, rational,
@@ -397,10 +397,10 @@ export const problems: MathProblemData[] = [
           $\\frac{4}{9}$ is a fraction of integers, so it is rational.
         </li>
         <li>
-          $-3$ can be written as $\\frac{-3}{1}$, so it is rational.
+          $-3$ can be written as $\\frac{-3}{1}$ so it is rational.
         </li>
         <li>
-          $0.75$ can be written as $\\frac{75}{100} = \\frac{3}{4}$, so it is rational.
+          $0.75$ can be written as $\\frac{75}{100} = \\frac{3}{4}$ so it is rational.
         </li>
         <li>
           $\\sqrt{2}$ cannot be written as a fraction of integers; it is a classic example of an
@@ -408,7 +408,7 @@ export const problems: MathProblemData[] = [
         </li>
       </ul>
       <p>
-        So the only irrational number in the list is $\\sqrt{2}$.
+        So the only irrational number in the list is $\\sqrt{2}$
       </p>
       <p>
         The correct choice is <strong>A. $\\sqrt{2}$</strong>.

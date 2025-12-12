@@ -16,3 +16,7 @@ Whatever this is that I am, it is flesh and a little spirit and an intelligence.
 ## 3
 
 What is divine is full of Providence. Even chance is not divorced from nature, from the inweaving and enfolding of things governed by Providence. Everything proceeds from it. And then there is necessity and the needs of the whole world, of which you are a part. Whatever the nature of the whole does, and whatever serves to maintain it, is good for every part of nature. The world is maintained by change—in the elements and in the things they compose. That should be enough for you; treat it as an axiom. Discard your thirst for books, so that you won’t die in bitterness, but in cheerfulness and truth, grateful to the gods from the bottom of your heart.
+
+## 4
+
+Remember how long you’ve been putting this off, how many extensions the gods gave you, and you didn’t use them. At some point you have to recognize what world it is that you belong to; what power rules it and from what source you spring; that there is a limit to the time assigned you, and if you don’t use it to free yourself it will be gone and will never return.

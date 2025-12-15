@@ -20,3 +20,7 @@ What is divine is full of Providence. Even chance is not divorced from nature, f
 ## 4
 
 Remember how long you’ve been putting this off, how many extensions the gods gave you, and you didn’t use them. At some point you have to recognize what world it is that you belong to; what power rules it and from what source you spring; that there is a limit to the time assigned you, and if you don’t use it to free yourself it will be gone and will never return.
+
+## 5
+
+Concentrate every minute like a Roman—like a man—on doing what’s in front of you with precise and genuine seriousness, tenderly, willingly, with justice. And on freeing yourself from all other distractions. Yes, you can—if you do everything as if it were the last thing you were doing in your life, and stop being aimless, stop letting your emotions override what your mind tells you, stop being hypocritical, self-centered, irritable. You see how few things you have to do to live a satisfying and reverent life? If you can manage this, that’s all even the gods can ask of you.

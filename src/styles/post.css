@@ -500,7 +500,7 @@
 .katex-display {
   text-align: center;
   margin: 0.35em 0 0.45em;
-  font-size: 1.05em;
+  font-size: 1.15em;
 }
 
 /* Reset any conflicting styles that might interfere with KaTeX */
@@ -512,7 +512,7 @@
 .katex,
 .katex * {
   color: inherit;
-  font-size: 0.96em;
+  font-size: 0.99em;
 }
 
 @media (min-width: 640px) {

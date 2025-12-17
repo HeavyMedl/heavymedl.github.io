@@ -16,4 +16,5 @@ export interface MathProblemData {
   skills: SkillRef[]
   difficulty?: 'easy' | 'medium' | 'hard'
   tags?: string[]
+  stratagemIds?: string[]
 }

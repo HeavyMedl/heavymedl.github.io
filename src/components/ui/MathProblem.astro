@@ -29,8 +29,11 @@ const renderMathHtml = (value?: string) =>
 const promptHtml = renderMathHtml(data.promptHtml)
 const strategyHtml = renderMathHtml(data.strategyHtml)
 const solutionHtml = renderMathHtml(data.solutionHtml)
-const primarySkillId = data.skills.find((s) => s.role === 'primary')?.skillId ?? data.skills[0]?.skillId
-const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label ?? primarySkillId : undefined
+const primarySkillId =
+  data.skills.find((s) => s.role === 'primary')?.skillId ?? data.skills[0]?.skillId
+const primarySkillLabel = primarySkillId
+  ? (mathTree.nodes[primarySkillId]?.label ?? primarySkillId)
+  : undefined
 ---
 
 <article class="math-problem" id={data.id}>
@@ -47,25 +50,23 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
 
   <div class="math-problem__prompt" set:html={promptHtml} />
 
-  {
-    data.choices.length > 0 ? (
-      <details class="math-problem__choices-wrapper" open={choicesInitiallyOpen}>
-        <summary class="math-problem__choices-toggle">
-          <span class="math-problem__choices-toggle-text" data-state="hide">
-            Hide choices
-          </span>
-        <span class="math-problem__choices-toggle-text" data-state="show">
-          Show choices
-        </span>
-        <span class="math-problem__choices-toggle-icon" aria-hidden="true" />
-      </summary>
+  <div class="math-problem__accordions">
+    {data.choices.length > 0 ? (
+      <details class="math-problem__accordion" open={choicesInitiallyOpen}>
+        <summary>
+          <span class="math-problem__accordion-label">Choices</span>
+          <span class="math-problem__accordion-icon" aria-hidden="true" />
+        </summary>
 
-        <div class="math-problem__choices-body">
+        <div class="math-problem__accordion-body math-problem__choices-body">
           <div class="math-problem__choices" role="list">
             {data.choices.map((choice) => (
               <div class="math-problem__choice" role="listitem">
                 <span class="math-problem__choice-label">{choice.id}</span>
-                <span class="math-problem__choice-text" set:html={renderMathHtml(choice.textHtml)} />
+                <span
+                  class="math-problem__choice-text"
+                  set:html={renderMathHtml(choice.textHtml)}
+                />
               </div>
             ))}
           </div>
@@ -73,10 +74,8 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
       </details>
     ) : (
       <p class="math-problem__empty">No choices provided.</p>
-    )
-  }
+    )}
 
-  <div class="math-problem__accordions">
     <details class="math-problem__accordion">
       <summary>
         <span class="math-problem__accordion-label">Strategy</span>
@@ -137,15 +136,12 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     }
 
     const initAnimations = () => {
-      document
-        .querySelectorAll<HTMLDetailsElement>('.math-problem__accordion, .math-problem__choices-wrapper')
+      document.querySelectorAll<HTMLDetailsElement>('.math-problem__accordion')
         .forEach((details) => {
           if (details.dataset.animBound === 'true') return
           details.dataset.animBound = 'true'
 
-          const body = details.querySelector<HTMLElement>(
-            '.math-problem__accordion-body, .math-problem__choices-body'
-          )
+          const body = details.querySelector<HTMLElement>('.math-problem__accordion-body')
           const summary = details.querySelector('summary')
           if (!body || !summary) return
 
@@ -196,7 +192,7 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1.2rem;
   }
 
   .math-problem__eyebrow {
@@ -269,6 +265,7 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     gap: 0.15rem;
     align-items: start;
     border-radius: 0.2rem;
+    margin-bottom: 1.2rem;
   }
 
   :global(.math-problem__prompt p) {
@@ -319,31 +316,34 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
   .math-problem__accordions {
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.35rem;
     margin-top: 1rem;
   }
 
   .math-problem__accordion {
-    border-radius: 0.25rem;
+    border-radius: 0.6rem;
     border: 1px solid var(--border);
     background: var(--code-bg);
-    padding: 0.05rem 0.35rem;
+    padding: 0.1rem 0.3rem;
     transition:
-      border-color 0.12s ease,
-      background 0.12s ease;
+      border-color 0.18s ease,
+      background 0.18s ease,
+      box-shadow 0.18s ease;
   }
 
   .math-problem__accordion[open] {
     border-color: var(--text-tertiary);
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
   }
 
   .math-problem__accordion summary {
-    padding: 0.75rem 0.25rem;
+    padding: 0.35rem 0.55rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--mp-toggle-gap);
-    font-weight: 500;
+    font-weight: 700;
     transition: color 0.2s ease;
   }
 
@@ -351,8 +351,7 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     padding: 0.05rem 0.1rem;
   }
 
-  .math-problem__accordion-icon,
-  .math-problem__choices-toggle-icon {
+  .math-problem__accordion-icon {
     display: inline-flex;
     width: var(--mp-toggle-icon-size);
     height: var(--mp-toggle-icon-size);
@@ -372,13 +371,11 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     -webkit-mask-position: center;
   }
 
-  .math-problem__accordion[open] .math-problem__accordion-icon,
-  .math-problem__choices-wrapper[open] .math-problem__choices-toggle-icon {
+  .math-problem__accordion[open] .math-problem__accordion-icon {
     transform: rotate(90deg);
   }
 
-  .math-problem__accordion[data-toggling='closed'] .math-problem__accordion-icon,
-  .math-problem__choices-wrapper[data-toggling='closed'] .math-problem__choices-toggle-icon {
+  .math-problem__accordion[data-toggling='closed'] .math-problem__accordion-icon {
     transform: rotate(0deg);
   }
 
@@ -402,74 +399,26 @@ const primarySkillLabel = primarySkillId ? mathTree.nodes[primarySkillId]?.label
     overflow: hidden;
   }
 
-  .math-problem__accordion-body p {
+  :global(.math-problem__accordion-content p) {
     margin: 0.2rem 0 0.7rem;
   }
 
-  .math-problem__accordion-body p:last-child {
+  :global(.math-problem__accordion-content p:first-child) {
+    margin-top: 0;
+  }
+
+  :global(.math-problem__accordion-content p:last-child) {
     margin-bottom: 0;
   }
 
-  .math-problem__choices-wrapper {
-    margin: 0.25rem 0 0.5rem;
-  }
-
-  .math-problem__choices-body {
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-6px);
-    max-height: 0;
-  }
-
-  .math-problem__choices-wrapper[open] .math-problem__choices-body {
-    max-height: 1200px;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .math-problem__choices-toggle {
-    padding: 0.15rem 0.1rem;
-    display: inline-flex;
-    align-items: center;
-    gap: var(--mp-toggle-gap);
-    font-weight: 500;
-    color: var(--text-secondary);
-  }
-
-  .math-problem__choices-toggle-text {
-    display: none;
-    font: inherit;
-    color: inherit;
-  }
-
-  .math-problem__choices-wrapper[data-toggling='open'] .math-problem__choices-toggle-text[data-state='hide'],
-  .math-problem__choices-wrapper[open]:not([data-toggling='closed'])
-    .math-problem__choices-toggle-text[data-state='hide'],
-  .math-problem__choices-wrapper[data-toggling='closed']
-    .math-problem__choices-toggle-text[data-state='show'],
-  .math-problem__choices-wrapper:not([open]):not([data-toggling='open'])
-    .math-problem__choices-toggle-text[data-state='show'] {
-    display: inline-flex;
-  }
-
-  .math-problem__choices-toggle-icon::before {
-    content: '−';
-  }
-
-  .math-problem__choices-wrapper:not([open]) .math-problem__choices-toggle-icon::before {
-    content: '+';
-  }
-
-  .math-problem__accordion summary,
-  .math-problem__choices-toggle {
+  .math-problem__accordion summary {
     cursor: pointer;
     list-style: none;
     border: none;
     background: transparent;
   }
 
-  .math-problem__accordion summary::-webkit-details-marker,
-  .math-problem__choices-toggle::-webkit-details-marker {
+  .math-problem__accordion summary::-webkit-details-marker {
     display: none;
   }
 

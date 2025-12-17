@@ -239,7 +239,7 @@ export const mathStratagems: Record<string, Stratagem> = {
       <p><strong>When to use it:</strong> When you see phrases like “per 1”, “each”, or you want to compare which option is the better buy.</p>
       <p><strong>Procedure:</strong></p>
       <ol>
-        <li>Write the rate as a fraction: \$begin:math:text$\\\\dfrac\{\\\\text\{total\}\}\{\\\\text\{number of units\}\}\\$end:math:text$.</li>
+        <li>Write the rate as a fraction: $\\dfrac{\\text{total}}{\\text{number of units}}$.</li>
         <li>Divide the numerator by the denominator to get a value “per 1 unit”.</li>
         <li>Attach the correct units to your answer.</li>
       </ol>
